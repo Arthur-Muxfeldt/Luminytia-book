@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Alquimista</name>
+		<description>Classe-base Alquimista do mundo de Luminytia.</description>
+		<update version="0.0.1">
+			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
+		</update>
+	</info>
+
+	<element name="Alquimista" type="Class" source="Luminytia" id="ID_CLASS_LUMINYTIA_ALQUIMISTA">
+		<description>
+			<p>O Alquimista transforma matéria e essência em poder. Frascos borbulhantes, pós reativos e elixires improváveis são as ferramentas de quem trata o mundo como um experimento.</p>
+			<h5>PONTOS DE VIDA</h5>
+			<ul class="unstyled">
+				<li><strong>Dado de Vida:</strong> 1d8 por nível de Alquimista</li>
+				<li><strong>PV no 1º Nível:</strong> 8 + seu modificador de Constituição</li>
+				<li><strong>PV em Níveis Superiores:</strong> 1d8 (ou 5) + seu modificador de Constituição por nível após o 1º</li>
+			</ul>
+			<h5>PROFICIÊNCIAS</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armadura:</strong> Leve</li>
+				<li><strong>Armas:</strong> Armas simples</li>
+				<li><strong>Ferramentas:</strong> Suprimentos de alquimista</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Testes de Resistência:</strong> Inteligência, Constituição</li>
+				<li><strong>Perícias:</strong> Escolha duas entre Arcanismo, Investigação, Medicina, Natureza, Percepção e Prestidigitação</li>
+			</ul>
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ALQUIMIA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARQUETIPO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI" />
+		</description>
+		<sheet display="false">
+			<description>Um mestre da transmutação que converte reagentes em elixires e explosivos.</description>
+		</sheet>
+		<setters>
+			<set name="short">Mestre da transmutação que converte reagentes em elixires e explosivos.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+			<select type="Proficiency" name="Perícia (Alquimista)" supports="Skill,Alquimista" number="2" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ALQUIMIA" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARQUETIPO" level="3" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI" level="4" />
+		</rules>
+		<multiclass id="ID_MULTICLASS_LUMINYTIA_ALQUIMISTA">
+			<prerequisite>Inteligência 13</prerequisite>
+			<requirements>[intelligence:13]</requirements>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Alquimia" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ALQUIMIA">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 1º nível, você domina os fundamentos da alquimia e pode preparar concocções a partir de reagentes. (Mecânica a ser detalhada.)</p>
+		</description>
+		<sheet>
+			<description>Você prepara concocções alquímicas a partir de reagentes. (A detalhar.)</description>
+		</sheet>
+	</element>
+
+	<element name="Arquétipo de Alquimista" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARQUETIPO">
+		<description>
+			<p>No 3º nível, você escolhe uma tradição alquímica que define seu ramo de estudo. Sua escolha concede recursos no 3º nível e novamente no 6º, 10º e 14º nível.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Tradição Alquímica" supports="Tradição Alquímica" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI">
+		<compendium display="false" />
+		<description>
+			<p>No 4º nível, e novamente no 8º, 12º, 16º e 19º nível, você pode aumentar um valor de habilidade em 2, ou dois valores de habilidade em 1. Você não pode passar de 20 com este recurso.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Melhoria (Alquimista 4)" supports="Improvement Option,Alquimista,4" level="4" />
+			<select type="Class Feature" name="Melhoria (Alquimista 8)" supports="Improvement Option,Alquimista,8" level="8" />
+			<select type="Class Feature" name="Melhoria (Alquimista 12)" supports="Improvement Option,Alquimista,12" level="12" />
+			<select type="Class Feature" name="Melhoria (Alquimista 16)" supports="Improvement Option,Alquimista,16" level="16" />
+			<select type="Class Feature" name="Melhoria (Alquimista 19)" supports="Improvement Option,Alquimista,19" level="19" />
+		</rules>
+	</element>
+
+</elements>
