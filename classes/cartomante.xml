@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Cartomante</name>
+		<description>Classe-base Cartomante do mundo de Luminytia.</description>
+		<update version="0.0.1">
+			<file name="classes/cartomante.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/cartomante.xml" />
+		</update>
+	</info>
+
+	<element name="Cartomante" type="Class" source="Luminytia" id="ID_CLASS_LUMINYTIA_CARTOMANTE">
+		<description>
+			<p>A Cartomante lê o destino nas cartas e o dobra a seu favor. Cada carta virada é uma aposta com a sorte — bênção ou ruína.</p>
+			<h5>PONTOS DE VIDA</h5>
+			<ul class="unstyled">
+				<li><strong>Dado de Vida:</strong> 1d8 por nível de Cartomante</li>
+				<li><strong>PV no 1º Nível:</strong> 8 + seu modificador de Constituição</li>
+				<li><strong>PV em Níveis Superiores:</strong> 1d8 (ou 5) + seu modificador de Constituição por nível após o 1º</li>
+			</ul>
+			<h5>PROFICIÊNCIAS</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armadura:</strong> Leve</li>
+				<li><strong>Armas:</strong> Armas simples</li>
+				<li><strong>Ferramentas:</strong> Baralho de cartomante</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Testes de Resistência:</strong> Sabedoria, Carisma</li>
+				<li><strong>Perícias:</strong> Escolha duas entre Intuição, Enganação, História, Investigação, Persuasão e Prestidigitação</li>
+			</ul>
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_DO_DESTINO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARQUETIPO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI" />
+		</description>
+		<sheet display="false">
+			<description>Uma leitora do destino que manipula a sorte por meio de cartas arcanas.</description>
+		</sheet>
+		<setters>
+			<set name="short">Leitora do destino que manipula a sorte por meio de cartas.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+			<select type="Proficiency" name="Perícia (Cartomante)" supports="Skill,Cartomante" number="2" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_DO_DESTINO" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARQUETIPO" level="3" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI" level="4" />
+		</rules>
+		<multiclass id="ID_MULTICLASS_LUMINYTIA_CARTOMANTE">
+			<prerequisite>Carisma 13</prerequisite>
+			<requirements>[charisma:13]</requirements>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Baralho do Destino" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_DO_DESTINO">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 1º nível, você carrega um baralho arcano ligado ao seu destino. (Mecânica a ser detalhada.)</p>
+		</description>
+		<sheet>
+			<description>Você possui um baralho arcano ligado ao seu destino. (A detalhar.)</description>
+		</sheet>
+	</element>
+
+	<element name="Arquétipo de Cartomante" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARQUETIPO">
+		<description>
+			<p>No 3º nível, você escolhe um arquétipo que molda seu método de leitura das cartas. Sua escolha concede recursos no 3º nível e novamente no 6º, 10º e 14º nível.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Arquétipo de Cartomante" supports="Arquétipo de Cartomante" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI">
+		<compendium display="false" />
+		<description>
+			<p>No 4º nível, e novamente no 8º, 12º, 16º e 19º nível, você pode aumentar um valor de habilidade em 2, ou dois valores de habilidade em 1. Você não pode passar de 20 com este recurso.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Melhoria (Cartomante 4)" supports="Improvement Option,Cartomante,4" level="4" />
+			<select type="Class Feature" name="Melhoria (Cartomante 8)" supports="Improvement Option,Cartomante,8" level="8" />
+			<select type="Class Feature" name="Melhoria (Cartomante 12)" supports="Improvement Option,Cartomante,12" level="12" />
+			<select type="Class Feature" name="Melhoria (Cartomante 16)" supports="Improvement Option,Cartomante,16" level="16" />
+			<select type="Class Feature" name="Melhoria (Cartomante 19)" supports="Improvement Option,Cartomante,19" level="19" />
+		</rules>
+	</element>
+
+</elements>
