@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+	<element name="Filho da Aurora" type="Race" source="Luminytia" id="ID_RACE_FILHO_DA_AURORA">
+		<supports>Race</supports>
+		<description>
+			<p>Descendentes tocados pela luz de Luminytia, portam em si um brilho tênue.</p>
+		</description>
+		<setters>
+			<set name="names">Aurin, Lumen, Sol, Vesper</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FILHO_DA_AURORA_LUZ_INTERIOR" />
+			<stat name="innate_speed" value="30" />
+		</rules>
+	</element>
+
+	<element name="Luz Interior" type="Racial Trait" source="Luminytia" id="ID_RACIAL_TRAIT_FILHO_DA_AURORA_LUZ_INTERIOR">
+		<supports>Racial Trait</supports>
+		<description>
+			<p>Você conhece o truque <i>luz</i>. Constituição é sua habilidade de conjuração para ele.</p>
+		</description>
+		<sheet>
+			<description>Você conhece o truque luz (conjuração por Constituição).</description>
+		</sheet>
+	</element>
+
+</elements>
