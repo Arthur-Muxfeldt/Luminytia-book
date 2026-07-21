@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+	<element name="Clarão da Aurora" type="Spell" source="Luminytia" id="ID_SPELL_CLARAO_DA_AURORA">
+		<supports>Spell</supports>
+		<description>
+			<p>Um clarão de luz multicolorida explode de um ponto à sua escolha.</p>
+			<p>Cada criatura em uma esfera de 3 metros de raio deve fazer um teste de resistência de Constituição. Em caso de falha, sofre 3d8 de dano radiante e fica cega até o fim do seu próximo turno. Em caso de sucesso, sofre metade do dano e não fica cega.</p>
+			<p><b>Em Níveis Superiores.</b> O dano aumenta em 1d8 para cada nível de espaço acima do 2º.</p>
+		</description>
+		<sheet>
+			<description>Esfera de 3m: CON ou 3d8 radiante + cego até o fim do próximo turno. Sucesso: metade e não cega.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, S</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+</elements>

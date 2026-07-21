@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+	<element name="Círculo da Aurora" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_DRUID_CIRCULO_DA_AURORA">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druidas que canalizam a primeira luz do dia, o Círculo da Aurora zela pela renovação e pela esperança.</p>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_CIRCULO_DA_AURORA_LUZ_RENOVADORA" level="2" />
+		</rules>
+	</element>
+
+	<element name="Luz Renovadora" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_CIRCULO_DA_AURORA_LUZ_RENOVADORA">
+		<supports>Archetype Feature</supports>
+		<compendium display="false" />
+		<description>
+			<p>A partir do 2º nível, quando você conjura uma magia que cura pontos de vida, o alvo recupera pontos de vida adicionais iguais ao seu modificador de Sabedoria (mínimo 1).</p>
+		</description>
+		<sheet>
+			<description>Magias de cura restauram PV adicionais iguais ao seu mod. de Sabedoria (mín. 1).</description>
+		</sheet>
+	</element>
+
+</elements>

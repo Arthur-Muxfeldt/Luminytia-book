@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+	<element name="Espada da Aurora" type="Magic Item" source="Luminytia" id="ID_ITEM_ESPADA_DA_AURORA">
+		<supports>Magic Item</supports>
+		<description>
+			<p>Uma lâmina longa que reluz com as cores do amanhecer. Rara, requer sintonização.</p>
+			<p>Você recebe +1 nas jogadas de ataque e dano com esta arma mágica. Além disso, a espada emite luz plena em um raio de 6 metros e luz fraca por mais 6 metros. Uma vez por turno, ao acertar um ataque, você pode causar 1d6 de dano radiante adicional.</p>
+		</description>
+		<sheet display="false">
+			<description>+1 de ataque e dano. Emite luz (6m plena / 6m fraca) e causa +1d6 de dano radiante uma vez por turno.</description>
+		</sheet>
+	</element>
+
+	<element name="Amuleto de Luminytia" type="Magic Item" source="Luminytia" id="ID_ITEM_AMULETO_DE_LUMINYTIA">
+		<supports>Magic Item</supports>
+		<description>
+			<p>Um amuleto incomum gravado com o símbolo de Luminytia. Requer sintonização.</p>
+			<p>Enquanto usa este amuleto, você tem vantagem em testes de resistência contra ficar amedrontado.</p>
+		</description>
+		<sheet>
+			<description>Vantagem em resistências contra a condição amedrontado.</description>
+		</sheet>
+	</element>
+
+</elements>
