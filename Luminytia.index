@@ -3,20 +3,24 @@
 	<info>
 		<name>Luminytia</name>
 		<description>Conteúdo customizado do mundo de Luminytia para D&amp;D 5e.</description>
-		<update version="0.0.2">
-			<file name="livro-da-aurora.index" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/livro-da-aurora.index" />
+		<update version="0.1.0">
+			<file name="Luminytia.index" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/Luminytia.index" />
+			<file name="luminytia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/luminytia.xml" />
 			<file name="itens/itens.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/itens/itens.xml" />
 			<file name="racas/racas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/racas/racas.xml" />
 			<file name="classes/cartomante.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/cartomante.xml" />
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
+			<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
 			<file name="magias/magias.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/magias.xml" />
 		</update>
 	</info>
 	<index>
+		<file name="luminytia.xml" />
 		<file name="itens/itens.xml" />
 		<file name="racas/racas.xml" />
 		<file name="classes/cartomante.xml" />
 		<file name="classes/alquimista.xml" />
+		<file name="classes/vias-de-ressonancia.xml" />
 		<file name="magias/magias.xml" />
 	</index>
 </elements>
