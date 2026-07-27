@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Luminytia</name>
+		<description>Fonte e lore do mundo de Luminytia.</description>
+		<update version="0.1.0">
+			<file name="luminytia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/luminytia.xml" />
+		</update>
+	</info>
+
+	<element name="Luminytia" type="Source" source="Core" id="ID_SOURCE_LUMINYTIA">
+		<description>
+			<p><strong>Conteúdo customizado do mundo de Luminytia para D&amp;D 5e.</strong></p>
+			<h4>A RESSONÂNCIA E OS DOIS DEUSES</h4>
+			<p>Antes de tudo eram dois corpos. Ílios, o sol (vida, bondade, a esperança que insiste) e Kólasi, a morte (o fim que reclama tudo o que começa). Ao alcançarem a condição de entidades puras, os dois abandonaram a carne. Mas divindade não desaparece: seus restos mortais foram devorados por diferentes raças, e o poder que havia neles se partiu, geração após geração, em linhagens cada vez mais finas.</p>
+			<p class="indent">Todo aquele capaz de manipular a ressonância, a energia que vibra em toda matéria, é no fundo descendente distante de alguém que comeu um deus. Quem não herdou nada é chamado de Lapso.</p>
+			<p class="indent">As disciplinas do alquimista não são estilos escolhidos: são heranças de sangue. E o Fardo, o preço que corrói quem usa demais o próprio poder, não é lei de homem nenhum: é o deus no sangue cobrando juros por ser chamado.</p>
+			<h4>AS CINCO VIAS</h4>
+			<ul>
+				<li><strong>Transmutação</strong> (nenhuma herança): Ílios e Kólasi não quiseram a matéria morta, então ela ficou sem dono. É a única arte que se aprende em vez de herdar, e a única face respeitável da alquimia. Nunca gera Fardo.</li>
+				<li><strong>Piromancia</strong> (Ílios): quando o corpo dele foi devorado, o calor se espalhou primeiro, a parte voltada para fora, que aquece sem tocar ninguém. Fardo leve.</li>
+				<li><strong>Vitamancia</strong> (Ílios): a vida voltada para dentro. As curas pequenas o deus dá de presente, mas ao drenar ou reviver o vitamante estica o dom até onde encosta a sombra de Kólasi. Fardo médio.</li>
+				<li><strong>Animancia</strong> (ambos): linhagem que provou dos dois deuses de uma vez, e por isso não tem lado. Só ela toca o que ambos dividiam: a vontade, a memória, a centelha que faz de um corpo alguém. Fardo médio-alto.</li>
+				<li><strong>Necromancia</strong> (Kólasi): o deus reclama tudo o que morre e não gosta de emprestar. O necromante manda nos restos que já são dele, e o deus permite como um credor permite. Fardo alto.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="abbreviation">LUM</set>
+			<set name="url">https://github.com/Arthur-Muxfeldt/Luminytia-book</set>
+			<set name="author">Arthur Muxfeldt</set>
+			<set name="official">false</set>
+			<set name="supplement">true</set>
+		</setters>
+	</element>
+
+</elements>

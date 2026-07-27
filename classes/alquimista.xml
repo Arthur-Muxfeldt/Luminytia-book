@@ -3,79 +3,275 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.0.1">
+		<update version="0.1.0">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>
 
 	<element name="Alquimista" type="Class" source="Luminytia" id="ID_CLASS_LUMINYTIA_ALQUIMISTA">
 		<description>
-			<p>O Alquimista transforma matéria e essência em poder. Frascos borbulhantes, pós reativos e elixires improváveis são as ferramentas de quem trata o mundo como um experimento.</p>
+			<p>Todo aquele capaz de manipular a ressonância é, no fundo, descendente distante de alguém que comeu um deus.</p>
+			<h4>A RESSONÂNCIA E OS DOIS DEUSES</h4>
+			<p>Antes de tudo eram dois corpos. Ílios, o sol (vida, bondade, a esperança que insiste) e Kólasi, a morte (o fim que reclama tudo o que começa). Ao alcançarem a condição de entidades puras, os dois abandonaram a carne. Mas divindade não desaparece: seus restos mortais foram devorados por diferentes raças, e o poder que havia neles se partiu, geração após geração, em linhagens cada vez mais finas.</p>
+			<p class="indent">Quem não herdou nada é chamado de Lapso. As disciplinas do alquimista não são estilos escolhidos: são heranças de sangue. E o Fardo, o preço que corrói quem usa demais o próprio poder, não é lei de homem nenhum: é o deus no sangue cobrando juros por ser chamado.</p>
 			<h5>PONTOS DE VIDA</h5>
 			<ul class="unstyled">
-				<li><strong>Dado de Vida:</strong> 1d8 por nível de Alquimista</li>
-				<li><strong>PV no 1º Nível:</strong> 8 + seu modificador de Constituição</li>
-				<li><strong>PV em Níveis Superiores:</strong> 1d8 (ou 5) + seu modificador de Constituição por nível após o 1º</li>
+				<li><strong>Dado de Vida:</strong> 1d6 por nível de Alquimista</li>
+				<li><strong>PV no 1º Nível:</strong> 6 + seu modificador de Constituição</li>
+				<li><strong>PV em Níveis Superiores:</strong> 1d6 (ou 4) + seu modificador de Constituição por nível após o 1º</li>
 			</ul>
 			<h5>PROFICIÊNCIAS</h5>
 			<ul class="unstyled mb">
-				<li><strong>Armadura:</strong> Leve</li>
+				<li><strong>Armadura:</strong> Armaduras leves</li>
 				<li><strong>Armas:</strong> Armas simples</li>
-				<li><strong>Ferramentas:</strong> Suprimentos de alquimista</li>
+				<li><strong>Ferramentas:</strong> Um tipo de ferramenta de artesão à sua escolha</li>
 			</ul>
 			<ul class="unstyled">
-				<li><strong>Testes de Resistência:</strong> Inteligência, Constituição</li>
-				<li><strong>Perícias:</strong> Escolha duas entre Arcanismo, Investigação, Medicina, Natureza, Percepção e Prestidigitação</li>
+				<li><strong>Testes de Resistência:</strong> Constituição, Inteligência</li>
+				<li><strong>Perícias:</strong> Escolha duas entre Arcanismo, História, Intuição, Investigação, Medicina, Natureza e Percepção</li>
 			</ul>
-			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ALQUIMIA" />
-			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARQUETIPO" />
+			<h5>EQUIPAMENTO INICIAL</h5>
+			<ul>
+				<li>(a) uma arma simples ou (b) um bordão</li>
+				<li>armadura de couro e uma adaga</li>
+				<li>um pacote de explorador ou de estudioso</li>
+			</ul>
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CONJURACAO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_SINTONIA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACOES" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FLUXO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_MAIOR" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CORPO_SINTONIA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_RESSONANCIA_PERFEITA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_RESSONANTE" />
 		</description>
-		<sheet display="false">
-			<description>Um mestre da transmutação que converte reagentes em elixires e explosivos.</description>
-		</sheet>
 		<setters>
-			<set name="short">Mestre da transmutação que converte reagentes em elixires e explosivos.</set>
-			<set name="hd">d8</set>
+			<set name="short">Herdeiro de sangue divino que molda a ressonância da matéria, e paga o Fardo por isso.</set>
+			<set name="hd">d6</set>
 		</setters>
+		<sheet display="false" />
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
-			<select type="Proficiency" name="Perícia (Alquimista)" supports="Skill,Alquimista" number="2" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ALQUIMIA" level="1" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARQUETIPO" level="3" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+			<select type="Proficiency" name="Ferramenta de Artesão (Alquimista)" supports="Artisan tools" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+			<select type="Proficiency" name="Perícia (Alquimista)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION" number="2" requirements="!ID_MULTICLASS_LUMINYTIA_ALQUIMISTA" />
+
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CONJURACAO" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_SINTONIA" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACOES" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA" level="3" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO" level="3" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI" level="4" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FLUXO" level="6" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_MAIOR" level="10" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CORPO_SINTONIA" level="14" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_RESSONANCIA_PERFEITA" level="18" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_RESSONANTE" level="20" />
 		</rules>
 		<multiclass id="ID_MULTICLASS_LUMINYTIA_ALQUIMISTA">
 			<prerequisite>Inteligência 13</prerequisite>
 			<requirements>[intelligence:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">armaduras leves, uma ferramenta de artesão.</set>
+			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<select type="Proficiency" name="Ferramenta de Artesão (Alquimista)" supports="Artisan tools" />
 			</rules>
 		</multiclass>
 	</element>
 
-	<element name="Alquimia" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ALQUIMIA">
+	<element name="Conjuração" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CONJURACAO">
+		<description>
+			<p>Você canaliza a ressonância como uma ciência arcana. Inteligência é sua habilidade de conjuração.</p>
+			<h5>TRUQUES</h5>
+			<p>No 1º nível, você conhece dois truques da lista do Alquimista. Você aprende truques adicionais nos níveis 10 e 14.</p>
+			<h5>MAGIAS PREPARADAS</h5>
+			<p>Você prepara magias iguais ao seu modificador de Inteligência + metade do seu nível de Alquimista (arredondado para baixo), mínimo 1. Você pode trocar as magias preparadas ao terminar um descanso longo.</p>
+			<h5>HABILIDADE DE CONJURAÇÃO</h5>
+			<p>Inteligência é sua habilidade de conjuração para suas magias de Alquimista.</p>
+			<center>
+				<p><strong>CD de resistência</strong> = 8 + seu bônus de proficiência + seu modificador de Inteligência</p>
+				<p><strong>Bônus de ataque mágico</strong> = seu bônus de proficiência + seu modificador de Inteligência</p>
+			</center>
+			<h5>FOCO DE CONJURAÇÃO</h5>
+			<p>Suas próprias mãos, moldadas pela sua Via, servem como foco de conjuração para suas magias de Alquimista.</p>
+			<p class="indent"><i>Nota de mesa: por enquanto o Alquimista usa a lista de magias do Mago. Uma lista própria está planejada; as magias que contam como efeitos proibidos serão marcadas conforme cada Via é finalizada.</i></p>
+		</description>
+		<sheet display="false">
+			<description>Suas próprias mãos, moldadas pela sua Via, são seu foco de conjuração.</description>
+		</sheet>
+		<spellcasting name="Alquimista" ability="Intelligence" prepare="true">
+			<list known="true">Wizard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="alquimista:spellcasting:slots:1" value="2" level="1" />
+			<stat name="alquimista:spellcasting:slots:1" value="1" level="3" />
+			<stat name="alquimista:spellcasting:slots:1" value="1" level="5" />
+			<stat name="alquimista:spellcasting:slots:2" value="2" level="5" />
+			<stat name="alquimista:spellcasting:slots:2" value="1" level="7" />
+			<stat name="alquimista:spellcasting:slots:3" value="2" level="9" />
+			<stat name="alquimista:spellcasting:slots:3" value="1" level="11" />
+			<stat name="alquimista:spellcasting:slots:4" value="1" level="13" />
+			<stat name="alquimista:spellcasting:slots:4" value="1" level="15" />
+			<stat name="alquimista:spellcasting:slots:4" value="1" level="17" />
+			<stat name="alquimista:spellcasting:slots:5" value="1" level="17" />
+			<stat name="alquimista:spellcasting:slots:5" value="1" level="19" />
+			<stat name="alquimista:spellcasting:prepare" value="intelligence:modifier" />
+			<stat name="alquimista:spellcasting:prepare" value="level:alquimista:half" />
+			<select type="Spell" name="Truque, Alquimista" supports="$(spellcasting:list), 0" number="2" spellcasting="Alquimista" />
+			<select type="Spell" name="Truque, Alquimista" supports="$(spellcasting:list), 0" number="1" spellcasting="Alquimista" level="10" />
+			<select type="Spell" name="Truque, Alquimista" supports="$(spellcasting:list), 0" number="1" spellcasting="Alquimista" level="14" />
+		</rules>
+	</element>
+
+	<element name="Sintonia com a Ressonância" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_SINTONIA">
 		<supports>Class Feature</supports>
 		<description>
-			<p>No 1º nível, você domina os fundamentos da alquimia e pode preparar concocções a partir de reagentes. (Mecânica a ser detalhada.)</p>
+			<p>No 1º nível, você sente e molda a energia latente na matéria.</p>
+			<h5>TOQUE ALQUÍMICO</h5>
+			<p>Com uma ação, você transmuta um objeto inorgânico não-mágico de até 30 cm para outro material de densidade semelhante (madeira em ferro, areia em vidro), ou repara/danifica o objeto. O efeito é permanente até você desfazê-lo.</p>
+			<h5>SENTIR RESSONÂNCIA</h5>
+			<p>Você percebe a localização de metais e de correntes de ressonância (incluindo magias alquímicas ativas) num raio de 9 metros, como um sentido difuso.</p>
 		</description>
-		<sheet>
-			<description>Você prepara concocções alquímicas a partir de reagentes. (A detalhar.)</description>
+		<sheet action="Action">
+			<description>Toque Alquímico: transmuta um objeto inorgânico não-mágico de até 30 cm, ou repara/danifica o objeto (permanente). Sentir Ressonância: você percebe metais e correntes de ressonância em 9 m.</description>
 		</sheet>
 	</element>
 
-	<element name="Arquétipo de Alquimista" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARQUETIPO">
+	<element name="Pontos de Ressonância" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA">
+		<supports>Class Feature</supports>
 		<description>
-			<p>No 3º nível, você escolhe uma tradição alquímica que define seu ramo de estudo. Sua escolha concede recursos no 3º nível e novamente no 6º, 10º e 14º nível.</p>
+			<p>No 2º nível, você ganha um reservatório de Pontos de Ressonância (PR) igual ao seu nível de Alquimista. Gaste-os em Manifestações e em características de Via.</p>
+			<p class="indent">Você recupera todos os seus PR ao terminar um descanso longo.</p>
+			<center>
+				<p><strong>CD de Ressonância</strong> = 8 + seu bônus de proficiência + seu modificador de Inteligência</p>
+			</center>
+		</description>
+		<sheet>
+			<description>Você tem {{ressonancia:pontos}} Pontos de Ressonância e sua CD de Ressonância é {{ressonancia:dc}}. Recupera todos em um descanso longo.</description>
+		</sheet>
+		<rules>
+			<stat name="ressonancia:pontos" value="level:alquimista" />
+			<stat name="ressonancia:dc" value="8" />
+			<stat name="ressonancia:dc" value="proficiency" />
+			<stat name="ressonancia:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Manifestações" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACOES">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 2º nível, você canaliza PR em efeitos rápidos. Você conhece todas as manifestações abaixo.</p>
+			<p class="indent"><strong>Manifestações nunca geram Fardo</strong>: são ressonância pura, não sangue divino.</p>
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_LAMINA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_REFORCO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_PASSO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_SOBRECARGA" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Tradição Alquímica" supports="Tradição Alquímica" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_LAMINA" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_REFORCO" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_PASSO" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_SOBRECARGA" />
 		</rules>
+	</element>
+
+	<element name="Lâmina Ressonante" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_LAMINA">
+		<supports>Manifestação</supports>
+		<description>
+			<p><strong>1 PR, ação bônus.</strong> O próximo acerto com arma ou desarmado neste turno causa +1d8 de dano de força.</p>
+			<p class="indent">O dano sobe para +2d8 no 10º nível.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 PR">
+			<description>O próximo acerto com arma ou desarmado neste turno causa +1d8 de dano de força.</description>
+			<description level="10">O próximo acerto com arma ou desarmado neste turno causa +2d8 de dano de força.</description>
+		</sheet>
+	</element>
+
+	<element name="Reforço" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_REFORCO">
+		<supports>Manifestação</supports>
+		<description>
+			<p><strong>1 PR, reação.</strong> Ao ser atingido, você ganha +3 na CA contra esse ataque.</p>
+			<p class="indent">O bônus sobe para +4 no 10º nível.</p>
+		</description>
+		<sheet action="Reaction" usage="1 PR">
+			<description>Ao ser atingido, você ganha +3 na CA contra esse ataque.</description>
+			<description level="10">Ao ser atingido, você ganha +4 na CA contra esse ataque.</description>
+		</sheet>
+	</element>
+
+	<element name="Passo Transmutado" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_PASSO">
+		<supports>Manifestação</supports>
+		<description>
+			<p><strong>1 PR, ação bônus.</strong> O terreno num raio de 6 metros ao seu redor vira terreno difícil para seus inimigos até o início do seu próximo turno; ou você ignora terreno difícil neste turno.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 PR">
+			<description>O terreno em 6 m ao seu redor vira terreno difícil para seus inimigos até o início do seu próximo turno; ou você ignora terreno difícil neste turno.</description>
+		</sheet>
+	</element>
+
+	<element name="Sobrecarga" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_SOBRECARGA">
+		<supports>Manifestação</supports>
+		<description>
+			<p><strong>X PR, ao conjurar.</strong> Gaste até metade do seu bônus de proficiência em PR ao lançar uma magia de dano; adicione 1d6 do mesmo tipo de dano por PR gasto.</p>
+		</description>
+		<sheet usage="X PR">
+			<description>Ao lançar uma magia de dano, gaste até metade do seu bônus de proficiência em PR e adicione 1d6 do mesmo tipo por PR gasto.</description>
+		</sheet>
+	</element>
+
+	<element name="Via de Ressonância" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA">
+		<description>
+			<p>No 3º nível você escolhe uma das cinco Vias de Ressonância. As disciplinas do alquimista não são estilos escolhidos: são heranças de sangue.</p>
+			<p class="indent">Esta é a única escolha de subclasse da classe. Uma vez feita, é permanente, e você ganha as características dos níveis 3, 5, 9 e 15 automaticamente.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Via de Ressonância" supports="Via de Ressonância" />
+		</rules>
+	</element>
+
+	<element name="O Fardo" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO">
+		<supports>Class Feature</supports>
+		<description>
+			<p>A partir do 3º nível, certos efeitos são proibidos (marcados com ✦): exigem vitalidade, não só ressonância. Sempre que você usa um efeito proibido além do que sua Via permite de graça, ganha 1 nível de Fardo. Você também pode escolher tomar Fardo voluntariamente para intensificar esses efeitos, como descrito em cada Via.</p>
+			<p class="indent">O Fardo não é lei de homem nenhum: é o deus no sangue cobrando juros por ser chamado.</p>
+			<h5>LIMIAR GRATUITO POR VIA</h5>
+			<ul>
+				<li><strong>Transmutação</strong> (nenhuma herança): nunca gera Fardo.</li>
+				<li><strong>Piromancia</strong> (Ílios): limiar gratuito de 2× seu bônus de proficiência usos por descanso longo.</li>
+				<li><strong>Vitamancia</strong> (Ílios): limiar gratuito de seu bônus de proficiência usos por descanso longo.</li>
+				<li><strong>Animancia</strong> (ambos): limiar de seu bônus de proficiência; efeitos maiores sempre cobram.</li>
+				<li><strong>Necromancia</strong> (Kólasi): cada excesso cobra por criatura ou por uso.</li>
+			</ul>
+			<p class="indent">Passado o limiar gratuito da sua Via, cada uso de efeito ✦ gera 1 nível de Fardo.</p>
+			<h5>A TRILHA DO FARDO</h5>
+			<p>O Fardo é uma trilha própria de 0 a 6, distinta de exaustão.</p>
+			<ul>
+				<li><strong>1.</strong> Desvantagem em testes de habilidade de Constituição.</li>
+				<li><strong>2.</strong> -1 em jogadas de ataque e na sua CD de conjuração.</li>
+				<li><strong>3.</strong> Desvantagem em jogadas de ataque e testes de resistência. Você esquece algo (você e o mestre narram uma memória perdida).</li>
+				<li><strong>4.</strong> Seus PV máximos e seu deslocamento são reduzidos à metade.</li>
+				<li><strong>5.</strong> Deslocamento 0; desvantagem em tudo.</li>
+				<li><strong>6.</strong> A ressonância consome você. O personagem é perdido e vira um NPC (a critério do mestre).</li>
+			</ul>
+			<h5>REDUZINDO O FARDO</h5>
+			<p>Você remove 1 nível ao terminar um descanso longo somente se não usou nenhum efeito proibido naquele dia. <i>Restauração Maior</i> remove 1 nível. Descanso curto e cura comum não afetam o Fardo.</p>
+		</description>
+		<sheet>
+			<description>Efeitos proibidos (✦) além do limiar da sua Via geram 1 nível de Fardo. Trilha de 0 a 6, distinta de exaustão. Só cai em descanso longo sem uso de efeito proibido, ou com Restauração Maior.</description>
+		</sheet>
 	</element>
 
 	<element name="Ability Score Improvement" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI">
@@ -91,6 +287,58 @@
 			<select type="Class Feature" name="Melhoria (Alquimista 16)" supports="Improvement Option,Alquimista,16" level="16" />
 			<select type="Class Feature" name="Melhoria (Alquimista 19)" supports="Improvement Option,Alquimista,19" level="19" />
 		</rules>
+	</element>
+
+	<element name="Fluxo de Ressonância" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FLUXO">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 6º nível, ao terminar um descanso curto, você recupera 1d4 Pontos de Ressonância.</p>
+			<p class="indent">É só um empurrão: o grosso dos PR volta apenas no descanso longo.</p>
+		</description>
+		<sheet usage="Descanso Curto">
+			<description>Ao terminar um descanso curto, você recupera 1d4 Pontos de Ressonância.</description>
+		</sheet>
+	</element>
+
+	<element name="Manifestação Maior" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_MAIOR">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 10º nível, suas manifestações amadurecem: Lâmina Ressonante sobe para +2d8, Reforço concede +4 na CA, e você pode gastar 1 PR adicional em qualquer manifestação para dobrar seus dados uma vez por turno.</p>
+		</description>
+		<sheet>
+			<description>Lâmina Ressonante causa +2d8 e Reforço concede +4 na CA. Gaste 1 PR adicional em qualquer manifestação para dobrar seus dados, uma vez por turno.</description>
+		</sheet>
+	</element>
+
+	<element name="Corpo em Sintonia" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CORPO_SINTONIA">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 14º nível, anos carregando a ressonância te enrijeceram contra o Preço. Você ignora os efeitos do 1º nível de Fardo: a trilha ainda sobe, mas o primeiro degrau deixa de te penalizar.</p>
+		</description>
+		<sheet>
+			<description>Você ignora os efeitos do 1º nível de Fardo (a trilha ainda sobe).</description>
+		</sheet>
+	</element>
+
+	<element name="Ressonância Perfeita" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_RESSONANCIA_PERFEITA">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 18º nível, uma vez por descanso longo, você pode lançar uma magia ou usar um efeito proibido sem ganhar Fardo.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>Você pode lançar uma magia ou usar um efeito proibido sem ganhar Fardo.</description>
+		</sheet>
+	</element>
+
+	<element name="Ressonante" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_RESSONANTE">
+		<supports>Class Feature</supports>
+		<description>
+			<p>No 20º nível, sua sintonia é absoluta. Quando você rola iniciativa e está sem PR, recupera 4.</p>
+			<p class="indent">Além disso, consumo involuntário não pode te levar acima do nível 5 de Fardo: a ressonância se recusa a devorar um mestre. Fardo voluntário ainda pode te levar ao 6.</p>
+		</description>
+		<sheet>
+			<description>Quando você rola iniciativa e está sem PR, recupera 4. Consumo involuntário não passa do Fardo 5 (Fardo voluntário ainda leva ao 6).</description>
+		</sheet>
 	</element>
 
 </elements>

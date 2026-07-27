@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Vias de Ressonância</name>
+		<description>As cinco Vias de Ressonância, subclasses do Alquimista de Luminytia.</description>
+		<update version="0.1.0">
+			<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
+		</update>
+	</info>
+
+	<!-- ============================ TRANSMUTAÇÃO ============================ -->
+
+	<element name="Via da Transmutação" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_TRANSMUTACAO">
+		<supports>Via de Ressonância</supports>
+		<description>
+			<p><i>A Arte Aceita.</i></p>
+			<p class="indent">Ílios e Kólasi não quiseram a matéria morta, então ela ficou sem dono. Por isso o metalúrgico não paga nada: não há deus no sangue dele cobrando. É a única arte que se aprende em vez de herdar.</p>
+			<p class="indent">Trabalha só com o inorgânico, e por isso é a face respeitável da alquimia: a que ergue pontes, forja armas e é bem-vinda em qualquer cidade. Nunca gera Fardo. É a Via mais melee da classe.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_METAL_VIVO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO" level="5" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA" level="9" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_METAL_VIVO" level="15" />
+		</rules>
+	</element>
+
+	<element name="Afinidade Metálica" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE">
+		<description>
+			<p>No 3º nível, você ganha proficiência em armaduras médias e escudos.</p>
+			<p class="indent">Escolha um metal predileto (ferro, aço, cobre, prata, titânio). Ele define a aparência das suas transmutações.</p>
+			<p class="indent">Com uma ação bônus, você conjura na sua mão uma arma marcial feita desse metal. Ela dura até você largá-la, conta como mágica, e você é proficiente com ela.</p>
+			<p class="indent">Além disso, com uma ação, gaste 1 PR para fazer metal irromper do solo sob uma criatura a até 9 metros: ela faz um teste de resistência de Força contra sua CD de Ressonância; falhando, fica agarrada (ação para repetir o teste e escapar).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Conjure na sua mão uma arma marcial do seu metal predileto (mágica, você é proficiente, dura até largá-la). Ação, 1 PR: metal irrompe sob uma criatura a 9 m, resistência de Força CD {{ressonancia:dc}} ou fica agarrada.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+
+	<element name="Armamento Ressonante" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO">
+		<description>
+			<p>No 5º nível, você pode atacar duas vezes, em vez de uma, sempre que usar a ação de Ataque no seu turno.</p>
+			<p class="indent">Quando você acerta com uma arma de metal, pode gastar 1 PR para empurrar o alvo 3 metros ou derrubá-lo. Uma vez por turno.</p>
+		</description>
+		<sheet>
+			<description>Você pode atacar duas vezes ao usar a ação de Ataque. Ao acertar com arma de metal, gaste 1 PR para empurrar o alvo 3 m ou derrubá-lo (1/turno).</description>
+		</sheet>
+		<rules>
+			<stat name="attacks:melee" value="1" bonus="base" />
+			<stat name="attacks:ranged" value="1" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Fortaleza de Aço" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA">
+		<description>
+			<p>No 9º nível, enquanto vestir armadura de metal, você tem resistência a dano de concussão, perfurante e cortante não-mágico.</p>
+			<p class="indent">Com uma ação, gaste 3 PR para erguer uma muralha de metal de até 9 m × 3 m × 15 cm num ponto a até 18 metros. Cada seção de 3 metros tem CA 19 e 30 PV. A muralha dura 10 minutos.</p>
+		</description>
+		<sheet action="Action" usage="3 PR">
+			<description>Vestindo armadura de metal: resistência a concussão, perfurante e cortante não-mágico. 3 PR: erga uma muralha de metal de 9 m × 3 m × 15 cm a até 18 m (CA 19, 30 PV por seção de 3 m, 10 minutos).</description>
+		</sheet>
+	</element>
+
+	<element name="Corpo de Metal Vivo" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_METAL_VIVO">
+		<description>
+			<p>No 15º nível, com uma ação bônus, gaste 3 PR para transmutar sua pele por 1 minuto. Durante esse tempo:</p>
+			<ul>
+				<li>você ganha +2 na CA;</li>
+				<li>você tem resistência a todo dano físico não-mágico;</li>
+				<li>você é imune às condições amedrontado e envenenado;</li>
+				<li>você não pode ser surpreendido.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="3 PR">
+			<description>Por 1 minuto: +2 na CA, resistência a todo dano físico não-mágico, imunidade a amedrontado e envenenado, e você não pode ser surpreendido.</description>
+		</sheet>
+	</element>
+
+	<!-- ============================ PIROMANCIA ============================ -->
+
+	<element name="Via da Piromancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_PIROMANCIA">
+		<supports>Via de Ressonância</supports>
+		<description>
+			<p><i>A Chama Ressonante.</i></p>
+			<p class="indent">Quando o corpo de Ílios foi devorado, o calor se espalhou primeiro: a parte dele voltada para fora, que aquece sem tocar ninguém. O deus deixa os herdeiros gastarem à vontade, mas force além do que ele dá de bom grado e o sangue cobra uma queimadura por dentro.</p>
+			<p class="indent">Artilharia mágica à distância, rara e espetacular, mas permitida.</p>
+			<p class="indent"><strong>Peso do Fardo: leve.</strong> Seus efeitos ✦ têm um limiar gratuito de 2× seu bônus de proficiência usos por descanso longo; além disso, cada uso gera 1 Fardo.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_ENCARNACAO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO" level="5" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE" level="9" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_ENCARNACAO" level="15" />
+		</rules>
+	</element>
+
+	<element name="Chama Interior" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR">
+		<description>
+			<p>No 3º nível, você aprende o truque <i>raio de fogo</i>. Ele não conta no seu limite de truques conhecidos.</p>
+			<p class="indent">Com uma ação, gaste 1 PR ✦ para exalar uma linha de fogo de 4,5 m × 1,5 m. Cada criatura na área faz um teste de resistência de Destreza contra sua CD de Ressonância, sofrendo 2d6 de dano de fogo, ou metade num sucesso.</p>
+			<p class="indent">O dano sobe para 3d6 no 6º nível, 4d6 no 11º e 5d6 no 15º.</p>
+		</description>
+		<sheet action="Action" usage="1 PR ✦">
+			<description>Linha de fogo de 4,5 m × 1,5 m. Resistência de Destreza CD {{ressonancia:dc}}: 2d6 de fogo, metade num sucesso.</description>
+			<description level="6">Linha de fogo de 4,5 m × 1,5 m. Resistência de Destreza CD {{ressonancia:dc}}: 3d6 de fogo, metade num sucesso.</description>
+			<description level="11">Linha de fogo de 4,5 m × 1,5 m. Resistência de Destreza CD {{ressonancia:dc}}: 4d6 de fogo, metade num sucesso.</description>
+			<description level="15">Linha de fogo de 4,5 m × 1,5 m. Resistência de Destreza CD {{ressonancia:dc}}: 5d6 de fogo, metade num sucesso.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" spellcasting="Alquimista" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Combustão" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO">
+		<description>
+			<p>No 5º nível, uma vez por turno, ao causar dano de fogo com uma magia ou característica, você adiciona seu modificador de Inteligência ao dano contra um alvo.</p>
+			<p class="indent">Esse alvo começa a queimar: sofre 1d6 de dano de fogo no início de cada turno dele. Uma ação apaga as chamas.</p>
+		</description>
+		<sheet>
+			<description>Uma vez por turno, ao causar dano de fogo, some seu modificador de Inteligência ao dano contra um alvo. Ele começa a queimar: 1d6 de fogo no início de cada turno dele (ação para apagar).</description>
+		</sheet>
+	</element>
+
+	<element name="Tempestade de Fogo" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE">
+		<description>
+			<p>No 9º nível, com uma ação, gaste 4 PR ✦ para criar uma explosão num ponto a até 30 metros: uma esfera de 6 metros de raio, causando 6d6 de dano de fogo, ou metade num teste de resistência de Destreza bem-sucedido.</p>
+			<p class="indent">A área queima até o início do seu próximo turno, causando 2d6 de dano de fogo a quem entrar nela ou terminar o turno ali.</p>
+		</description>
+		<sheet action="Action" usage="4 PR ✦">
+			<description>Explosão a até 30 m: esfera de 6 m de raio, 6d6 de fogo, metade com resistência de Destreza CD {{ressonancia:dc}}. A área queima até o início do seu próximo turno (2d6 a quem entrar ou terminar o turno nela).</description>
+		</sheet>
+	</element>
+
+	<element name="Encarnação da Chama" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_ENCARNACAO">
+		<description>
+			<p>No 15º nível, com uma ação bônus, gaste 4 PR para se envolver em chamas vivas por 1 minuto. Durante esse tempo:</p>
+			<ul>
+				<li>você é imune a dano de fogo;</li>
+				<li>você emite luz brilhante num raio de 9 metros;</li>
+				<li>quem te acertar com um ataque corpo a corpo ou terminar o turno a 1,5 metro de você sofre 1d10 de dano de fogo.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="4 PR">
+			<description>Por 1 minuto: imunidade a fogo, luz brilhante em 9 m, e quem te acertar corpo a corpo ou terminar o turno a 1,5 m sofre 1d10 de fogo.</description>
+		</sheet>
+	</element>
+
+	<!-- ============================ VITAMANCIA ============================ -->
+
+	<element name="Via da Vitamancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_VITAMANCIA">
+		<supports>Via de Ressonância</supports>
+		<description>
+			<p><i>A Vida Voltada para Dentro.</i></p>
+			<p class="indent">É a vida de Ílios correndo na carne de quem o comeu; as curas pequenas ele dá de presente. Mas curar por dentro é segurar a vida na mão, e o que se segura pode se apertar. Ao drenar ou reviver, o vitamante estica o dom até onde encosta a sombra de Kólasi, e ali paga.</p>
+			<p class="indent">Cura e dreno no mesmo gesto.</p>
+			<p class="indent"><strong>Peso do Fardo: médio.</strong> Limiar gratuito de seu bônus de proficiência usos de Manipular Vitalidade por descanso longo; além disso, cada uso gera 1 Fardo.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_SENHOR" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO" level="5" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR" level="9" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_SENHOR" level="15" />
+		</rules>
+	</element>
+
+	<element name="Manipular Vitalidade" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR">
+		<description>
+			<p>No 3º nível, com uma ação, gaste 1 PR e escolha uma criatura a até 9 metros:</p>
+			<ul>
+				<li><strong>Restaurar:</strong> ela recupera 1d8 + seu modificador de Inteligência em pontos de vida.</li>
+				<li><strong>Drenar:</strong> ela sofre a mesma quantia como dano necrótico; um teste de resistência de Constituição bem-sucedido reduz o dano à metade.</li>
+			</ul>
+			<p class="indent">Os dados sobem para 2d8 no 5º nível e 3d8 no 11º.</p>
+			<p class="indent">Dentro do limiar da Via, o uso é gratuito; além dele, cada uso gera 1 Fardo ✦. Você pode tomar 1 Fardo voluntário para dobrar os dados de um uso.</p>
+		</description>
+		<sheet action="Action" usage="1 PR">
+			<description>Restaurar (1d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo ✦.</description>
+			<description level="5">Restaurar (2d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo ✦.</description>
+			<description level="11">Restaurar (3d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo ✦.</description>
+		</sheet>
+	</element>
+
+	<element name="Transfusão" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO">
+		<description>
+			<p>No 5º nível, com uma ação, gaste 2 PR ✦ para drenar até 4d8 de uma criatura a até 9 metros (um teste de resistência de Constituição bem-sucedido reduz à metade) e distribuir essa cura entre criaturas à sua escolha que você possa ver.</p>
+		</description>
+		<sheet action="Action" usage="2 PR ✦">
+			<description>Drene até 4d8 de uma criatura a 9 m (resistência de Constituição CD {{ressonancia:dc}} para metade) e distribua essa cura entre criaturas à sua escolha que possa ver.</description>
+		</sheet>
+	</element>
+
+	<element name="Restaurar Vitalidade" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR">
+		<description>
+			<p>No 9º nível, com uma ação, gaste 4 PR ✦ para curar 6d8 pontos de vida e encerrar uma condição entre cego, surdo, paralisado ou envenenado.</p>
+			<p class="indent">Alternativamente, tomando 2 Fardo voluntários, você revive uma criatura morta no último minuto com 1 ponto de vida, como <i>revivificar</i>.</p>
+		</description>
+		<sheet action="Action" usage="4 PR ✦">
+			<description>Cure 6d8 e encerre uma condição entre cego, surdo, paralisado ou envenenado. Alternativa: tomando 2 Fardo voluntários, revive uma criatura morta no último minuto com 1 PV.</description>
+		</sheet>
+	</element>
+
+	<element name="Senhor da Vida e da Morte" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_SENHOR">
+		<description>
+			<p>No 15º nível, com uma ação, gaste 5 PR ✦ e escolha criaturas a até 9 metros: distribua 10d8 entre cura (aliados) e dano necrótico (inimigos; um teste de resistência de Constituição bem-sucedido reduz à metade).</p>
+			<p class="indent">Uma vez por descanso longo, você pode estabilizar ou reviver uma criatura sem gastar PR, mas isso gera 2 níveis de Fardo.</p>
+		</description>
+		<sheet action="Action" usage="5 PR ✦">
+			<description>Distribua 10d8 entre cura (aliados) e dano necrótico (inimigos, resistência de Constituição CD {{ressonancia:dc}} para metade) a até 9 m. 1/descanso longo: estabilize ou revive sem gastar PR, gerando 2 níveis de Fardo.</description>
+		</sheet>
+	</element>
+
+	<!-- ============================ ANIMANCIA ============================ -->
+
+	<element name="Via da Animancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_ANIMANCIA">
+		<supports>Via de Ressonância</supports>
+		<description>
+			<p><i>O Sussurro na Mente.</i></p>
+			<p class="indent">Linhagem que provou dos dois deuses de uma vez, e por isso não tem lado. Só ela toca o que ambos dividiam: a vontade, a memória, a centelha que faz de um corpo alguém. Nada disso é gratuito: os dois deuses querem sua parte, e ambos coletam.</p>
+			<p class="indent">Controle mental: emoções, memórias, almas. Fraca em dano direto, devastadora fora de combate.</p>
+			<p class="indent"><strong>Peso do Fardo: médio-alto.</strong> Limiar gratuito de seu bônus de proficiência usos por descanso longo. Os efeitos de 9º e 15º nível sempre geram Fardo, mesmo dentro do limiar.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_TRANSFERENCIA" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES" level="5" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR" level="9" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_TRANSFERENCIA" level="15" />
+		</rules>
+	</element>
+
+	<element name="Sussurro Anímico" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO">
+		<description>
+			<p>No 3º nível, com uma ação, gaste 1 PR ✦: uma criatura a até 18 metros faz um teste de resistência de Sabedoria contra sua CD de Ressonância. Falhando, você lê seus pensamentos de superfície e ela fica com desvantagem na próxima jogada de ataque ou teste contra você, por 1 minuto.</p>
+			<p class="indent">Você pode tomar 1 Fardo voluntário para, em vez disso, deixá-la enfeitiçada por 1 minuto. Ela repete o teste se sofrer dano.</p>
+		</description>
+		<sheet action="Action" usage="1 PR ✦">
+			<description>Criatura a 18 m, resistência de Sabedoria CD {{ressonancia:dc}}: você lê os pensamentos de superfície dela e ela fica com desvantagem na próxima jogada contra você (1 min). Com 1 Fardo voluntário, fica enfeitiçada por 1 minuto.</description>
+		</sheet>
+	</element>
+
+	<element name="Dominar Emoções" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES">
+		<description>
+			<p>No 5º nível, com uma ação, gaste 3 PR ✦: criaturas à sua escolha num raio de 4,5 metros, centrado num ponto a até 18 metros, fazem um teste de resistência de Sabedoria ou ficam amedrontadas ou enfeitiçadas (você escolhe) por 1 minuto. Cada criatura repete o teste no fim de cada turno dela.</p>
+		</description>
+		<sheet action="Action" usage="3 PR ✦">
+			<description>Criaturas à sua escolha em 4,5 m (a até 18 m), resistência de Sabedoria CD {{ressonancia:dc}} ou ficam amedrontadas ou enfeitiçadas (você escolhe) por 1 minuto, repetindo o teste no fim de cada turno.</description>
+		</sheet>
+	</element>
+
+	<element name="Invadir a Mente" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR">
+		<description>
+			<p>No 9º nível, você pode lançar <i>dominar pessoa</i> e <i>modificar memórias</i> gastando 4 PR em vez de um espaço de magia.</p>
+			<p class="indent">Cada conjuração dessas gera Fardo ✦, mesmo dentro do limiar da Via.</p>
+		</description>
+		<sheet usage="4 PR ✦">
+			<description>Lance dominar pessoa e modificar memórias gastando 4 PR em vez de espaço de magia. Cada conjuração dessas sempre gera Fardo.</description>
+		</sheet>
+	</element>
+
+	<element name="Transferência" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_TRANSFERENCIA">
+		<description>
+			<p>No 15º nível, com uma ação, gaste 5 PR e tome 2 Fardo obrigatórios ✦ para projetar sua alma no corpo de uma criatura disposta ou incapacitada a até 9 metros.</p>
+			<p class="indent">Você controla o corpo dela e usa seus atributos físicos, mantendo seus próprios atributos mentais, características e magias. Seu corpo original fica inconsciente e estável.</p>
+			<p class="indent">O efeito termina quando você quiser, quando um dos corpos morrer, ou após 1 hora.</p>
+		</description>
+		<sheet action="Action" usage="5 PR + 2 Fardo ✦">
+			<description>Projete sua alma no corpo de uma criatura disposta ou incapacitada a 9 m. Você usa os atributos físicos dela e mantém os seus mentais, características e magias. Seu corpo fica inconsciente e estável. Dura até 1 hora.</description>
+		</sheet>
+	</element>
+
+	<!-- ============================ NECROMANCIA ============================ -->
+
+	<element name="Via da Necromancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_NECROMANCIA">
+		<supports>Via de Ressonância</supports>
+		<description>
+			<p><i>A Colheita dos Mortos.</i></p>
+			<p class="indent">Sangue puro de Kólasi, que reclama tudo o que morre e não gosta de emprestar. O necromante manda nos restos que já são do deus, e o deus permite como um credor permite. Erguer um morto já pesa; erguer muitos é dívida que se acumula por cabeça.</p>
+			<p class="indent">Invocador de mortos-vivos. A disciplina mais tabu do mundo e a que mais cobra.</p>
+			<p class="indent"><strong>Peso do Fardo: alto.</strong> Cada excesso cobra por criatura ou por uso.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_SENHOR_MORTOS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO" level="5" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA" level="9" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_SENHOR_MORTOS" level="15" />
+		</rules>
+	</element>
+
+	<element name="Erguer Necrotralo" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER">
+		<description>
+			<p>No 3º nível, com uma ação, gaste 2 PR e toque um cadáver ou pilha de ossos de humanoide Médio ou Pequeno a até 3 metros. Ele se ergue como necrotralo, usando o bloco de estatísticas de esqueleto ou zumbi, sob seu controle.</p>
+			<p class="indent">Você controla até seu bônus de proficiência em necrotralos sem custo adicional. Erguer além disso gera 1 Fardo por criatura ✦.</p>
+			<p class="indent">A cada turno, uma única ação bônus comanda todos eles. Sem comando, apenas se defendem.</p>
+		</description>
+		<sheet action="Action" usage="2 PR">
+			<description>Toque um cadáver ou pilha de ossos humanoide Médio ou Pequeno a 3 m: ele se ergue como necrotralo (esqueleto ou zumbi) sob seu controle. Até seu bônus de proficiência sem custo; além disso, 1 Fardo por criatura ✦. Uma ação bônus comanda todos.</description>
+		</sheet>
+	</element>
+
+	<element name="Legião" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO">
+		<description>
+			<p>No 5º nível, seus necrotralos ganham pontos de vida temporários iguais ao seu nível de Alquimista ao serem erguidos, e somam seu modificador de Inteligência ao dano que causam.</p>
+			<p class="indent">Além disso, um único uso de Erguer Necrotralo agora ergue dois cadáveres.</p>
+		</description>
+		<sheet>
+			<description>Seus necrotralos ganham PV temporários iguais ao seu nível de Alquimista ao serem erguidos e somam seu modificador de Inteligência ao dano. Erguer Necrotralo agora ergue dois cadáveres por uso.</description>
+		</sheet>
+	</element>
+
+	<element name="Colheita" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA">
+		<description>
+			<p>No 9º nível, quando uma criatura morre a até 9 metros de você, você pode usar sua reação para recuperar 2 PR ou ganhar pontos de vida temporários iguais ao seu bônus de proficiência.</p>
+			<p class="indent">Além disso, uma vez por descanso longo, você ergue um necrotralo maior: uma criatura de ND até metade do seu nível, que serve por 24 horas. Isso gera 1 Fardo ✦.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Quando uma criatura morre a 9 m, recupere 2 PR ou ganhe PV temporários iguais ao seu bônus de proficiência. 1/descanso longo: ergue um necrotralo maior (ND até metade do seu nível) por 24 h, gerando 1 Fardo ✦.</description>
+		</sheet>
+	</element>
+
+	<element name="Senhor dos Mortos" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_SENHOR_MORTOS">
+		<description>
+			<p>No 15º nível, você tem resistência a dano necrótico e não pode ser amedrontado por mortos-vivos.</p>
+			<p class="indent">Com uma ação, gaste 5 PR e tome 2 Fardo obrigatórios ✦ para erguer uma horda: até seis necrotralos de uma vez, que não contam no seu limite e permanecem por 1 hora.</p>
+		</description>
+		<sheet action="Action" usage="5 PR + 2 Fardo ✦">
+			<description>Resistência a dano necrótico; você não pode ser amedrontado por mortos-vivos. Erga uma horda de até seis necrotralos que não contam no seu limite e duram 1 hora.</description>
+		</sheet>
+	</element>
+
+</elements>
