@@ -16,6 +16,7 @@
 			<p><i>A Arte Aceita.</i></p>
 			<p class="indent">Ílios e Kólasi não quiseram a matéria morta, então ela ficou sem dono. Por isso o metalúrgico não paga nada: não há deus no sangue dele cobrando. É a única arte que se aprende em vez de herdar.</p>
 			<p class="indent">Trabalha só com o inorgânico, e por isso é a face respeitável da alquimia: a que ergue pontes, forja armas e é bem-vinda em qualquer cidade. Nunca gera Fardo. É a Via mais melee da classe.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA" />
@@ -23,6 +24,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA" level="9" />
@@ -94,6 +96,7 @@
 			<p class="indent">Quando o corpo de Ílios foi devorado, o calor se espalhou primeiro: a parte dele voltada para fora, que aquece sem tocar ninguém. O deus deixa os herdeiros gastarem à vontade, mas force além do que ele dá de bom grado e o sangue cobra uma queimadura por dentro.</p>
 			<p class="indent">Artilharia mágica à distância, rara e espetacular, mas permitida.</p>
 			<p class="indent"><strong>Peso do Fardo: leve.</strong> Seus efeitos ✦ têm um limiar gratuito de 2× seu bônus de proficiência usos por descanso longo; além disso, cada uso gera 1 Fardo.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE" />
@@ -101,6 +104,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE" level="9" />
@@ -168,6 +172,7 @@
 			<p class="indent">É a vida de Ílios correndo na carne de quem o comeu; as curas pequenas ele dá de presente. Mas curar por dentro é segurar a vida na mão, e o que se segura pode se apertar. Ao drenar ou reviver, o vitamante estica o dom até onde encosta a sombra de Kólasi, e ali paga.</p>
 			<p class="indent">Cura e dreno no mesmo gesto.</p>
 			<p class="indent"><strong>Peso do Fardo: médio.</strong> Limiar gratuito de seu bônus de proficiência usos de Manipular Vitalidade por descanso longo; além disso, cada uso gera 1 Fardo.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR" />
@@ -175,6 +180,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR" level="9" />
@@ -237,6 +243,7 @@
 			<p class="indent">Linhagem que provou dos dois deuses de uma vez, e por isso não tem lado. Só ela toca o que ambos dividiam: a vontade, a memória, a centelha que faz de um corpo alguém. Nada disso é gratuito: os dois deuses querem sua parte, e ambos coletam.</p>
 			<p class="indent">Controle mental: emoções, memórias, almas. Fraca em dano direto, devastadora fora de combate.</p>
 			<p class="indent"><strong>Peso do Fardo: médio-alto.</strong> Limiar gratuito de seu bônus de proficiência usos por descanso longo. Os efeitos de 9º e 15º nível sempre geram Fardo, mesmo dentro do limiar.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR" />
@@ -244,6 +251,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR" level="9" />
@@ -300,6 +308,7 @@
 			<p class="indent">Sangue puro de Kólasi, que reclama tudo o que morre e não gosta de emprestar. O necromante manda nos restos que já são do deus, e o deus permite como um credor permite. Erguer um morto já pesa; erguer muitos é dívida que se acumula por cabeça.</p>
 			<p class="indent">Invocador de mortos-vivos. A disciplina mais tabu do mundo e a que mais cobra.</p>
 			<p class="indent"><strong>Peso do Fardo: alto.</strong> Cada excesso cobra por criatura ou por uso.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA" />
@@ -307,6 +316,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA" level="9" />
@@ -353,6 +363,133 @@
 		<sheet action="Action" usage="5 PR + 2 Fardo ✦">
 			<description>Resistência a dano necrótico; você não pode ser amedrontado por mortos-vivos. Erga uma horda de até seis necrotralos que não contam no seu limite e duram 1 hora.</description>
 		</sheet>
+	</element>
+
+	<!-- ==================== MAGIAS DE VIA ==================== -->
+
+	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA">
+		<description>
+			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<ul>
+				<li><strong>1º nível:</strong> <i>Graxa</i></li>
+				<li><strong>2º nível:</strong> <i>Aumentar/Reduzir</i></li>
+				<li><strong>3º nível:</strong> <i>Dissipar Magia</i></li>
+				<li><strong>4º nível:</strong> <i>Fabricar</i></li>
+				<li><strong>5º nível:</strong> <i>Animar Objetos</i></li>
+			</ul>
+			<p class="indent">Nenhuma delas é ✦, e essa é a característica que define a Via: a Transmutação não herdou de ninguém, não deve nada e nunca toca a trilha do Fardo.</p>
+		</description>
+		<sheet>
+			<description>Magias sempre preparadas da Via da Transmutação, fora do limite de preparadas: 1º Graxa; 2º Aumentar/Reduzir; 3º Dissipar Magia; 4º Fabricar; 5º Animar Objetos.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GREASE" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Alquimista" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Alquimista" prepared="true" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Alquimista" prepared="true" level="13" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Alquimista" prepared="true" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA">
+		<description>
+			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<ul>
+				<li><strong>1º nível:</strong> <i>Mãos Flamejantes</i></li>
+				<li><strong>2º nível:</strong> <i>Raio Ardente</i></li>
+				<li><strong>3º nível:</strong> <i>Bola de Fogo</i></li>
+				<li><strong>4º nível:</strong> <i>Muralha de Fogo</i></li>
+				<li><strong>5º nível:</strong> <i>Coluna de Chamas</i></li>
+			</ul>
+			<p class="indent">Nenhuma é ✦: o fogo do calor não exige vitalidade, só ressonância. O que cobra Fardo nesta Via são as características de classe, não as magias.</p>
+		</description>
+		<sheet>
+			<description>Magias sempre preparadas da Via da Piromancia, fora do limite de preparadas: 1º Mãos Flamejantes; 2º Raio Ardente; 3º Bola de Fogo; 4º Muralha de Fogo; 5º Coluna de Chamas.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Alquimista" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Alquimista" prepared="true" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Alquimista" prepared="true" level="13" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" spellcasting="Alquimista" prepared="true" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA">
+		<description>
+			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<ul>
+				<li><strong>1º nível:</strong> <i>Curar Ferimentos</i></li>
+				<li><strong>2º nível:</strong> <i>Restauração Menor</i></li>
+				<li><strong>3º nível:</strong> <i>Toque Vampírico ✦</i></li>
+				<li><strong>4º nível:</strong> <i>Praga ✦</i></li>
+				<li><strong>5º nível:</strong> <i>Restauração Maior</i></li>
+			</ul>
+			<p class="indent">Duas ✦ em cinco, e nessa ordem de propósito. A Via começa curando de graça e termina curando de graça; o que fica no meio é o que ela cobra.</p>
+		</description>
+		<sheet>
+			<description>Magias sempre preparadas da Via da Vitamancia, fora do limite de preparadas: 1º Curar Ferimentos; 2º Restauração Menor; 3º Toque Vampírico ✦; 4º Praga ✦; 5º Restauração Maior.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Alquimista" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" spellcasting="Alquimista" prepared="true" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" spellcasting="Alquimista" prepared="true" level="13" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Alquimista" prepared="true" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA">
+		<description>
+			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<ul>
+				<li><strong>1º nível:</strong> <i>Enfeitiçar Pessoa ✦</i></li>
+				<li><strong>2º nível:</strong> <i>Detectar Pensamentos</i></li>
+				<li><strong>3º nível:</strong> <i>Sugestão ✦</i></li>
+				<li><strong>4º nível:</strong> <i>Confusão ✦</i></li>
+				<li><strong>5º nível:</strong> <i>Modificar Memória ✦</i></li>
+			</ul>
+			<p class="indent">Quatro ✦ em cinco, herança dos dois deuses. A única limpa é Detectar Pensamentos, e ela é limpa por um motivo só: ler não é reescrever.</p>
+		</description>
+		<sheet>
+			<description>Magias sempre preparadas da Via da Animancia, fora do limite de preparadas: 1º Enfeitiçar Pessoa ✦; 2º Detectar Pensamentos; 3º Sugestão ✦; 4º Confusão ✦; 5º Modificar Memória ✦.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Alquimista" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" spellcasting="Alquimista" prepared="true" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Alquimista" prepared="true" level="13" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Alquimista" prepared="true" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA">
+		<description>
+			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<ul>
+				<li><strong>1º nível:</strong> <i>Falsa Vida ✦</i></li>
+				<li><strong>2º nível:</strong> <i>Raio de Enfraquecimento ✦</i></li>
+				<li><strong>3º nível:</strong> <i>Animar os Mortos ✦</i></li>
+				<li><strong>4º nível:</strong> <i>Proteção contra a Morte ✦</i></li>
+				<li><strong>5º nível:</strong> <i>Erguer Morto ✦</i></li>
+			</ul>
+			<p class="indent">Cinco ✦ em cinco. Nenhuma magia limpa, porque não existe jeito limpo de mexer no que já é de Kólasi. É por isso que esta é a Via de Fardo alto.</p>
+		</description>
+		<sheet>
+			<description>Magias sempre preparadas da Via da Necromancia, fora do limite de preparadas: 1º Falsa Vida ✦; 2º Raio de Enfraquecimento ✦; 3º Animar os Mortos ✦; 4º Proteção contra a Morte ✦; 5º Erguer Morto ✦.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Alquimista" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Alquimista" prepared="true" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Alquimista" prepared="true" level="13" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" spellcasting="Alquimista" prepared="true" level="17" />
+		</rules>
 	</element>
 
 </elements>
