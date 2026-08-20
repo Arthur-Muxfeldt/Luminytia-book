@@ -2,15 +2,16 @@
 <elements>
 	<info>
 		<name>Cartomante</name>
-		<description>Classe-base Cartomante do mundo de Luminytia.</description>
-		<update version="0.0.1">
+		<description>Classe-base Cartomante do mundo de Luminytia. Conjurador completo de Sabedoria, movido a cartas pintadas à mão.</description>
+		<update version="0.2.0">
 			<file name="classes/cartomante.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/cartomante.xml" />
 		</update>
 	</info>
 
 	<element name="Cartomante" type="Class" source="Luminytia" id="ID_CLASS_LUMINYTIA_CARTOMANTE">
 		<description>
-			<p>A Cartomante lê o destino nas cartas e o dobra a seu favor. Cada carta virada é uma aposta com a sorte — bênção ou ruína.</p>
+			<p>O alquimista calcula a ressonância. O cartomante escuta. Onde o Alquimista herdou sangue dos Dois Deuses, o cartomante deve o que sabe aos vinte e um que nunca ascenderam: os Arcanos Maiores falam por cartas, e cobram por carta.</p>
+			<p class="indent">A conjuração do cartomante é <strong>Sabedoria</strong>: ele não estuda a ressonância como ciência, ele a percebe antes de entender. Isso o deixa como o oposto exato do Alquimista, que usa Inteligência.</p>
 			<h5>PONTOS DE VIDA</h5>
 			<ul class="unstyled">
 				<li><strong>Dado de Vida:</strong> 1d8 por nível de Cartomante</li>
@@ -21,76 +22,303 @@
 			<ul class="unstyled mb">
 				<li><strong>Armadura:</strong> Leve</li>
 				<li><strong>Armas:</strong> Armas simples</li>
-				<li><strong>Ferramentas:</strong> Baralho de cartomante</li>
+				<li><strong>Ferramentas:</strong> Suprimentos de pintor e um conjunto de jogos à sua escolha</li>
 			</ul>
 			<ul class="unstyled">
 				<li><strong>Testes de Resistência:</strong> Sabedoria, Carisma</li>
-				<li><strong>Perícias:</strong> Escolha duas entre Intuição, Enganação, História, Investigação, Persuasão e Prestidigitação</li>
+				<li><strong>Perícias:</strong> Escolha três entre Adestrar Animais, Atuação, Enganação, História, Intuição, Investigação, Percepção, Persuasão e Religião</li>
 			</ul>
-			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_DO_DESTINO" />
-			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARQUETIPO" />
+			<h5>EQUIPAMENTO INICIAL</h5>
+			<ul>
+				<li>(a) uma arma simples ou (b) um bordão</li>
+				<li>um baralho de arcanos menores pintado por você, seu foco de conjuração</li>
+				<li>suprimentos de pintor e três telas em branco</li>
+				<li>armadura de couro e uma adaga</li>
+				<li>um pacote de estudioso ou de artista</li>
+			</ul>
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CONJURACAO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_O_BARALHO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_A_MAO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CORTE_DO_BARALHO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_QUEIMADA" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_FIRME" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_NA_MANGA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_LEITURA_PROFUNDA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARCANO_EMPRESTADO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_CHEIA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_INVERSAO_PERFEITA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_COMPLETO" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ULTIMA_CARTA" />
 		</description>
 		<sheet display="false">
-			<description>Uma leitora do destino que manipula a sorte por meio de cartas arcanas.</description>
+			<description>Conjurador completo de Sabedoria que não prepara magias: possui as cartas que pintou.</description>
 		</sheet>
 		<setters>
-			<set name="short">Leitora do destino que manipula a sorte por meio de cartas.</set>
+			<set name="short">Conjurador completo de Sabedoria, movido a cartas pintadas à mão.</set>
 			<set name="hd">d8</set>
+			<set name="player">true</set>
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
-			<select type="Proficiency" name="Perícia (Cartomante)" supports="Skill,Cartomante" number="2" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_DO_DESTINO" level="1" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARQUETIPO" level="3" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+			<select type="Proficiency" name="Conjunto de Jogos (Cartomante)" supports="Gaming Set" number="1" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+			<select type="Proficiency" name="Perícia (Cartomante)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" number="3" requirements="!ID_MULTICLASS_LUMINYTIA_CARTOMANTE" />
+
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CONJURACAO" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_O_BARALHO" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_A_MAO" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CORTE_DO_BARALHO" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_QUEIMADA" level="3" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI" level="4" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_FIRME" level="5" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_NA_MANGA" level="7" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_LEITURA_PROFUNDA" level="9" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARCANO_EMPRESTADO" level="11" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_CHEIA" level="13" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_INVERSAO_PERFEITA" level="15" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_COMPLETO" level="18" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ULTIMA_CARTA" level="20" />
 		</rules>
 		<multiclass id="ID_MULTICLASS_LUMINYTIA_CARTOMANTE">
-			<prerequisite>Carisma 13</prerequisite>
-			<requirements>[charisma:13]</requirements>
+			<prerequisite>Sabedoria 13</prerequisite>
+			<requirements>[wisdom:13]</requirements>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+				<select type="Proficiency" name="Perícia (Cartomante)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" number="1" />
 			</rules>
 		</multiclass>
 	</element>
 
-	<element name="Baralho do Destino" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_DO_DESTINO">
-		<supports>Class Feature</supports>
+	<!-- ======================= CONJURAÇÃO ======================= -->
+
+	<element name="Conjuração" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CONJURACAO">
 		<description>
-			<p>No 1º nível, você carrega um baralho arcano ligado ao seu destino. (Mecânica a ser detalhada.)</p>
+			<p>Você conjura lendo as cartas dos Arcanos menores. <strong>Sabedoria</strong> é sua habilidade de conjuração.</p>
+			<ul>
+				<li><strong>CD de resistência:</strong> 8 + bônus de proficiência + modificador de Sabedoria</li>
+				<li><strong>Bônus de ataque mágico:</strong> bônus de proficiência + modificador de Sabedoria</li>
+				<li><strong>Foco de conjuração:</strong> seu baralho, que não pode ser substituído por outro foco</li>
+			</ul>
+			<p class="indent">Sua lista de magias é a lista do Cartomante, inteira: Naipe de Paus, Naipe de Copas, Naipe de Espadas e Naipe de Ouros, nas duas orientações de cada carta.</p>
+			<p class="indent">Você é um conjurador completo, com a mesma progressão de espaços do Bardo. Você <strong>não prepara magias</strong>: você conhece as cartas que pintou.</p>
 		</description>
-		<sheet>
-			<description>Você possui um baralho arcano ligado ao seu destino. (A detalhar.)</description>
+		<sheet alt="Conjuração (Cartomante)">
+			<description>Sabedoria é sua habilidade de conjuração. Seu foco é o seu baralho e não pode ser substituído. Você não prepara magias: conhece as cartas que pintou.</description>
+		</sheet>
+		<spellcasting name="Cartomante" ability="Wisdom">
+			<list>Cartomante</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+
+			<stat name="cartomante:spellcasting:slots:1" value="2" level="1" />
+			<stat name="cartomante:spellcasting:slots:1" value="1" level="2" />
+			<stat name="cartomante:spellcasting:slots:1" value="1" level="3" />
+			<stat name="cartomante:spellcasting:slots:2" value="2" level="3" />
+			<stat name="cartomante:spellcasting:slots:2" value="1" level="4" />
+			<stat name="cartomante:spellcasting:slots:3" value="2" level="5" />
+			<stat name="cartomante:spellcasting:slots:3" value="1" level="6" />
+			<stat name="cartomante:spellcasting:slots:4" value="1" level="7" />
+			<stat name="cartomante:spellcasting:slots:4" value="1" level="8" />
+			<stat name="cartomante:spellcasting:slots:4" value="1" level="9" />
+			<stat name="cartomante:spellcasting:slots:5" value="1" level="9" />
+			<stat name="cartomante:spellcasting:slots:5" value="1" level="10" />
+			<stat name="cartomante:spellcasting:slots:5" value="1" level="18" />
+			<stat name="cartomante:spellcasting:slots:6" value="1" level="11" />
+			<stat name="cartomante:spellcasting:slots:6" value="1" level="19" />
+			<stat name="cartomante:spellcasting:slots:7" value="1" level="13" />
+			<stat name="cartomante:spellcasting:slots:7" value="1" level="20" />
+			<stat name="cartomante:spellcasting:slots:8" value="1" level="15" />
+			<stat name="cartomante:spellcasting:slots:9" value="1" level="17" />
+
+			<select type="Spell" name="Ás (Cartomante)" supports="Cartomante,0" number="2" spellcasting="Cartomante" level="1" />
+			<select type="Spell" name="Ás (Cartomante)" supports="Cartomante,0" number="1" spellcasting="Cartomante" level="4" />
+			<select type="Spell" name="Ás (Cartomante)" supports="Cartomante,0" number="1" spellcasting="Cartomante" level="10" />
+		</rules>
+	</element>
+
+	<!-- ======================= O BARALHO ======================= -->
+
+	<element name="O Baralho" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_O_BARALHO">
+		<description>
+			<p>Você não prepara magias: você <strong>conhece as cartas que pintou</strong>. Cada magia conhecida corresponde a uma carta física do seu baralho, pintada à mão numa tela de linho preparado do tamanho de uma palma, e você só conjura o que está lá.</p>
+			<p class="indent">Você começa com 2 Ases e 4 cartas de 1º nível de magia, ganhando mais conforme sobe de nível. Cada carta nova você <strong>pinta</strong> ao subir de nível, sem custo em tempo nem material: é a ressonância te ensinando a imagem.</p>
+			<p class="indent">Ao subir de nível, você também pode trocar uma carta conhecida por outra de um nível de magia que você possa conjurar, repintando a tela por cima.</p>
+			<p class="indent">Cartas pintadas por outra pessoa podem ser incorporadas ao seu baralho gastando <strong>1 dia e 50 po por nível de magia</strong> da carta, estudando o traço alheio até ele obedecer você. Elas não contam no limite da tabela.</p>
+			<p class="indent">Um baralho não pintado por você <strong>não conjura nada</strong>. Comprar um baralho pronto de arcanos menores custa 25 po e serve só de base: as telas vêm em branco para a sua mão.</p>
+			<p class="indent">Se você perder o baralho, perde a conjuração até refazê-lo. Vale a tabela de Repintar a Carta, com a concessão de que cartas de até 2º nível de magia podem ser repintadas em lote, todas de uma vez, num único descanso longo com material suficiente.</p>
+		</description>
+		<sheet alt="O Baralho">
+			<description>Você conhece as cartas que pintou; cada magia conhecida é uma tela física. Baralho não pintado por você não conjura nada. Carta alheia custa 1 dia e 50 po por nível de magia e fica fora do limite.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="4" spellcasting="Cartomante" level="1" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="2" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="3" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="4" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="5" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="6" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="7" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="8" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="9" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="2" spellcasting="Cartomante" level="10" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="11" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="13" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="2" spellcasting="Cartomante" level="14" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="15" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="17" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="2" spellcasting="Cartomante" level="18" />
+		</rules>
+	</element>
+
+	<!-- ======================= A MÃO ======================= -->
+
+	<element name="A Mão" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_A_MAO">
+		<description>
+			<p>Ao terminar um descanso longo, você embaralha e compra uma mão de cartas igual ao seu <strong>bônus de proficiência</strong>. Anote cada carta comprada como <strong>direita</strong> ou <strong>invertida</strong> (vire de fato, ou role 1d2).</p>
+			<p class="indent">Uma vez por turno, sem gastar ação, você pode descartar uma carta da mão para um dos efeitos abaixo, escolhendo depois de ver o resultado da rolagem, mas antes de o mestre dizer se foi sucesso ou falha.</p>
+			<p class="indent">Gastando uma carta <strong>direita</strong>, uma criatura que você possa ver a até 18 metros soma o Dado da Mão a uma jogada de ataque, teste de habilidade ou teste de resistência que acabou de fazer.</p>
+			<p class="indent">Gastando uma carta <strong>invertida</strong>, uma criatura hostil que você possa ver a até 18 metros subtrai o Dado da Mão de uma jogada de ataque ou teste de habilidade que acabou de fazer.</p>
+			<p class="indent">O Dado da Mão é d6, subindo para d8 no 5º nível, d10 no 11º e d12 no 17º.</p>
+			<p class="indent">Você recupera 1 carta ao terminar um descanso curto, e a mão inteira ao terminar um descanso longo.</p>
+		</description>
+		<sheet alt="A Mão" usage="{{proficiency}}/Descanso Longo">
+			<description>Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d6 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d6 de um ataque ou teste de um hostil a 18 m. Recupera 1 carta no descanso curto.</description>
+			<description level="5">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d8 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d8 de um ataque ou teste de um hostil a 18 m. Recupera 1 carta no descanso curto.</description>
+			<description level="11">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d10 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d10 de um ataque ou teste de um hostil a 18 m.</description>
+			<description level="17">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d12 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d12 de um ataque ou teste de um hostil a 18 m.</description>
 		</sheet>
 	</element>
 
-	<element name="Arquétipo de Cartomante" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARQUETIPO">
+	<!-- ======================= CORTE DO BARALHO ======================= -->
+
+	<element name="Corte do Baralho" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CORTE_DO_BARALHO">
 		<description>
-			<p>No 3º nível, você escolhe um arquétipo que molda seu método de leitura das cartas. Sua escolha concede recursos no 3º nível e novamente no 6º, 10º e 14º nível.</p>
+			<p>No 2º nível, uma vez por descanso longo, você corta o baralho e faz uma pergunta sobre o que vai acontecer nas próximas <strong>24 horas</strong>, envolvendo um plano de ação concreto. O mestre responde com uma palavra: <strong>fortuna</strong>, <strong>ruína</strong>, <strong>ambas</strong> ou <strong>nada</strong>.</p>
+			<p class="indent">Se você usar isto mais de uma vez por descanso longo, há chance cumulativa de 25% por uso extra de a leitura vir aleatória.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>Pergunta sobre as próximas 24 horas envolvendo um plano concreto. O mestre responde: fortuna, ruína, ambas ou nada. Usos extras têm 25% cumulativo de vir aleatório.</description>
+		</sheet>
+	</element>
+
+	<!-- ======================= CARTA QUEIMADA E REPINTAR ======================= -->
+
+	<element name="Carta Queimada e Repintar" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_QUEIMADA">
+		<description>
+			<p>No 3º nível, as magias marcadas com <strong>✦</strong> na lista do Cartomante passam a seguir as regras do Fardo.</p>
+			<p class="indent"><strong>Limiar gratuito:</strong> seu bônus de proficiência em usos de efeitos ✦ por descanso longo. Passado o limiar, cada uso gera 1 nível de Fardo.</p>
+			<p class="indent"><strong>Carta queimada:</strong> toda vez que você conjura um efeito ✦, a tinta da carta usada <strong>apaga</strong>. A tela fica cinza e lisa, como se nunca tivesse sido pintada, e sai do baralho. Você não pode conjurar aquela magia até repintá-la.</p>
+			<p class="indent"><strong>Recuperação:</strong> não há recuperação automática. A carta volta quando você repinta a tela, e não antes.</p>
+			<h5>REPINTAR A CARTA</h5>
+			<ul>
+				<li><strong>Ás (truque):</strong> 1 hora de pintura, 5 po de tinta e tela</li>
+				<li><strong>1º e 2º nível:</strong> 2 horas, 10 po</li>
+				<li><strong>3º e 4º nível:</strong> 4 horas, 25 po</li>
+				<li><strong>5º e 6º nível:</strong> 8 horas, 50 po</li>
+				<li><strong>7º e 8º nível:</strong> 2 dias, 100 po</li>
+				<li><strong>9º nível:</strong> 5 dias, 250 po</li>
+			</ul>
+			<p class="indent">Durante um descanso longo você consegue pintar cartas de até 2º nível de magia, uma por descanso. Qualquer coisa acima disso exige tempo de inatividade de verdade, em lugar seguro e com luz. Trabalho interrompido não se perde, mas também não avança. Você não pode pintar uma carta que não conheça.</p>
+		</description>
+		<sheet alt="Carta Queimada" usage="{{proficiency}} ✦/Descanso Longo">
+			<description>Limiar gratuito de efeitos ✦ igual ao bônus de proficiência; além disso, 1 nível de Fardo por uso. Todo efeito ✦ queima a carta, que sai do baralho até ser repintada. Não há recuperação automática.</description>
+		</sheet>
+	</element>
+
+	<!-- ======================= DEMAIS CARACTERÍSTICAS ======================= -->
+
+	<element name="Aumento de Atributo" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI">
+		<description>
+			<p>Quando você atinge o 4º nível, e novamente no 8º, 12º, 16º e 19º, você pode aumentar um valor de atributo à sua escolha em 2, ou dois valores de atributo à sua escolha em 1. Como de costume, você não pode aumentar um valor de atributo acima de 20 usando esta característica.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Arquétipo de Cartomante" supports="Arquétipo de Cartomante" />
+			<select type="Grants" name="Aumento de Atributo (Cartomante 4)" level="4" supports="Ability Score Improvement" />
+			<select type="Grants" name="Aumento de Atributo (Cartomante 8)" level="8" supports="Ability Score Improvement" />
+			<select type="Grants" name="Aumento de Atributo (Cartomante 12)" level="12" supports="Ability Score Improvement" />
+			<select type="Grants" name="Aumento de Atributo (Cartomante 16)" level="16" supports="Ability Score Improvement" />
+			<select type="Grants" name="Aumento de Atributo (Cartomante 19)" level="19" supports="Ability Score Improvement" />
 		</rules>
 	</element>
 
-	<element name="Ability Score Improvement" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI">
-		<compendium display="false" />
+	<element name="Mão Firme" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_FIRME">
 		<description>
-			<p>No 4º nível, e novamente no 8º, 12º, 16º e 19º nível, você pode aumentar um valor de habilidade em 2, ou dois valores de habilidade em 1. Você não pode passar de 20 com este recurso.</p>
+			<p>No 5º nível, você recupera <strong>toda a Mão</strong> ao terminar um descanso curto, e não só uma carta.</p>
 		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Class Feature" name="Melhoria (Cartomante 4)" supports="Improvement Option,Cartomante,4" level="4" />
-			<select type="Class Feature" name="Melhoria (Cartomante 8)" supports="Improvement Option,Cartomante,8" level="8" />
-			<select type="Class Feature" name="Melhoria (Cartomante 12)" supports="Improvement Option,Cartomante,12" level="12" />
-			<select type="Class Feature" name="Melhoria (Cartomante 16)" supports="Improvement Option,Cartomante,16" level="16" />
-			<select type="Class Feature" name="Melhoria (Cartomante 19)" supports="Improvement Option,Cartomante,19" level="19" />
-		</rules>
+		<sheet>
+			<description>Você recupera a Mão inteira ao terminar um descanso curto.</description>
+		</sheet>
+	</element>
+
+	<element name="Carta na Manga" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_NA_MANGA">
+		<description>
+			<p>No 7º nível, uma vez por descanso longo, você conjura uma carta do seu baralho de <strong>3º nível de magia ou menor</strong> sem gastar espaço de magia.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>Conjure uma carta do seu baralho de 3º nível de magia ou menor sem gastar espaço.</description>
+		</sheet>
+	</element>
+
+	<element name="Leitura Profunda" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_LEITURA_PROFUNDA">
+		<description>
+			<p>No 9º nível, uma vez por descanso longo, você faz uma leitura de 10 minutos e obtém uma resposta verdadeira e curta sobre algo que já aconteceu, funcionando como <i>adivinhação</i>, mas sobre o passado em vez do futuro. O mestre pode responder com uma imagem em vez de uma frase.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>Leitura de 10 minutos: resposta verdadeira e curta sobre algo que já aconteceu, como adivinhação voltada ao passado.</description>
+		</sheet>
+	</element>
+
+	<element name="Arcano Emprestado" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ARCANO_EMPRESTADO">
+		<description>
+			<p>No 11º nível, escolha uma carta de qualquer naipe, de um nível de magia que você possa conjurar. Ela entra no seu baralho sem contar no limite da tabela. Você pode trocá-la ao terminar um descanso longo.</p>
+		</description>
+		<sheet>
+			<description>Uma carta extra de qualquer naipe, fora do limite de cartas conhecidas, trocável a cada descanso longo.</description>
+		</sheet>
+	</element>
+
+	<element name="Mão Cheia" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_CHEIA">
+		<description>
+			<p>No 13º nível, sua mão passa a ter <strong>2 cartas adicionais</strong>, e você pode escolher a orientação de uma delas ao comprar.</p>
+		</description>
+		<sheet>
+			<description>Sua Mão tem 2 cartas adicionais, e você escolhe a orientação de uma delas ao comprar.</description>
+		</sheet>
+	</element>
+
+	<element name="Inversão Perfeita" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_INVERSAO_PERFEITA">
+		<description>
+			<p>No 15º nível, uma vez por descanso longo, ao conjurar uma carta, você usa <strong>as duas versões ao mesmo tempo</strong>: aplique o efeito direito a um alvo ou área e o efeito invertido a outro. Cada efeito precisa de alvos legais próprios e a magia consome um só espaço.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>Conjure uma carta usando as duas orientações ao mesmo tempo, em alvos diferentes, gastando um só espaço de magia.</description>
+		</sheet>
+	</element>
+
+	<element name="O Baralho Completo" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_BARALHO_COMPLETO">
+		<description>
+			<p>No 18º nível, uma vez por descanso longo, você conjura qualquer carta do seu <strong>Naipe Regente</strong> de 5º nível de magia ou menor, mesmo que ela não esteja no seu baralho e mesmo que esteja queimada.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>Conjure qualquer carta do seu Naipe Regente de 5º nível de magia ou menor, mesmo fora do baralho ou queimada.</description>
+		</sheet>
+	</element>
+
+	<element name="A Última Carta" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ULTIMA_CARTA">
+		<description>
+			<p>No 20º nível, a leitura sempre tem mais uma carta embaixo. Quando você cai a 0 PV, vire a carta do topo: você fica com <strong>metade dos seus PV máximos</strong> em vez de cair, e recupera a Mão inteira. Uma vez por descanso longo.</p>
+			<p class="indent">Além disso, sua mão nunca fica vazia: se você gastar a última carta, compra 1 nova imediatamente, uma vez por turno.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>Ao cair a 0 PV, fique com metade dos PV máximos e recupere a Mão inteira. Além disso, gastar a última carta compra 1 nova imediatamente, 1×/turno.</description>
+		</sheet>
 	</element>
 
 </elements>
