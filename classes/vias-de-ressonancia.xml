@@ -17,6 +17,7 @@
 			<p class="indent">Ílios e Kólasi não quiseram a matéria morta, então ela ficou sem dono. Por isso o metalúrgico não paga nada: não há deus no sangue dele cobrando. É a única arte que se aprende em vez de herdar.</p>
 			<p class="indent">Trabalha só com o inorgânico, e por isso é a face respeitável da alquimia: a que ergue pontes, forja armas e é bem-vinda em qualquer cidade. Nunca gera Fardo. É a Via mais melee da classe.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_EXCLUSIVAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA" />
@@ -25,6 +26,7 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_EXCLUSIVAS" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA" level="9" />
@@ -97,6 +99,7 @@
 			<p class="indent">Artilharia mágica à distância, rara e espetacular, mas permitida.</p>
 			<p class="indent"><strong>Peso do Fardo: leve.</strong> Seus efeitos ✦ têm um limiar gratuito de 2× seu bônus de proficiência usos por descanso longo; além disso, cada uso gera 1 Fardo.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_EXCLUSIVAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE" />
@@ -105,6 +108,7 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE" level="9" />
@@ -173,6 +177,7 @@
 			<p class="indent">Cura e dreno no mesmo gesto.</p>
 			<p class="indent"><strong>Peso do Fardo: médio.</strong> Limiar gratuito de seu bônus de proficiência usos de Manipular Vitalidade por descanso longo; além disso, cada uso gera 1 Fardo.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_EXCLUSIVAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR" />
@@ -181,6 +186,7 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR" level="9" />
@@ -244,6 +250,7 @@
 			<p class="indent">Controle mental: emoções, memórias, almas. Fraca em dano direto, devastadora fora de combate.</p>
 			<p class="indent"><strong>Peso do Fardo: médio-alto.</strong> Limiar gratuito de seu bônus de proficiência usos por descanso longo. Os efeitos de 9º e 15º nível sempre geram Fardo, mesmo dentro do limiar.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_EXCLUSIVAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR" />
@@ -252,6 +259,7 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR" level="9" />
@@ -309,6 +317,7 @@
 			<p class="indent">Invocador de mortos-vivos. A disciplina mais tabu do mundo e a que mais cobra.</p>
 			<p class="indent"><strong>Peso do Fardo: alto.</strong> Cada excesso cobra por criatura ou por uso.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_EXCLUSIVAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA" />
@@ -317,6 +326,7 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" level="3" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA" level="9" />
@@ -489,6 +499,113 @@
 			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Alquimista" prepared="true" level="9" />
 			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Alquimista" prepared="true" level="13" />
 			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" spellcasting="Alquimista" prepared="true" level="17" />
+		</rules>
+	</element>
+
+	<!-- ==================== MAGIAS EXCLUSIVAS ==================== -->
+
+	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_EXCLUSIVAS">
+		<description>
+			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
+			<ul>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Liga Viva</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Reescrever a Peça</i></li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>Cidadela de um Minuto</i></li>
+			</ul>
+			<p class="indent">Nenhuma das três é ✦. A Transmutação não herdou de ninguém, não deve nada, e nem as magias exclusivas dela tocam a trilha do Fardo.</p>
+		</description>
+		<sheet>
+			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: 1º Liga Viva; 3º Reescrever a Peça; 5º Cidadela de um Minuto.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_REESCREVER_A_PECA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_CIDADELA_DE_UM_MINUTO" spellcasting="Alquimista" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_EXCLUSIVAS">
+		<description>
+			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
+			<ul>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Brasa Guardada</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Sopro de Meio-Dia</i></li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>A Parte Voltada Para Fora</i></li>
+			</ul>
+			<p class="indent">Nenhuma das três é ✦: o fogo do calor não exige vitalidade, só ressonância.</p>
+		</description>
+		<sheet>
+			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Brasa Guardada; 3º Sopro de Meio-Dia; 5º A Parte Voltada Para Fora.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_SOPRO_DE_MEIO_DIA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_A_PARTE_VOLTADA_PARA_FORA" spellcasting="Alquimista" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_EXCLUSIVAS">
+		<description>
+			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
+			<ul>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Costura</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Balança de Ílios ✦</i></li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>Dividir a Vida ✦</i></li>
+			</ul>
+			<p class="indent">A primeira cura de graça e as duas seguintes cobram. É a Via inteira em três magias: cura pequena é presente de Ílios, e mover vida de um corpo para outro nunca foi.</p>
+		</description>
+		<sheet>
+			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: 1º Costura; 3º Balança de Ílios ✦; 5º Dividir a Vida ✦.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_COSTURA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BALANCA_DE_ILIOS" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_DIVIDIR_A_VIDA" spellcasting="Alquimista" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_EXCLUSIVAS">
+		<description>
+			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
+			<ul>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Nome na Boca ✦</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Empréstimo de Perícia</i></li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>Segunda Voz ✦</i></li>
+			</ul>
+			<p class="indent">Duas ✦ e uma limpa, e a limpa é Empréstimo de Perícia por um motivo só: exige que a pessoa queira. A Via inteira gira nessa dobradiça.</p>
+		</description>
+		<sheet>
+			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: 1º Nome na Boca ✦; 3º Empréstimo de Perícia; 5º Segunda Voz ✦.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTIMO_DE_PERICIA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_SEGUNDA_VOZ" spellcasting="Alquimista" level="17" />
+		</rules>
+	</element>
+
+	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_EXCLUSIVAS">
+		<description>
+			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
+			<ul>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Adiamento ✦</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Inventário de Ossos</i></li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>A Conta Aberta ✦</i></li>
+			</ul>
+			<p class="indent">Duas ✦ e uma limpa. Inventário de Ossos é limpa por razão técnica: contar não é atrasar. Todo o resto que esta Via faz é atrasar.</p>
+		</description>
+		<sheet>
+			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Adiamento ✦; 3º Inventário de Ossos; 5º A Conta Aberta ✦.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_INVENTARIO_DE_OSSOS" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_A_CONTA_ABERTA" spellcasting="Alquimista" level="17" />
 		</rules>
 	</element>
 

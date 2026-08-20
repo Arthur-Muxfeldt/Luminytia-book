@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Magias Exclusivas de Via</name>
+		<description>Quinze magias que só existem em Luminytia, três por Via de Ressonância. Nenhuma outra Via as aprende.</description>
+		<update version="0.1.0">
+			<file name="magias/exclusivas-de-via.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/exclusivas-de-via.xml" />
+		</update>
+	</info>
+
+	<element name="Liga Viva" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Você corre a mão por uma arma ou peça de armadura não mágica e o metal dela responde, reorganizando-se sozinho enquanto você mantiver a atenção.</p>
+			<p class="indent">Numa arma, ela causa +1d4 de dano de força e conta como mágica para vencer resistências.</p>
+			<p class="indent">Numa armadura ou escudo, quem a veste ganha +1 na CA.</p>
+			<p class="indent">Você só pode manter uma Liga Viva por vez.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d4 de dano ou +1 de CA adicionais a cada dois níveis acima do 1º, até o máximo de +3d4 ou +3 de CA.</p>
+		</description>
+		<sheet>
+			<description>Arma: +1d4 de força e conta como mágica. Armadura ou escudo: +1 na CA. Uma por vez.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Reescrever a Peça" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_REESCREVER_A_PECA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Uma versão grande e deliberada do seu Toque Alquímico. Você toca um objeto inorgânico não mágico de até 1,5 metro em qualquer dimensão e o converte inteiro em outro material não mágico de densidade semelhante: pedra em ferro, corda em corrente, vidro em aço, uma porta trancada em areia.</p>
+			<p class="indent">A mudança é real e permanente, e não se desfaz com Dissipar Magia.</p>
+			<p class="indent">Você não pode criar matéria viva, componentes de magia, nem produzir mais de 500 po em valor por conjuração. Objeto carregado ou vestido por criatura hostil permite teste de resistência de Destreza para evitar.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O tamanho sobe para 3 metros no 5º nível, e o valor máximo dobra por nível acima do 3º.</p>
+		</description>
+		<sheet>
+			<description>Converte um objeto inorgânico não mágico de até 1,5 m em outro material de densidade semelhante. Permanente e real, imune a Dissipar Magia. Máximo 500 po por conjuração.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 minuto</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">Permanente</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Cidadela de um Minuto" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_CIDADELA_DE_UM_MINUTO">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Você bate o pé no chão e a terra sobe organizada.</p>
+			<p class="indent">Num ponto que possa ver, ergue-se uma fortificação de pedra e metal ressonante: um círculo de até 9 metros de diâmetro, com muro de 3 metros de altura e 30 centímetros de espessura, com uma abertura no lugar que você escolher. O muro tem CA 17, 60 PV por seção de 3 metros, e é imune a dano psíquico e venenoso.</p>
+			<p class="indent">Criaturas no espaço ocupado pelo muro ao ser erguido fazem teste de resistência de Destreza; falhando, são empurradas para o lado que você escolher.</p>
+			<p class="indent">Ao fim da duração a estrutura afunda de volta sem deixar marca.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> A altura sobe 1,5 metro e os PV sobem 15 por seção a cada nível acima do 5º.</p>
+		</description>
+		<sheet>
+			<description>Fortificação circular de 9 m de diâmetro, muro de 3 m, CA 17, 60 PV por seção de 3 m, imune a psíquico e veneno. Afunda sem deixar marca ao fim.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">8 horas</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Brasa Guardada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Você recolhe calor e guarda. Ao conjurar, escolha uma fonte de fogo a até 3 metros, ou gaste 1 PR: uma brasa fica alojada na palma da sua mão, visível, quente e inofensiva para você.</p>
+			<p class="indent">A qualquer momento antes do fim da duração, você pode soltá-la sem gastar ação como parte de outro ataque ou magia sua: o alvo sofre 2d6 de dano de fogo adicional.</p>
+			<p class="indent">Se você for reduzido a 0 PV com a brasa guardada, ela solta sozinha e atinge a criatura mais próxima de você, hostil ou não.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d6 por nível acima do 1º.</p>
+		</description>
+		<sheet>
+			<description>Guarda uma brasa por até 8 horas. Solte sem ação junto de outro ataque ou magia: +2d6 de fogo. Cair a 0 PV solta na criatura mais próxima.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G</set>
+			<set name="duration">Até 8 horas</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Sopro de Meio-Dia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_SOPRO_DE_MEIO_DIA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Uma linha de fogo branco de 18 metros por 1,5 metro, saindo de você.</p>
+			<p class="indent">Cada criatura na linha faz teste de resistência de Destreza e sofre 6d6 de dano de fogo, metade num sucesso.</p>
+			<p class="indent">O que separa esta magia de qualquer outro fogo: você escolhe quem ela ignora. Escolha um número de criaturas na linha até o seu modificador de Inteligência; elas não são afetadas e não fazem teste.</p>
+			<p class="indent">O fogo não incendeia objetos que não estejam sendo carregados.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d6 por nível acima do 3º, e uma criatura poupada adicional a cada dois níveis.</p>
+		</description>
+		<sheet>
+			<description>Linha de 18 m × 1,5 m: Destreza ou 6d6 de fogo, metade num sucesso. Você poupa um número de criaturas na linha até seu modificador de Inteligência.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">Pessoal (linha de 18 metros)</set>
+			<set name="components">V, G</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="A Parte Voltada Para Fora" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_A_PARTE_VOLTADA_PARA_FORA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Você deixa de conter o calor.</p>
+			<p class="indent">Por 1 minuto, você emite luz clara em 12 metros e penumbra por mais 12, tem resistência a dano de fogo, e toda criatura hostil que comece o turno a até 3 metros de você sofre 3d6 de dano de fogo, sem teste.</p>
+			<p class="indent">Além disso, uma vez em cada um dos seus turnos, sem gastar ação, você pode fazer uma criatura que possa ver a até 18 metros fazer teste de resistência de Constituição, sofrendo 4d6 de fogo se falhar.</p>
+			<p class="indent">Enquanto durar, você não pode ser surpreendido e não sente frio de nenhuma fonte.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Os danos sobem 1d6 cada a cada nível acima do 5º.</p>
+		</description>
+		<sheet>
+			<description>Luz clara 12 m, resistência a fogo, 3d6 de fogo em hostis que comecem o turno a 3 m. 1×/turno sem ação: Constituição a 18 m ou 4d6 de fogo. Não pode ser surpreendido.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Costura" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_COSTURA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Você fecha o que está aberto. Uma criatura que você toque recupera 1d8 + seu modificador de Inteligência PV, e qualquer sangramento ou ferida em carne viva fecha na hora.</p>
+			<p class="indent">Se a criatura estiver a 0 PV, ela estabiliza e recupera 1 PV além da cura.</p>
+			<p class="indent">A cura deixa uma cicatriz de linha fina que não some. Uma criatura pode ter qualquer número de cicatrizes de Costura, e um vitamante experiente lê nelas quem já foi remendado, por quantas mãos e quando.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d8 por nível acima do 1º.</p>
+		</description>
+		<sheet>
+			<description>Toque: cura 1d8 + modificador de Inteligência e fecha feridas. A 0 PV, estabiliza e recupera 1 PV a mais. Deixa cicatriz permanente que serve de assinatura.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Balança de Ílios" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_BALANCA_DE_ILIOS">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p class="indent">Você equilibra duas vidas na mesma mão.</p>
+			<p class="indent">Escolha duas criaturas que possa ver, uma doadora e uma receptora. A doadora perde até 4d8 PV, à sua escolha, sem teste de resistência se estiver disposta, ou com teste de Constituição para metade se não estiver. A receptora recupera exatamente a mesma quantia.</p>
+			<p class="indent">Se a doadora estiver disposta e for você mesmo, a receptora recupera o dobro.</p>
+			<p class="indent">Isto não pode levar a doadora abaixo de 1 PV.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d8 por nível acima do 3º.</p>
+		</description>
+		<sheet>
+			<description>✦ Doadora perde até 4d8 PV (Constituição para metade se não estiver disposta) e a receptora recupera a mesma quantia. Se a doadora for você e estiver disposto, dobra. Nunca leva a doadora abaixo de 1 PV.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Dividir a Vida" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_DIVIDIR_A_VIDA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p class="indent">Você amarra duas vitalidades numa só.</p>
+			<p class="indent">Toque duas criaturas dispostas, que podem incluir você. Enquanto durar, sempre que uma delas sofrer dano, metade desse dano é transferida para a outra e a primeira sofre só a outra metade. Cura recebida por qualquer uma das duas é dividida do mesmo jeito.</p>
+			<p class="indent">Se uma das duas cair a 0 PV, o vínculo se rompe e a outra sofre 4d10 de dano necrótico imediatamente.</p>
+			<p class="indent">Uma criatura só pode estar sob um vínculo por vez.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> A duração sobe para 8 horas no 7º nível.</p>
+		</description>
+		<sheet>
+			<description>✦ Duas criaturas dispostas dividem dano e cura pela metade. Se uma cair a 0 PV, o vínculo rompe e a outra sofre 4d10 necrótico.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Nome na Boca" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p class="indent">Você tira uma palavra de alguém.</p>
+			<p class="indent">Escolha uma criatura que possa ver e uma palavra que você tenha ouvido dela ou que saiba que ela conhece: um nome, um lugar, uma senha, um comando. A criatura faz teste de resistência de Inteligência.</p>
+			<p class="indent">Falhando, pelo próximo minuto ela não consegue dizer, escrever nem indicar aquela palavra, e sabe que existe algo que não está conseguindo dizer. Ela ainda pensa normalmente sobre o assunto.</p>
+			<p class="indent">Se a palavra for necessária para conjurar uma magia, ativar um item ou dar uma ordem específica, aquilo simplesmente não funciona.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Uma palavra adicional por nível acima do 1º.</p>
+		</description>
+		<sheet>
+			<description>✦ Resistência de Inteligência ou o alvo não consegue dizer, escrever nem indicar uma palavra por 1 minuto. Magia, item ou ordem que dependa dela não funciona.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Empréstimo de Perícia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTIMO_DE_PERICIA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Você pede emprestado o que outra pessoa sabe.</p>
+			<p class="indent">Toque uma criatura disposta. Escolha uma perícia ou proficiência com ferramenta em que ela seja proficiente. Enquanto durar, você ganha essa proficiência, e se ela tiver especialização você também tem.</p>
+			<p class="indent">Enquanto durar, a criatura que emprestou tem desvantagem em testes daquela perícia: ela sabe fazer, e não lembra como.</p>
+			<p class="indent">A criatura pode encerrar o empréstimo a qualquer momento, sem ação.</p>
+			<p class="indent">Esta é a única magia limpa da Via, e é limpa por um motivo só: exige que a pessoa queira.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Uma perícia adicional por dois níveis acima do 3º, da mesma criatura ou de outra.</p>
+		</description>
+		<sheet>
+			<description>Toque uma criatura disposta e pegue emprestada uma perícia ou proficiência com ferramenta dela, com especialização se ela tiver. Ela fica com desvantagem naquela perícia enquanto durar.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 10 minutos</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Segunda Voz" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_SEGUNDA_VOZ">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p class="indent">Você deixa uma voz dentro de alguém.</p>
+			<p class="indent">Toque uma criatura e sussurre uma instrução de até uma frase, que deve soar razoável. A criatura faz teste de resistência de Sabedoria, com vantagem se a instrução for claramente contra os interesses dela.</p>
+			<p class="indent">Falhando, ela carrega a instrução por até 30 dias. Ela não a obedece o tempo todo: ela a obedece quando as circunstâncias que você descreveu acontecerem, e nesse momento acredita que a ideia é dela.</p>
+			<p class="indent">Depois de executada uma vez, a magia termina. A criatura lembra do que fez e não lembra de por quê.</p>
+			<p class="indent">Uma criatura só pode carregar uma Segunda Voz por vez, e Restauração Maior ou Dissipar Magia encerram o efeito.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> A duração sobe para 1 ano no 7º nível.</p>
+		</description>
+		<sheet>
+			<description>✦ Resistência de Sabedoria (vantagem se for contra os interesses dela) ou carrega uma instrução por 30 dias, executada quando as circunstâncias acontecerem. Uma por criatura.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 minuto</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">30 dias</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Adiamento" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p class="indent">Você adia a cobrança por alguns segundos.</p>
+			<p class="indent">A criatura não cai: fica com 1 PV até o fim do próximo turno dela, e sabe exatamente quanto tempo tem.</p>
+			<p class="indent">Ao fim desse prazo, se ainda estiver com 1 PV e não tiver recebido cura, ela cai automaticamente e falha em um teste de resistência contra a morte.</p>
+			<p class="indent">Funciona em aliado, em inimigo, e em você. Não funciona duas vezes na mesma criatura entre descansos longos.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> A criatura fica com PV iguais ao nível de magia usado, em vez de 1.</p>
+		</description>
+		<sheet>
+			<description>✦ Reação quando alguém cai a 0 PV: fica com 1 PV até o fim do próximo turno dele. Sem cura até lá, cai e falha um teste contra a morte. 1× por criatura entre descansos longos.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reação, que você toma quando uma criatura que possa ver é reduzida a 0 pontos de vida</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">1 rodada</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="Inventário de Ossos" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_INVENTARIO_DE_OSSOS">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p class="indent">Você faz a contagem do que já foi cobrado.</p>
+			<p class="indent">Você percebe, num raio de 300 metros atravessando pedra e terra, cada corpo morto que houver: quantos são, a que profundidade estão, há quanto tempo morreram por faixa, e se algum deles não desceu como deveria.</p>
+			<p class="indent">Corpo que foi erguido, espírito que foi segurado ou morto que está sob efeito parecido aparecem marcados como conta em aberto, e você sabe a direção de cada um.</p>
+			<p class="indent">Não revela nomes, causas de morte nem o que enterraram junto.</p>
+			<p class="indent">É a única magia limpa da Via, e a razão é técnica: contar não é atrasar.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O raio dobra por nível acima do 3º.</p>
+		</description>
+		<sheet>
+			<description>Percebe cada corpo morto num raio de 300 m atravessando pedra e terra: quantos, a que profundidade, há quanto tempo, e quais são conta em aberto, com a direção de cada um.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">10 minutos</set>
+			<set name="range">300 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+
+	<element name="A Conta Aberta" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_A_CONTA_ABERTA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p class="indent">Você declara que uma dívida não vai ser paga hoje.</p>
+			<p class="indent">Escolha até três criaturas mortas há no máximo 10 dias que possa ver. Elas se levantam imediatamente com metade dos PV que tinham em vida, mantêm as estatísticas que tinham, e agem no seu turno seguindo suas ordens, sem precisar de nova ação para comandá-las.</p>
+			<p class="indent">Elas não são mortos-vivos comuns: mantêm a perícia, o idioma e o ofício que tinham, e obedecem literalmente, sem iniciativa própria.</p>
+			<p class="indent">Ao fim da duração, todas as três caem de volta e não podem ser erguidas de novo por meio nenhum, incluindo Erguer Morto. A conta fecha de vez.</p>
+			<p class="indent">Cada criatura erguida conta como um uso separado para o limiar gratuito da sua Via.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Uma criatura adicional por nível acima do 5º.</p>
+		</description>
+		<sheet>
+			<description>✦ Ergue até 3 mortos de no máximo 10 dias com metade dos PV e as estatísticas, perícia e ofício que tinham. Ao fim caem de vez e não podem ser erguidos por meio nenhum. Cada um conta como um uso ✦.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+</elements>
