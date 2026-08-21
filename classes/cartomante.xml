@@ -41,6 +41,7 @@
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_A_MAO" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CORTE_DO_BARALHO" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_QUEIMADA" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_NAIPE_REGENTE" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_FIRME" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_NA_MANGA" />
@@ -73,6 +74,7 @@
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_A_MAO" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CORTE_DO_BARALHO" level="2" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_QUEIMADA" level="3" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_NAIPE_REGENTE" level="3" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI" level="4" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_MAO_FIRME" level="5" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_NA_MANGA" level="7" />
@@ -230,6 +232,20 @@
 		<sheet alt="Carta Queimada" usage="{{proficiency}} ✦/Descanso Longo">
 			<description>Limiar gratuito de efeitos ✦ igual ao bônus de proficiência; além disso, 1 nível de Fardo por uso. Todo efeito ✦ queima a carta, que sai do baralho até ser repintada. Não há recuperação automática.</description>
 		</sheet>
+	</element>
+
+	<!-- ======================= NAIPE REGENTE ======================= -->
+
+	<element name="Naipe Regente" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_NAIPE_REGENTE">
+		<description>
+			<p>No 3º nível você descobre qual naipe rege você. Não é escolha de estilo: é o naipe que insiste em aparecer desde a primeira vez que você embaralhou, e a essa altura já não dá para fingir que é coincidência.</p>
+			<p class="indent">Esta é a única escolha de subclasse da classe. Uma vez feita, é permanente, e você ganha as características dos níveis 3, 6, 10 e 14 automaticamente.</p>
+			<p class="indent">O Naipe Regente também é o naipe que <i>O Baralho Completo</i>, no 18º nível, abre inteiro para você.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Naipe Regente" supports="Naipe Regente" />
+		</rules>
 	</element>
 
 	<!-- ======================= DEMAIS CARACTERÍSTICAS ======================= -->

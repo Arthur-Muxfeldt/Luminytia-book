@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Naipe de Espadas</name>
+		<description>As catorze cartas de Espadas lidas direitas, do Ás ao Rei. Ar: intelecto, conflito, verdade, palavra, decisão. Lista do Cartomante de Luminytia.</description>
+		<update version="0.1.0">
+			<file name="magias/espadas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/espadas.xml" />
+		</update>
+	</info>
+
+	<!-- ÁS DE ESPADAS -->
+	<element name="Fio da Verdade" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_FIO_DA_VERDADE">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Ás de Espadas, lida direita.</i></p>
+			<p>Uma lâmina fina de pensamento corta o ar. Faça uma jogada de ataque mágico à distância. Acertando, o alvo sofre 1d10 de dano psíquico.</p>
+			<p class="indent">Até o fim do seu próximo turno, ele não pode se esconder de você nem se beneficiar de invisibilidade contra você: o corte abriu uma verdade que não fecha na hora.</p>
+			<p class="indent">O dano sobe para 2d10 no 5º nível, 3d10 no 11º e 4d10 no 17º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Fio Cego</i>.</p>
+		</description>
+		<sheet>
+			<description>Ataque mágico à distância: 1d10 psíquico. Até o fim do seu próximo turno o alvo não pode se esconder de você nem se beneficiar de invisibilidade contra você.</description>
+			<description level="5">Ataque mágico à distância: 2d10 psíquico. Até o fim do seu próximo turno o alvo não pode se esconder de você nem se beneficiar de invisibilidade contra você.</description>
+			<description level="11">Ataque mágico à distância: 3d10 psíquico. Até o fim do seu próximo turno o alvo não pode se esconder de você nem se beneficiar de invisibilidade contra você.</description>
+			<description level="17">Ataque mágico à distância: 4d10 psíquico. Até o fim do seu próximo turno o alvo não pode se esconder de você nem se beneficiar de invisibilidade contra você.</description>
+		</sheet>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 2 DE ESPADAS -->
+	<element name="Venda nos Olhos" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_VENDA_NOS_OLHOS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>2 de Espadas, lida direita.</i></p>
+			<p>A mulher da carta cruza as duas lâminas e não escolhe nenhuma. Uma criatura que você possa ver faz um teste de resistência de Sabedoria.</p>
+			<p class="indent">Falhando, ela não confia mais no que vê: fica com desvantagem nas jogadas de ataque e não pode fazer reações que dependam de enxergar, incluindo ataques de oportunidade.</p>
+			<p class="indent">O alvo repete o teste no fim de cada turno dele, encerrando o efeito com um sucesso.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais um alvo por nível acima do 1º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Venda Arrancada</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou o alvo fica com desvantagem em ataques e sem reações que dependam de enxergar, inclusive ataques de oportunidade. Repete o teste no fim de cada turno dele.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 3 DE ESPADAS -->
+	<element name="Três Espadas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_TRES_ESPADAS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>3 de Espadas, lida direita.</i></p>
+			<p>Três lâminas atravessam um coração que não está em lugar nenhum. Uma criatura que você possa ver faz um teste de resistência de Sabedoria, sofrendo 3d6 de dano psíquico e ficando com desvantagem na próxima jogada de ataque dela, ou metade do dano e sem desvantagem num sucesso.</p>
+			<p class="indent">Se houver uma criatura aliada do alvo a até 1,5 metro dele, o dano aumenta em 1d6: dói mais na frente de quem importa.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d6 por nível acima do 1º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Coração Costurado</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou 3d6 psíquico e desvantagem na próxima jogada de ataque; metade e sem desvantagem num sucesso. +1d6 se houver aliado do alvo a 1,5 m dele.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 4 DE ESPADAS -->
+	<element name="Repouso do Cavaleiro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_REPOUSO_DO_CAVALEIRO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>4 de Espadas, lida direita.</i></p>
+			<p>O cavaleiro da carta não está morto: está deitado, de mãos postas, esperando passar. Uma criatura voluntária que você toque cai em repouso e fica inconsciente durante a duração.</p>
+			<p class="indent">Enquanto repousa, ela não pode ser acordada por barulho nem por sacudida, ataques contra ela não ganham vantagem por ela estar inconsciente, e ela não pode ser alvo de ataques de oportunidade.</p>
+			<p class="indent">Se ela chegar ao fim do minuto sem sofrer dano, acorda com os benefícios de um <strong>descanso curto</strong>. Se sofrer qualquer dano antes disso, acorda na hora e não ganha nada.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais uma criatura por nível acima do 2º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Vigília Forçada</i>.</p>
+		</description>
+		<sheet>
+			<description>Criatura voluntária fica inconsciente por 1 minuto, sem poder ser acordada e sem conceder vantagem a ataques. Completando o minuto sem sofrer dano, acorda com os benefícios de um descanso curto.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 5 DE ESPADAS -->
+	<element name="Vitória Vazia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_VITORIA_VAZIA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>5 de Espadas, lida direita.</i></p>
+			<p>O sujeito da carta fica com todas as espadas do campo e com ninguém para contar. Quando uma criatura que você possa ver acerta um ataque, você toma o ganho dela para si.</p>
+			<p class="indent">Ela faz um teste de resistência de Carisma. Falhando, o ataque acerta mas <b>não causa dano nenhum</b>, e você ganha pontos de vida temporários iguais ao dano que ela teria causado.</p>
+			<p class="indent">Num sucesso, o dano acontece normalmente e você ainda ganha pontos de vida temporários iguais ao seu modificador de Sabedoria.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Você pode afetar mais um ataque, do mesmo gatilho, por nível acima do 2º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Derrota Bem Paga</i>.</p>
+		</description>
+		<sheet usage="Reação">
+			<description>Reação quando uma criatura acerta um ataque: resistência de Carisma ou o ataque não causa dano e você ganha PV temporários iguais ao dano evitado. Num sucesso, você ainda ganha PV temporários iguais ao seu modificador de Sabedoria.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 reação, que você toma quando uma criatura que possa ver acerta um ataque</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 6 DE ESPADAS -->
+	<element name="A Travessia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_A_TRAVESSIA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>6 de Espadas, lida direita.</i></p>
+			<p>A barca passa da água agitada para a água parada, e ninguém a bordo olha para trás. Você e até cinco criaturas voluntárias a até 9 metros de você são levadas para um espaço livre que você possa ver, a até 30 metros.</p>
+			<p class="indent">A travessia não provoca ataques de oportunidade. Cada criatura levada tem resistência a todo dano até o início do próximo turno dela.</p>
+			<p class="indent">Se todas as criaturas levadas estiverem se afastando de uma criatura hostil, a resistência dura até o fim do próximo turno de cada uma.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Águas Revoltas</i>.</p>
+		</description>
+		<sheet>
+			<description>Você e até 5 criaturas voluntárias a 9 m vão para um espaço livre a até 30 m, sem provocar oportunidade. Cada uma tem resistência a todo dano até o início do próximo turno dela.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 7 DE ESPADAS -->
+	<element name="Sete Espadas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_SETE_ESPADAS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>7 de Espadas, lida direita.</i></p>
+			<p>O ladrão da carta leva cinco e deixa duas fincadas, porque carregar as sete seria confessar. Escolha uma criatura que possa ver: ela faz um teste de resistência de Destreza.</p>
+			<p class="indent">Falhando, um objeto que ela carregue, à sua escolha, some da posse dela e aparece na sua mão. Não funciona com objetos maiores que você consiga segurar com uma mão, nem com o que estiver preso ao corpo dela por magia.</p>
+			<p class="indent">Tendo sucesso ou não, você fica invisível até o fim do seu próximo turno ou até atacar, conjurar uma magia ou falar acima de um sussurro.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>As Duas Que Ficaram</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Destreza ou você rouba à distância um objeto de uma mão que o alvo carrega, que aparece na sua mão. De qualquer forma, você fica invisível até o fim do seu próximo turno ou até atacar, conjurar ou falar alto.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 8 DE ESPADAS -->
+	<element name="O Cerco de Lâminas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_CERCO_DE_LAMINAS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>8 de Espadas, lida direita.</i></p>
+			<p>Oito espadas fincadas em volta, e nenhuma delas encostando. A prisão da carta é a que a pessoa acredita. Uma criatura que você possa ver faz um teste de resistência de Sabedoria.</p>
+			<p class="indent">Falhando, ela fica impedida por lâminas que só ela vê. Se tentar se mover enquanto estiver assim, ela sofre 4d8 de dano psíquico e o movimento é perdido.</p>
+			<p class="indent">Ela repete o teste no fim de cada turno dela. Ela também pode gastar a ação dela para examinar o cerco com um teste de Inteligência (Investigação) contra a sua CD: passando, entende que as lâminas não são reais e a magia acaba para ela.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais um alvo por nível acima do 4º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Corda Solta</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou fica impedido por lâminas ilusórias; tentar mover-se custa 4d8 psíquico e perde o movimento. Repete o teste no fim de cada turno, ou gasta a ação num teste de Investigação para desfazer.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 9 DE ESPADAS -->
+	<element name="A Noite em Claro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_NOITE_EM_CLARO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>9 de Espadas, lida direita.</i></p>
+			<p>A figura senta na cama no escuro com as mãos no rosto, e as nove espadas estão penduradas na parede, onde sempre estiveram. Uma criatura que você possa ver faz um teste de resistência de Sabedoria.</p>
+			<p class="indent">Falhando, ela fica amedrontada durante a duração e sofre 4d10 de dano psíquico no fim de cada turno dela. Enquanto durar, ela não recupera pontos de vida por nenhum meio e não se beneficia de descanso.</p>
+			<p class="indent">Ela repete o teste no fim de cada turno dela, encerrando o efeito com um sucesso.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d10 por nível acima do 4º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Primeiro Sono</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou fica amedrontado, sofre 4d10 psíquico no fim de cada turno dele e não recupera PV por meio nenhum. Repete o teste no fim de cada turno dele.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 10 DE ESPADAS -->
+	<element name="Dez nas Costas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_DEZ_NAS_COSTAS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>10 de Espadas, lida direita.</i></p>
+			<p>O corpo caído com dez lâminas nas costas e o sol nascendo atrás dele. É a carta do fim definitivo, e ela não finge ser outra coisa.</p>
+			<p class="indent">Escolha uma criatura que possa ver. Dez espadas caem sobre ela: teste de resistência de Destreza, sofrendo 12d6 de dano perfurante, metade num sucesso.</p>
+			<p class="indent">Se o alvo estiver amedrontado, enfeitiçado, impedido, paralisado, caído ou inconsciente, ele <b>falha automaticamente</b>. Quem já está no chão não desvia de dez.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +2d6 por nível acima do 5º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Aurora Depois</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Destreza ou 12d6 perfurante, metade num sucesso. Falha automática se o alvo estiver amedrontado, enfeitiçado, impedido, paralisado, caído ou inconsciente.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">45 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- VALETE DE ESPADAS -->
+	<element name="O Vigia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_O_VIGIA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Valete de Espadas, lida direita.</i></p>
+			<p>O pajem da carta está no alto do morro, de espada erguida, olhando o horizonte por gente que ainda não chegou. Você conjura um vigia de vento e vidro num espaço que possa ver.</p>
+			<p class="indent">Ele é invisível para todos menos para você, tem CA 15, 20 pontos de vida e deslocamento de voo de 18 metros, e se move com sua ação bônus. Você pode ver e ouvir por ele à vontade.</p>
+			<p class="indent">Num raio de 18 metros do vigia, criaturas hostis não conseguem ficar escondidas nem invisíveis para você, e nem você nem seus aliados podem ser surpreendidos.</p>
+			<p class="indent">Uma vez por turno, quando uma criatura a até 9 metros do vigia faz uma jogada de ataque, ele pode usar a reação dele para impor desvantagem nessa jogada.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Vigia Comprado</i>.</p>
+		</description>
+		<sheet>
+			<description>Vigia invisível (CA 15, 20 PV, voo 18 m), movido com ação bônus, pelo qual você vê e ouve. Num raio de 18 m dele, hostis não ficam escondidos ou invisíveis para você e ninguém do grupo é surpreendido. 1×/turno, reação dele impõe desvantagem num ataque a 9 m.</description>
+		</sheet>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Divination</set>
+			<set name="time">1 ação</set>
+			<set name="range">27 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- CAVALEIRO DE ESPADAS -->
+	<element name="A Carga Sem Rédea" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_CARGA_SEM_REDEA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Cavaleiro de Espadas, lida direita.</i></p>
+			<p>O cavaleiro mais rápido do baralho, e o único que não olha para os lados. Seu deslocamento dobra, você não provoca ataques de oportunidade e pode se mover pelo espaço de outras criaturas.</p>
+			<p class="indent">Uma vez por turno para cada criatura, quando você passa pelo espaço de uma criatura ou termina o movimento adjacente a ela, ela faz um teste de resistência de Destreza, sofrendo 4d8 de dano cortante, metade num sucesso.</p>
+			<p class="indent">A carta não sabe parar: se você terminar um turno sem ter se movido ao menos 9 metros, a magia acaba imediatamente.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Rédea Curta</i>.</p>
+		</description>
+		<sheet>
+			<description>Deslocamento dobrado, atravessa espaços e não provoca oportunidade. Cada criatura por cujo espaço você passa ou de quem termina adjacente: Destreza ou 4d8 cortante (1×/turno por criatura). Terminar um turno sem mover 9 m encerra a magia.</description>
+		</sheet>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- RAINHA DE ESPADAS -->
+	<element name="Sentença" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_SENTENCA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rainha de Espadas, lida direita.</i></p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar e queima a carta, que sai do baralho até ser repintada.</p>
+			<p class="indent">A Rainha de Espadas é a única figura do baralho que olha de frente e não sorri. Ela não pune: ela corta fora.</p>
+			<p class="indent">Escolha uma criatura que possa ver e nomeie em voz alta <b>uma coisa</b> que ela sabe: um idioma que ela fala, uma perícia em que é proficiente, uma magia que ela conhece, ou o nome de uma criatura de quem ela gosta.</p>
+			<p class="indent">Ela faz um teste de resistência de Carisma. Falhando, sofre 10d8 de dano psíquico e aquilo é <b>cortado dela permanentemente</b>. Ela não perde a memória de ter perdido: ela simplesmente nunca soube. Ninguém em volta esquece junto, e é aí que a carta machuca.</p>
+			<p class="indent">O que foi cortado só volta com <i>desejo</i>, ou com <i>restauração maior</i> conjurada por alguém que saiba dizer exatamente o que foi tirado.</p>
+			<p class="indent">Num sucesso, o alvo sofre metade do dano e nada é cortado.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Sentença Cassada</i>.</p>
+		</description>
+		<sheet>
+			<description>✦ Nomeie um idioma, perícia, magia conhecida ou afeto do alvo. Resistência de Carisma ou 10d8 psíquico e aquilo é cortado permanentemente, como se nunca tivesse existido nele. Só volta com desejo ou restauração maior de quem saiba o que foi tirado. Queima a carta.</description>
+		</sheet>
+		<setters>
+			<set name="level">8</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- REI DE ESPADAS -->
+	<element name="O Juízo" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_O_JUIZO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rei de Espadas, lida direita.</i></p>
+			<p>O rei sentado de frente, espada na vertical, sem nenhum enfeite. Você declara uma lei em voz alta e ela passa a valer numa esfera de 30 metros de raio centrada num ponto que possa ver. Escolha uma:</p>
+			<ul>
+				<li><strong>Ninguém ataca.</strong> Nenhuma criatura sujeita pode fazer jogadas de ataque.</li>
+				<li><strong>Ninguém conjura.</strong> Nenhuma criatura sujeita pode conjurar magias.</li>
+				<li><strong>Ninguém corre.</strong> Nenhuma criatura sujeita pode se mover mais que metade do deslocamento dela nem usar a ação de Disparada.</li>
+				<li><strong>Ninguém mente.</strong> Nenhuma criatura sujeita pode dizer o que sabe ser falso, nem por omissão deliberada.</li>
+			</ul>
+			<p class="indent">Ao conjurar, e depois sempre que começar o turno dentro da área, cada criatura hostil faz um teste de resistência de Sabedoria e fica sujeita à lei ao falhar. Aliados seus podem escolher falhar ou passar.</p>
+			<p class="indent">Uma criatura sujeita que tentar quebrar a lei <b>perde a ação</b> e sofre 12d8 de dano psíquico. Ela não é impedida de tentar: ela é julgada por ter tentado.</p>
+			<p class="indent">Você sabe, no instante em que acontece, quem quebrou a lei e o que estava tentando fazer.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Lei Sem Juiz</i>.</p>
+		</description>
+		<sheet>
+			<description>Esfera de 30 m com uma lei declarada: ninguém ataca, ninguém conjura, ninguém corre ou ninguém mente. Hostis fazem resistência de Sabedoria ao conjurar e ao começar o turno na área; sujeitos que quebrarem a lei perdem a ação e sofrem 12d8 psíquico. Você sabe quem quebrou e o que tentava fazer.</description>
+		</sheet>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">27 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+</elements>
