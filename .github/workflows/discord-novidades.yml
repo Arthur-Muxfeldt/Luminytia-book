@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # precisa do histórico para comparar os dois commits
+          fetch-depth: 0
 
       - name: Publicar novidades no Discord
         env:

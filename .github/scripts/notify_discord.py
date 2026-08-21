@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """Posta em um webhook do Discord o que mudou no livro de Luminytia.
 
 Compara os <element> de todos os XMLs entre dois commits e monta um resumo
@@ -24,7 +23,6 @@ import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 
-# Tipos que ganham linha própria no post; o resto vira contagem resumida.
 MAIN_TYPES = ("Source", "Class", "Archetype", "Race", "Background", "Feat",
               "Spell", "Magic Item", "Item", "Monster", "Companion")
 
@@ -55,12 +53,10 @@ SCHOOLS = {
     "Necromancy": "necromancia", "Transmutation": "transmutação",
 }
 
-COLOR = 0xE8B14A          # dourado de Luminytia
-MAX_EMBED_DESC = 3800     # limite do Discord é 4096; folga para o rodapé
+COLOR = 0xE8B14A
+MAX_EMBED_DESC = 3800
 NAMES_PER_SECTION = 40
 
-
-# ---------------------------------------------------------------- git
 
 def git(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(("git",) + args, capture_output=True, text=True)
@@ -83,8 +79,6 @@ def xml_files(ref: str) -> list[str]:
     out = git("ls-tree", "-r", "--name-only", ref).stdout
     return [line for line in out.splitlines() if line.endswith(".xml")]
 
-
-# ---------------------------------------------------------------- parsing
 
 def parse_elements(text: str | None, path: str) -> dict[str, dict]:
     els: dict[str, dict] = {}
@@ -131,8 +125,6 @@ def index_version(ref: str | None) -> str | None:
         return None
     return node.get("version") if node is not None else None
 
-
-# ---------------------------------------------------------------- texto
 
 def plural(typ: str, n: int) -> str:
     sing, plur = PT.get(typ, (typ.lower(), typ.lower()))
@@ -205,8 +197,6 @@ def chunk(lines: list[str]) -> list[str]:
     return chunks
 
 
-# ---------------------------------------------------------------- envio
-
 def post(webhook: str, payload: dict) -> None:
     data = json.dumps(payload).encode("utf-8")
     headers = {"Content-Type": "application/json", "User-Agent": "luminytia-book/1.0"}
@@ -233,8 +223,6 @@ def post(webhook: str, payload: dict) -> None:
             time.sleep(2 * (attempt + 1))
     raise SystemExit("::error::não consegui falar com o Discord depois de 5 tentativas")
 
-
-# ---------------------------------------------------------------- main
 
 def main() -> int:
     webhook = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()

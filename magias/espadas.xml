@@ -8,7 +8,6 @@
 		</update>
 	</info>
 
-	<!-- ÁS DE ESPADAS -->
 	<element name="Fio da Verdade" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_FIO_DA_VERDADE">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -38,7 +37,6 @@
 		</setters>
 	</element>
 
-	<!-- 2 DE ESPADAS -->
 	<element name="Venda nos Olhos" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_VENDA_NOS_OLHOS">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -67,7 +65,6 @@
 		</setters>
 	</element>
 
-	<!-- 3 DE ESPADAS -->
 	<element name="Três Espadas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_TRES_ESPADAS">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -94,7 +91,6 @@
 		</setters>
 	</element>
 
-	<!-- 4 DE ESPADAS -->
 	<element name="Repouso do Cavaleiro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_REPOUSO_DO_CAVALEIRO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -122,7 +118,6 @@
 		</setters>
 	</element>
 
-	<!-- 5 DE ESPADAS -->
 	<element name="Vitória Vazia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_VITORIA_VAZIA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -150,7 +145,6 @@
 		</setters>
 	</element>
 
-	<!-- 6 DE ESPADAS -->
 	<element name="A Travessia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_A_TRAVESSIA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -177,7 +171,6 @@
 		</setters>
 	</element>
 
-	<!-- 7 DE ESPADAS -->
 	<element name="Sete Espadas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_SETE_ESPADAS">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -204,7 +197,6 @@
 		</setters>
 	</element>
 
-	<!-- 8 DE ESPADAS -->
 	<element name="O Cerco de Lâminas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_CERCO_DE_LAMINAS">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -233,7 +225,6 @@
 		</setters>
 	</element>
 
-	<!-- 9 DE ESPADAS -->
 	<element name="A Noite em Claro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_NOITE_EM_CLARO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -262,7 +253,6 @@
 		</setters>
 	</element>
 
-	<!-- 10 DE ESPADAS -->
 	<element name="Dez nas Costas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_DEZ_NAS_COSTAS">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -290,7 +280,6 @@
 		</setters>
 	</element>
 
-	<!-- VALETE DE ESPADAS -->
 	<element name="O Vigia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_O_VIGIA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -319,7 +308,6 @@
 		</setters>
 	</element>
 
-	<!-- CAVALEIRO DE ESPADAS -->
 	<element name="A Carga Sem Rédea" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_CARGA_SEM_REDEA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -347,7 +335,6 @@
 		</setters>
 	</element>
 
-	<!-- RAINHA DE ESPADAS -->
 	<element name="Sentença" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_SENTENCA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -377,7 +364,6 @@
 		</setters>
 	</element>
 
-	<!-- REI DE ESPADAS -->
 	<element name="O Juízo" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_ESPADAS_O_JUIZO">
 		<supports>Spell, Cartomante</supports>
 		<description>

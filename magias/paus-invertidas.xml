@@ -8,7 +8,6 @@
 		</update>
 	</info>
 
-	<!-- ÁS DE PAUS INVERTIDO -->
 	<element name="Faísca Frustrada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_FAISCA_FRUSTRADA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -38,7 +37,6 @@
 		</setters>
 	</element>
 
-	<!-- 2 DE PAUS INVERTIDO -->
 	<element name="Medo do Desconhecido" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_MEDO_DO_DESCONHECIDO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -67,7 +65,6 @@
 		</setters>
 	</element>
 
-	<!-- 3 DE PAUS INVERTIDO -->
 	<element name="Passo Travado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_PASSO_TRAVADO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -96,7 +93,6 @@
 		</setters>
 	</element>
 
-	<!-- 4 DE PAUS INVERTIDO -->
 	<element name="Fogueira Apagada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_FOGUEIRA_APAGADA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -125,7 +121,6 @@
 		</setters>
 	</element>
 
-	<!-- 5 DE PAUS INVERTIDO -->
 	<element name="Fim do Conflito" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_FIM_DO_CONFLITO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -153,7 +148,6 @@
 		</setters>
 	</element>
 
-	<!-- 6 DE PAUS INVERTIDO -->
 	<element name="Estandarte Sem Glória" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_ESTANDARTE_SEM_GLORIA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -182,7 +176,6 @@
 		</setters>
 	</element>
 
-	<!-- 7 DE PAUS INVERTIDO -->
 	<element name="Ceder Terreno" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_CEDER_TERRENO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -211,7 +204,6 @@
 		</setters>
 	</element>
 
-	<!-- 8 DE PAUS INVERTIDO -->
 	<element name="Salva Descontrolada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_SALVA_DESCONTROLADA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -239,7 +231,6 @@
 		</setters>
 	</element>
 
-	<!-- 9 DE PAUS INVERTIDO -->
 	<element name="Último Gesto" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_ULTIMO_GESTO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -267,7 +258,6 @@
 		</setters>
 	</element>
 
-	<!-- 10 DE PAUS INVERTIDO -->
 	<element name="Implosão" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_IMPLOSAO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -295,7 +285,6 @@
 		</setters>
 	</element>
 
-	<!-- VALETE DE PAUS INVERTIDO -->
 	<element name="Arauto Indócil" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_ARAUTO_INDOCIL">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -324,7 +313,6 @@
 		</setters>
 	</element>
 
-	<!-- CAVALEIRO DE PAUS INVERTIDO -->
 	<element name="Brasa Fincada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_BRASA_FINCADA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -352,7 +340,6 @@
 		</setters>
 	</element>
 
-	<!-- RAINHA DE PAUS INVERTIDA -->
 	<element name="Coroa Exigida" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_COROA_EXIGIDA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -382,7 +369,6 @@
 		</setters>
 	</element>
 
-	<!-- REI DE PAUS INVERTIDO -->
 	<element name="A Vontade Voltada Para Dentro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_VONTADE_VOLTADA_PARA_DENTRO">
 		<supports>Spell, Cartomante</supports>
 		<description>

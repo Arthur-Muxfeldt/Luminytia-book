@@ -97,8 +97,6 @@
 		</multiclass>
 	</element>
 
-	<!-- ======================= CONJURAÇÃO ======================= -->
-
 	<element name="Conjuração" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CONJURACAO">
 		<description>
 			<p>Você conjura lendo as cartas dos Arcanos menores. <strong>Sabedoria</strong> é sua habilidade de conjuração.</p>
@@ -145,8 +143,6 @@
 		</rules>
 	</element>
 
-	<!-- ======================= O BARALHO ======================= -->
-
 	<element name="O Baralho" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_O_BARALHO">
 		<description>
 			<p>Você não prepara magias: você <strong>conhece as cartas que pintou</strong>. Cada magia conhecida corresponde a uma carta física do seu baralho, pintada à mão numa tela de linho preparado do tamanho de uma palma, e você só conjura o que está lá.</p>
@@ -179,8 +175,6 @@
 		</rules>
 	</element>
 
-	<!-- ======================= A MÃO ======================= -->
-
 	<element name="A Mão" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_A_MAO">
 		<description>
 			<p>Ao terminar um descanso longo, você embaralha e compra uma mão de cartas igual ao seu <strong>bônus de proficiência</strong>. Anote cada carta comprada como <strong>direita</strong> ou <strong>invertida</strong> (vire de fato, ou role 1d2).</p>
@@ -198,8 +192,6 @@
 		</sheet>
 	</element>
 
-	<!-- ======================= CORTE DO BARALHO ======================= -->
-
 	<element name="Corte do Baralho" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CORTE_DO_BARALHO">
 		<description>
 			<p>No 2º nível, uma vez por descanso longo, você corta o baralho e faz uma pergunta sobre o que vai acontecer nas próximas <strong>24 horas</strong>, envolvendo um plano de ação concreto. O mestre responde com uma palavra: <strong>fortuna</strong>, <strong>ruína</strong>, <strong>ambas</strong> ou <strong>nada</strong>.</p>
@@ -209,8 +201,6 @@
 			<description>Pergunta sobre as próximas 24 horas envolvendo um plano concreto. O mestre responde: fortuna, ruína, ambas ou nada. Usos extras têm 25% cumulativo de vir aleatório.</description>
 		</sheet>
 	</element>
-
-	<!-- ======================= CARTA QUEIMADA E REPINTAR ======================= -->
 
 	<element name="Carta Queimada e Repintar" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_QUEIMADA">
 		<description>
@@ -234,8 +224,6 @@
 		</sheet>
 	</element>
 
-	<!-- ======================= NAIPE REGENTE ======================= -->
-
 	<element name="Naipe Regente" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_NAIPE_REGENTE">
 		<description>
 			<p>No 3º nível você descobre qual naipe rege você. Não é escolha de estilo: é o naipe que insiste em aparecer desde a primeira vez que você embaralhou, e a essa altura já não dá para fingir que é coincidência.</p>
@@ -247,8 +235,6 @@
 			<select type="Archetype" name="Naipe Regente" supports="Naipe Regente" />
 		</rules>
 	</element>
-
-	<!-- ======================= DEMAIS CARACTERÍSTICAS ======================= -->
 
 	<element name="Aumento de Atributo" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_ASI">
 		<description>

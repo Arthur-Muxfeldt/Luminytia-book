@@ -8,8 +8,6 @@
 		</update>
 	</info>
 
-	<!-- ============================ TRANSMUTAÇÃO ============================ -->
-
 	<element name="Via da Transmutação" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_TRANSMUTACAO">
 		<supports>Via de Ressonância</supports>
 		<description>
@@ -89,8 +87,6 @@
 		</sheet>
 	</element>
 
-	<!-- ============================ PIROMANCIA ============================ -->
-
 	<element name="Via da Piromancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_PIROMANCIA">
 		<supports>Via de Ressonância</supports>
 		<description>
@@ -167,8 +163,6 @@
 		</sheet>
 	</element>
 
-	<!-- ============================ VITAMANCIA ============================ -->
-
 	<element name="Via da Vitamancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_VITAMANCIA">
 		<supports>Via de Ressonância</supports>
 		<description>
@@ -240,8 +234,6 @@
 		</sheet>
 	</element>
 
-	<!-- ============================ ANIMANCIA ============================ -->
-
 	<element name="Via da Animancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_ANIMANCIA">
 		<supports>Via de Ressonância</supports>
 		<description>
@@ -306,8 +298,6 @@
 			<description>Projete sua alma no corpo de uma criatura disposta ou incapacitada a 9 m. Você usa os atributos físicos dela e mantém os seus mentais, características e magias. Seu corpo fica inconsciente e estável. Dura até 1 hora.</description>
 		</sheet>
 	</element>
-
-	<!-- ============================ NECROMANCIA ============================ -->
 
 	<element name="Via da Necromancia" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_VIA_NECROMANCIA">
 		<supports>Via de Ressonância</supports>
@@ -374,8 +364,6 @@
 			<description>Resistência a dano necrótico; você não pode ser amedrontado por mortos-vivos. Erga uma horda de até seis necrotralos que não contam no seu limite e duram 1 hora.</description>
 		</sheet>
 	</element>
-
-	<!-- ==================== MAGIAS DE VIA ==================== -->
 
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA">
 		<description>
@@ -501,8 +489,6 @@
 			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" spellcasting="Alquimista" prepared="true" level="17" />
 		</rules>
 	</element>
-
-	<!-- ==================== MAGIAS EXCLUSIVAS ==================== -->
 
 	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_EXCLUSIVAS">
 		<description>

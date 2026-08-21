@@ -8,7 +8,6 @@
 		</update>
 	</info>
 
-	<!-- ÁS DE OUROS -->
 	<element name="Semente de Chumbo" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_SEMENTE_DE_CHUMBO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -37,7 +36,6 @@
 		</setters>
 	</element>
 
-	<!-- 2 DE OUROS -->
 	<element name="As Duas Moedas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_AS_DUAS_MOEDAS">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -65,7 +63,6 @@
 		</setters>
 	</element>
 
-	<!-- 3 DE OUROS -->
 	<element name="Obra de Três" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_OBRA_DE_TRES">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -94,7 +91,6 @@
 		</setters>
 	</element>
 
-	<!-- 4 DE OUROS -->
 	<element name="Punho Fechado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_PUNHO_FECHADO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -121,7 +117,6 @@
 		</setters>
 	</element>
 
-	<!-- 5 DE OUROS -->
 	<element name="Fora da Janela" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_FORA_DA_JANELA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -150,7 +145,6 @@
 		</setters>
 	</element>
 
-	<!-- 6 DE OUROS -->
 	<element name="A Balança do Doador" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_BALANCA_DO_DOADOR">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -177,7 +171,6 @@
 		</setters>
 	</element>
 
-	<!-- 7 DE OUROS -->
 	<element name="A Espera da Colheita" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_ESPERA_DA_COLHEITA">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -206,7 +199,6 @@
 		</setters>
 	</element>
 
-	<!-- 8 DE OUROS -->
 	<element name="Martelo do Aprendiz" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_MARTELO_DO_APRENDIZ">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -235,7 +227,6 @@
 		</setters>
 	</element>
 
-	<!-- 9 DE OUROS -->
 	<element name="O Jardim Murado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_JARDIM_MURADO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -262,7 +253,6 @@
 		</setters>
 	</element>
 
-	<!-- 10 DE OUROS -->
 	<element name="O Patrimônio" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_O_PATRIMONIO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -290,7 +280,6 @@
 		</setters>
 	</element>
 
-	<!-- VALETE DE OUROS -->
 	<element name="O Aprendiz de Barro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_APRENDIZ_DE_BARRO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -319,7 +308,6 @@
 		</setters>
 	</element>
 
-	<!-- CAVALEIRO DE OUROS -->
 	<element name="Passo de Ferro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_PASSO_DE_FERRO">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -347,7 +335,6 @@
 		</setters>
 	</element>
 
-	<!-- RAINHA DE OUROS -->
 	<element name="O Toque de Ouros" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_TOQUE_DE_OUROS">
 		<supports>Spell, Cartomante</supports>
 		<description>
@@ -377,7 +364,6 @@
 		</setters>
 	</element>
 
-	<!-- REI DE OUROS -->
 	<element name="A Montanha Obedece" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_A_MONTANHA_OBEDECE">
 		<supports>Spell, Cartomante</supports>
 		<description>

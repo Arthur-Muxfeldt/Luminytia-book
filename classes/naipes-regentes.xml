@@ -8,8 +8,6 @@
 		</update>
 	</info>
 
-	<!-- ============================ PAUS ============================ -->
-
 	<element name="Naipe Regente: Paus" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_NAIPE_PAUS">
 		<supports>Naipe Regente</supports>
 		<description>
@@ -105,8 +103,6 @@
 			<description>Imune a dano de fogo e não pode ficar amedrontado. 1×/descanso longo, conjure uma carta de Paus sem gastar espaço de magia (efeitos ✦ ainda queimam a carta e cobram Fardo).</description>
 		</sheet>
 	</element>
-
-	<!-- ============================ OUROS ============================ -->
 
 	<element name="Naipe Regente: Ouros" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_NAIPE_OUROS">
 		<supports>Naipe Regente</supports>
