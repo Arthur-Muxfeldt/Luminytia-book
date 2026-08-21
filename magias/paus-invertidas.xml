@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Naipe de Paus (Invertido)</name>
+		<description>As catorze cartas de Paus lidas ao contrário, do Ás ao Rei. O mesmo fogo virado do avesso: o que não pega, o que não anda, o que queima para dentro. Lista do Cartomante de Luminytia.</description>
+		<update version="0.1.0">
+			<file name="magias/paus-invertidas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus-invertidas.xml" />
+		</update>
+	</info>
+
+	<!-- ÁS DE PAUS INVERTIDO -->
+	<element name="Faísca Frustrada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_FAISCA_FRUSTRADA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Ás de Paus, lida ao contrário.</i></p>
+			<p>A faísca sai, mas não pega. Faça uma jogada de ataque mágico à distância. Acertando, o alvo sofre 1d8 de dano de fogo e não pode fazer reações até o fim do próximo turno dele: o gesto morreu na mão.</p>
+			<p class="indent">Você também apaga qualquer chama não mágica num cubo de 1,5 metro dentro do alcance, e fontes de luz mágicas de 1º nível ou menos se apagam.</p>
+			<p class="indent">O dano sobe para 2d8 no 5º nível, 3d8 no 11º e 4d8 no 17º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Faísca</i>.</p>
+		</description>
+		<sheet>
+			<description>Ataque mágico à distância: 1d8 de fogo e o alvo não pode fazer reações até o fim do próximo turno dele. Apaga chamas não mágicas num cubo de 1,5 m e luz mágica de 1º nível ou menos.</description>
+			<description level="5">Ataque mágico à distância: 2d8 de fogo e o alvo não pode fazer reações até o fim do próximo turno dele. Apaga chamas não mágicas num cubo de 1,5 m e luz mágica de 1º nível ou menos.</description>
+			<description level="11">Ataque mágico à distância: 3d8 de fogo e o alvo não pode fazer reações até o fim do próximo turno dele. Apaga chamas não mágicas num cubo de 1,5 m e luz mágica de 1º nível ou menos.</description>
+			<description level="17">Ataque mágico à distância: 4d8 de fogo e o alvo não pode fazer reações até o fim do próximo turno dele. Apaga chamas não mágicas num cubo de 1,5 m e luz mágica de 1º nível ou menos.</description>
+		</sheet>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 2 DE PAUS INVERTIDO -->
+	<element name="Medo do Desconhecido" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_MEDO_DO_DESCONHECIDO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>2 de Paus, lida ao contrário.</i></p>
+			<p>Em vez de mostrar o horizonte, a carta esconde o que já estava ali. Uma criatura que você possa ver faz um teste de resistência de Sabedoria.</p>
+			<p class="indent">Falhando, ela fica amedrontada <b>enquanto não conseguir ver você</b>. No instante em que puser os olhos em você, o medo passa, e ela repete o teste no fim daquele turno, encerrando o efeito com um sucesso.</p>
+			<p class="indent">Enquanto estiver amedrontada assim, ela não consegue se aproximar voluntariamente do último ponto em que viu você.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais um alvo por nível acima do 1º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Vislumbre do Horizonte</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou o alvo fica amedrontado enquanto não conseguir ver você, sem poder se aproximar do último ponto onde viu você. Vendo você, o medo passa e ele repete o teste.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 3 DE PAUS INVERTIDO -->
+	<element name="Passo Travado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_PASSO_TRAVADO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>3 de Paus, lida ao contrário.</i></p>
+			<p>Escolha até três criaturas que possa ver. Cada uma faz um teste de resistência de Força. Falhando, tem o deslocamento reduzido à metade e não pode usar a ação de Disparada durante a duração.</p>
+			<p class="indent">Na primeira vez que uma criatura afetada acertar um ataque, ela perde 1d6 do dano causado, com mínimo de 1: a força chega atrasada.</p>
+			<p class="indent">O alvo repete o teste no fim de cada turno dele, encerrando o efeito com um sucesso.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais uma criatura por nível acima do 1º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Sinal de Avanço</i>.</p>
+		</description>
+		<sheet>
+			<description>Até 3 criaturas: resistência de Força ou deslocamento pela metade e sem Disparada. O primeiro acerto de cada uma perde 1d6 de dano. Repetem o teste no fim de cada turno delas.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 4 DE PAUS INVERTIDO -->
+	<element name="Fogueira Apagada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_FOGUEIRA_APAGADA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>4 de Paus, lida ao contrário.</i></p>
+			<p>Um monte de cinzas frias ocupa um cubo de 1,5 metro. A luz num raio de 9 metros cai um grau: luz intensa vira fraca, luz fraca vira escuridão. Luz mágica de 2º nível ou menor não acende ali.</p>
+			<p class="indent">Criaturas hostis que comecem o turno a até 3 metros das cinzas fazem um teste de resistência de Constituição, sofrendo 2d6 de dano de frio e perdendo todos os pontos de vida temporários, ou metade do dano e mantendo os temporários num sucesso.</p>
+			<p class="indent">Ninguém completa um descanso curto a até 9 metros das cinzas.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d6 por nível acima do 2º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Fogueira Festiva</i>.</p>
+		</description>
+		<sheet>
+			<description>Cinzas frias em cubo de 1,5 m: luz cai um grau num raio de 9 m. Hostis que comecem o turno a 3 m: Constituição ou 2d6 de frio e perdem os PV temporários. Ninguém descansa curto a 9 m.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 10 minutos</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 5 DE PAUS INVERTIDO -->
+	<element name="Fim do Conflito" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_FIM_DO_CONFLITO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>5 de Paus, lida ao contrário.</i></p>
+			<p>A rixa cansa e a carta impõe a trégua. Uma criatura que possa ver faz um teste de resistência de Sabedoria. Falhando, durante a duração ela não pode usar a ação de Ataque nem conjurar magias que causem dano.</p>
+			<p class="indent">A trégua é frágil: o efeito termina imediatamente se a criatura sofrer qualquer dano. Ela também repete o teste no fim de cada turno dela, encerrando o efeito com um sucesso.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais uma criatura por nível acima do 2º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Rixa</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou o alvo não pode usar a ação de Ataque nem conjurar magias de dano. Acaba na hora se ele sofrer dano; ele também repete o teste no fim de cada turno dele.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 6 DE PAUS INVERTIDO -->
+	<element name="Estandarte Sem Glória" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_ESTANDARTE_SEM_GLORIA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>6 de Paus, lida ao contrário.</i></p>
+			<p>Você finca um estandarte queimado e caído, dessas insígnias que o exército derrotado deixa para trás. Ele ocupa um espaço de 1,5 metro.</p>
+			<p class="indent">Criaturas hostis a até 6 metros dele subtraem 1d4 das jogadas de ataque e têm desvantagem em testes de resistência contra ficar amedrontado. Elas não conseguem ganhar pontos de vida temporários enquanto estiverem nesse raio.</p>
+			<p class="indent">O estandarte tem CA 15, 20 PV e imunidade a fogo e a dano psíquico. Destruí-lo encerra a magia.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O raio aumenta em 3 metros por nível acima do 3º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Estandarte da Vitória</i>.</p>
+		</description>
+		<sheet>
+			<description>Estandarte caído: hostis a 6 m subtraem 1d4 dos ataques, têm desvantagem contra ficar amedrontados e não ganham PV temporários. CA 15, 20 PV, imune a fogo e psíquico.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 7 DE PAUS INVERTIDO -->
+	<element name="Ceder Terreno" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_CEDER_TERRENO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>7 de Paus, lida ao contrário.</i></p>
+			<p>Quem segura a posição morre nela. Enquanto durar, você não provoca ataques de oportunidade e pode usar a ação de Desengajar como ação bônus.</p>
+			<p class="indent">No fim de qualquer turno seu em que você tenha se afastado ao menos 3 metros de onde começou, você ganha +2 na CA e resistência a todo dano até o início do seu próximo turno.</p>
+			<p class="indent">Cada espaço que você deixa fica com brasa: a primeira criatura que entrar nele durante a duração sofre 1d8 de dano de fogo.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O dano da brasa sobe 1d8 por nível acima do 3º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Manter a Posição</i>.</p>
+		</description>
+		<sheet>
+			<description>Não provoca oportunidade e Desengajar vira ação bônus. Terminando o turno a 3 m ou mais de onde começou: +2 CA e resistência a todo dano até o início do próximo turno. Espaços deixados queimam a primeira criatura que entrar: 1d8 de fogo.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 8 DE PAUS INVERTIDO -->
+	<element name="Salva Descontrolada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_SALVA_DESCONTROLADA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>8 de Paus, lida ao contrário.</i></p>
+			<p>As oito faíscas viram doze e nenhuma obedece. Escolha um ponto que possa ver: cada criatura numa esfera de 6 metros de raio faz um teste de resistência de Destreza, sofrendo 10d6 de dano de fogo, metade num sucesso.</p>
+			<p class="indent">Você não escolhe alvos. Aliados, animais de carga e você, se estiver dentro da esfera, entram na conta como qualquer um.</p>
+			<p class="indent">Todo objeto inflamável na área que não esteja sendo carregado pega fogo.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d6 por nível acima do 4º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Salva Veloz</i>.</p>
+		</description>
+		<sheet>
+			<description>Esfera de 6 m: toda criatura dentro, amiga ou inimiga, faz resistência de Destreza ou sofre 10d6 de fogo, metade num sucesso. Objetos inflamáveis não carregados pegam fogo.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">36 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 9 DE PAUS INVERTIDO -->
+	<element name="Último Gesto" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_ULTIMO_GESTO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>9 de Paus, lida ao contrário.</i></p>
+			<p>A carta direita segura quem ia cair. Esta não segura: ela cobra o último gesto de quem já caiu.</p>
+			<p class="indent">A criatura que desencadeou a reação não é estabilizada nem recupera nada. Antes de apagar, ela faz imediatamente um ataque com arma ou conjura um truque, à escolha de quem a controla.</p>
+			<p class="indent">Em seguida, tudo o que ela ainda tinha queima: cada criatura hostil a até 3 metros dela faz um teste de resistência de Destreza, sofrendo 6d8 de dano de fogo, metade num sucesso. Se a criatura tiver morrido em vez de cair inconsciente, o dano sobe para 8d8.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +2d8 por nível acima do 4º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Última Barreira</i>.</p>
+		</description>
+		<sheet usage="Reação">
+			<description>Reação quando alguém cai a 0 PV: ela não é estabilizada, mas faz um ataque ou truque antes de apagar, e hostis a 3 m fazem resistência de Destreza ou sofrem 6d8 de fogo (8d8 se ela morreu), metade num sucesso.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reação, que você toma quando você ou uma criatura que possa ver cai a 0 pontos de vida</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 10 DE PAUS INVERTIDO -->
+	<element name="Implosão" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_IMPLOSAO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>10 de Paus, lida ao contrário.</i></p>
+			<p>O peso não cai em cima: ele puxa para dentro. Escolha um ponto que possa ver. Cada criatura numa esfera de 6 metros de raio faz um teste de resistência de Força.</p>
+			<p class="indent">Falhando, ela é arrastada em linha reta até o espaço livre mais próximo do ponto e sofre 6d10 de dano de concussão. Num sucesso, sofre metade do dano e não é arrastada.</p>
+			<p class="indent">Se três ou mais criaturas terminarem amontoadas a até 1,5 metro do ponto, cada uma delas sofre mais 2d10 de dano de concussão pelo aperto.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d10 por nível acima do 5º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Peso das Chamas</i>.</p>
+		</description>
+		<sheet>
+			<description>Esfera de 6 m: resistência de Força ou a criatura é arrastada até o ponto e sofre 6d10 de concussão, metade e sem arrasto num sucesso. Três ou mais amontoadas a 1,5 m do ponto sofrem mais 2d10.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">45 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- VALETE DE PAUS INVERTIDO -->
+	<element name="Arauto Indócil" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_ARAUTO_INDOCIL">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Valete de Paus, lida ao contrário.</i></p>
+			<p>Vem o mesmo arauto, e ele não te deve nada. Ele usa o bloco de estatísticas de um elemental do fogo, com vantagem em todas as jogadas de ataque e o dobro dos pontos de vida, e não é amistoso a ninguém.</p>
+			<p class="indent">No turno dele, ele ataca a criatura viva mais próxima, sem distinguir você dos seus. Com sua ação, você pode gastar o turno inteiro discutindo com ele: passando num teste de Sabedoria (CD 15), você escolhe o alvo dele naquele turno.</p>
+			<p class="indent">Se sua concentração cair, ele não desaparece: continua ali por 1 minuto, hostil a tudo, e só então se desfaz.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O ND do arauto sobe 1 por nível acima do 6º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Arauto da Faísca</i>.</p>
+		</description>
+		<sheet>
+			<description>Invoca um elemental do fogo hostil a tudo, com vantagem em ataques e o dobro de PV. Ele ataca a criatura viva mais próxima; sua ação + teste de Sabedoria CD 15 escolhe o alvo dele no turno. Concentração perdida: ele fica solto por 1 minuto.</description>
+		</sheet>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 minuto</set>
+			<set name="range">27 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- CAVALEIRO DE PAUS INVERTIDO -->
+	<element name="Brasa Fincada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_BRASA_FINCADA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Cavaleiro de Paus, lida ao contrário.</i></p>
+			<p>O cavaleiro desmonta e crava as botas no chão. Seu deslocamento vira 0 e você não pode se mover voluntariamente nem ser movido, empurrado, puxado ou teleportado por ninguém, nem por você mesmo.</p>
+			<p class="indent">Em troca, você ganha +3 na CA, resistência a dano de concussão, perfurante e cortante, imunidade a dano de fogo e vantagem em testes de resistência para manter a concentração.</p>
+			<p class="indent">Toda criatura que começar o turno a até 4,5 metros de você faz um teste de resistência de Destreza, sofrendo 4d6 de dano de fogo, metade num sucesso.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Carga Flamejante</i>.</p>
+		</description>
+		<sheet>
+			<description>Deslocamento 0 e não pode ser movido por nada. +3 CA, resistência a concussão/perfurante/cortante, imune a fogo, vantagem para manter concentração. Quem começar o turno a 4,5 m: Destreza ou 4d6 de fogo, metade num sucesso.</description>
+		</sheet>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- RAINHA DE PAUS INVERTIDA -->
+	<element name="Coroa Exigida" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_COROA_EXIGIDA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rainha de Paus, lida ao contrário.</i></p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar e queima a carta, que sai do baralho até ser repintada.</p>
+			<p class="indent">A Rainha direita manda. Esta cobra. Cada criatura hostil que possa ver você numa esfera de 9 metros de raio centrada em você faz um teste de resistência de Carisma. Falhando, fica <b>vassala</b> durante a duração.</p>
+			<p class="indent">Uma criatura vassala não pode atacar você nem seus aliados. No início de cada turno dela, ela deve pagar o tributo: ou usa a ação dela para Ajudar você ou um aliado seu, ou sofre 8d6 de dano psíquico.</p>
+			<p class="indent">Ela repete o teste sempre que sofrer dano vindo de qualquer outra fonte, encerrando o efeito sobre si com um sucesso.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O raio aumenta em 3 metros por nível acima do 8º.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>Coroa Ardente</i>.</p>
+		</description>
+		<sheet>
+			<description>✦ Hostis numa esfera de 9 m: resistência de Carisma ou ficam vassalas — não podem atacar você nem seus aliados e, a cada turno, ou usam a ação para Ajudar ou sofrem 8d6 psíquico. Repetem o teste ao sofrer dano de outra fonte. Queima a carta.</description>
+		</sheet>
+		<setters>
+			<set name="level">8</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">Pessoal (esfera de 9 metros)</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- REI DE PAUS INVERTIDO -->
+	<element name="A Vontade Voltada Para Dentro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_PAUS_INV_VONTADE_VOLTADA_PARA_DENTRO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rei de Paus, lida ao contrário.</i></p>
+			<p>O rei não queima o campo: queima a si mesmo. Todo o incêndio que ia para fora entra em você e fica.</p>
+			<p class="indent">Você ganha 60 pontos de vida temporários, imunidade a dano de fogo, e não pode ficar amedrontado nem enfeitiçado durante a duração.</p>
+			<p class="indent">Uma vez por turno, quando você acerta um ataque ou uma criatura falha num teste de resistência contra uma magia sua, o alvo sofre +4d6 de dano de fogo.</p>
+			<p class="indent">Toda criatura hostil que começar o turno a até 9 metros de você faz um teste de resistência de Destreza, sofrendo 6d6 de dano de fogo, metade num sucesso.</p>
+			<p class="indent">Quando a magia acaba, a conta chega: você sofre 6d6 de dano de fogo que não pode ser reduzido, evitado nem redirecionado de nenhuma forma, e ganha um nível de exaustão.</p>
+			<p class="indent">Lida direita, a mesma carta conjura <i>A Vontade Que Queima</i>.</p>
+		</description>
+		<sheet>
+			<description>60 PV temporários, imune a fogo, não fica amedrontado nem enfeitiçado. 1×/turno: +4d6 de fogo quando você acerta um ataque ou o alvo falha contra magia sua. Hostis que comecem o turno a 9 m: Destreza ou 6d6 de fogo. Ao acabar: você sofre 6d6 de fogo irredutível e um nível de exaustão.</description>
+		</sheet>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+</elements>
