@@ -265,16 +265,16 @@ def main() -> int:
         return 0
 
     lines: list[str] = []
-    lines += render_section(f"🟢 **Adicionado** ({len(added)})", added)
-    lines += render_section(f"🟡 **Alterado** ({len(changed)})", changed)
-    lines += render_section(f"🔴 **Removido** ({len(removed)})", removed)
+    lines += render_section(f"**Adicionado** ({len(added)})", added)
+    lines += render_section(f"**Alterado** ({len(changed)})", changed)
+    lines += render_section(f"**Removido** ({len(removed)})", removed)
 
     v_old, v_new = index_version(before), index_version(after)
-    title = "📖 Luminytia — o livro foi atualizado"
+    title = "Luminytia — o livro foi atualizado"
     if v_new and v_new != v_old:
-        title = f"📖 Luminytia {v_new} — o livro foi atualizado"
+        title = f"Luminytia {v_new} — o livro foi atualizado"
     if before is None:
-        title = "📖 Luminytia — o livro foi publicado"
+        title = "Luminytia — o livro foi publicado"
 
     message = (os.environ.get("COMMIT_MESSAGE") or "").strip().splitlines()
     footer = message[0][:120] if message else f"commit {after[:7]}"
