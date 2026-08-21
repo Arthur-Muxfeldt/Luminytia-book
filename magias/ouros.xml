@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Naipe de Ouros</name>
+		<description>As catorze cartas de Ouros lidas direitas, do Ás ao Rei. Terra: matéria, ofício, patrimônio, corpo, paciência. Lista do Cartomante de Luminytia.</description>
+		<update version="0.1.0">
+			<file name="magias/ouros.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/ouros.xml" />
+		</update>
+	</info>
+
+	<!-- ÁS DE OUROS -->
+	<element name="Semente de Chumbo" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_SEMENTE_DE_CHUMBO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Ás de Ouros, lida direita.</i></p>
+			<p>Você condensa uma moeda de matéria bruta e a arremessa. Faça uma jogada de ataque mágico à distância. Acertando, o alvo sofre 1d10 de dano de concussão e seu deslocamento diminui em 1,5 metro até o fim do seu próximo turno, pelo peso que ficou nele.</p>
+			<p class="indent">O dano sobe para 2d10 no 5º nível, 3d10 no 11º e 4d10 no 17º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Semente Oca</i>.</p>
+		</description>
+		<sheet>
+			<description>Ataque mágico à distância: 1d10 de concussão e -1,5 m de deslocamento até o fim do seu próximo turno.</description>
+			<description level="5">Ataque mágico à distância: 2d10 de concussão e -1,5 m de deslocamento até o fim do seu próximo turno.</description>
+			<description level="11">Ataque mágico à distância: 3d10 de concussão e -1,5 m de deslocamento até o fim do seu próximo turno.</description>
+			<description level="17">Ataque mágico à distância: 4d10 de concussão e -1,5 m de deslocamento até o fim do seu próximo turno.</description>
+		</sheet>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 2 DE OUROS -->
+	<element name="As Duas Moedas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_AS_DUAS_MOEDAS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>2 de Ouros, lida direita.</i></p>
+			<p>Você põe duas coisas a girar e nenhuma cai. Uma vez por turno, sem gastar ação, você troca de lugar com uma criatura voluntária que possa ver a até 9 metros. Ambas ficam com +1 na CA até o início do seu próximo turno.</p>
+			<p class="indent">A troca não provoca ataques de oportunidade e não conta como deslocamento para nenhuma das duas.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O alcance aumenta em 9 metros por nível acima do 1º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Prato Desequilibrado</i>.</p>
+		</description>
+		<sheet>
+			<description>1×/turno, sem ação: troque de lugar com uma criatura voluntária a até 9 m. Ambas ganham +1 CA até o início do seu próximo turno. Não provoca oportunidade nem gasta deslocamento.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 3 DE OUROS -->
+	<element name="Obra de Três" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_OBRA_DE_TRES">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>3 de Ouros, lida direita.</i></p>
+			<p>A carta mostra três pares de mãos na mesma obra. Erga até três cubos de 1,5 metro de pedra e madeira ligados entre si, em superfícies sólidas que possa ver: uma ponte, uma rampa, um muro, um abrigo.</p>
+			<p class="indent">Cada cubo tem CA 15, 15 pontos de vida e é imune a dano psíquico e venenoso. Uma criatura sob um cubo quando ele surge é empurrada para o espaço livre mais próximo.</p>
+			<p class="indent">Se você dedicar 1 hora e 25 po em material à obra antes da magia acabar, ela vira permanente e mundana.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais dois cubos por nível acima do 1º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Obra Malfeita</i>.</p>
+		</description>
+		<sheet>
+			<description>Erga 3 cubos de 1,5 m de pedra e madeira ligados entre si (CA 15, 15 PV). 1 hora e 25 po de material tornam a obra permanente.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 10 minutos</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 4 DE OUROS -->
+	<element name="Punho Fechado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_PUNHO_FECHADO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>4 de Ouros, lida direita.</i></p>
+			<p>O avarento da carta não solta o que é dele, nem por bem nem por mal. Uma criatura que você toque ganha 10 pontos de vida temporários.</p>
+			<p class="indent">Enquanto restar ao menos 1 desses pontos temporários, ela não pode ser empurrada, puxada, derrubada nem teleportada contra a vontade dela, e nada que ela esteja segurando ou vestindo pode ser tomado sem que ela permita.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +5 pontos de vida temporários por nível acima do 2º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Punho Aberto</i>.</p>
+		</description>
+		<sheet>
+			<description>10 PV temporários. Enquanto restarem, o alvo não pode ser empurrado, puxado, derrubado nem teleportado contra a vontade, e nada que segura ou veste pode ser tomado dele.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 5 DE OUROS -->
+	<element name="Fora da Janela" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_FORA_DA_JANELA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>5 de Ouros, lida direita.</i></p>
+			<p>Dois miseráveis passam na neve diante da janela iluminada, e ninguém abre. Uma criatura que possa ver faz um teste de resistência de Carisma. Falhando, fica <b>desamparada</b> durante a duração.</p>
+			<p class="indent">Uma criatura desamparada não recupera pontos de vida, não ganha pontos de vida temporários e não se beneficia de vantagem concedida por aliados nem de qualquer bônus que venha de outra criatura.</p>
+			<p class="indent">O alvo repete o teste no fim de cada turno dele, encerrando o efeito com um sucesso.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais um alvo por nível acima do 2º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>De Volta à Luz</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Carisma ou fica desamparado: não recupera PV, não ganha PV temporários e não se beneficia de nada concedido por outra criatura. Repete o teste no fim de cada turno dele.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 6 DE OUROS -->
+	<element name="A Balança do Doador" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_BALANCA_DO_DOADOR">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>6 de Ouros, lida direita.</i></p>
+			<p>O mercador da carta pesa a esmola numa balança de mão. Você abre mão de até 15 dos seus próprios pontos de vida, e uma criatura que possa ver recupera o dobro do que você deu.</p>
+			<p class="indent">Isto nunca leva você abaixo de 1 ponto de vida, e os pontos que você dá não podem vir de pontos de vida temporários.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Você pode dar mais 5 pontos de vida por nível acima do 3º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Mão que Retém</i>.</p>
+		</description>
+		<sheet>
+			<description>Dê até 15 dos seus PV; uma criatura a 9 m recupera o dobro. Nunca leva você abaixo de 1 PV e não pode vir de PV temporários.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 7 DE OUROS -->
+	<element name="A Espera da Colheita" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_ESPERA_DA_COLHEITA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>7 de Ouros, lida direita.</i></p>
+			<p>Você planta uma semente invisível de ressonância num ponto que possa ver. Ela não faz nada: ela engorda. No fim de cada turno seu, a semente acumula 2d6, até no máximo cinco acumulações.</p>
+			<p class="indent">Com uma ação bônus, você colhe: cada criatura a até 3 metros da semente faz um teste de resistência de Destreza, sofrendo todo o dano de concussão acumulado, metade num sucesso. A magia então acaba.</p>
+			<p class="indent">Se sua concentração cair antes da colheita, a semente apodrece e tudo o que ela juntou se perde.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais uma acumulação máxima por nível acima do 3º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Colheita Antecipada</i>.</p>
+		</description>
+		<sheet>
+			<description>Semente que acumula 2d6 no fim de cada turno seu, até 5 acumulações. Ação bônus para colher: criaturas a 3 m fazem resistência de Destreza ou sofrem o acumulado em concussão, metade num sucesso. Perder a concentração perde tudo.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 8 DE OUROS -->
+	<element name="Martelo do Aprendiz" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_MARTELO_DO_APRENDIZ">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>8 de Ouros, lida direita.</i></p>
+			<p>Um martelo de bigorna surge flutuando num espaço que possa ver. Ao conjurar e depois com uma ação bônus no seu turno, você o faz golpear: faça uma jogada de ataque mágico contra uma criatura a até 1,5 metro dele, causando 2d10 de dano de concussão.</p>
+			<p class="indent">Ofício se aprende repetindo. Cada turno consecutivo em que o martelo golpear <b>o mesmo alvo</b> soma +1d10 ao dano, cumulativo até +3d10. Trocar de alvo zera o acúmulo.</p>
+			<p class="indent">Com a mesma ação bônus você pode mover o martelo até 6 metros antes de golpear.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +1d10 no dano inicial por nível acima do 4º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Martelo Sem Bigorna</i>.</p>
+		</description>
+		<sheet usage="Ação Bônus">
+			<description>Martelo flutuante: ação bônus para mover 6 m e golpear com ataque mágico, 2d10 de concussão. Cada turno consecutivo no mesmo alvo soma +1d10, até +3d10. Trocar de alvo zera.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- 9 DE OUROS -->
+	<element name="O Jardim Murado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_JARDIM_MURADO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>9 de Ouros, lida direita.</i></p>
+			<p>A terra levanta muros de pedra viva e vinha num raio de 9 metros, fechando um jardim que só existe enquanto a carta estiver aberta. Dentro dele o clima é ameno, há água limpa e comida simples para até dez criaturas, e camas de musgo seco.</p>
+			<p class="indent">Criaturas hostis a você não podem entrar sem antes passar num teste de resistência de Carisma, repetido a cada tentativa. Ataques e magias atravessam os muros normalmente: o jardim guarda o sossego, não a vida.</p>
+			<p class="indent">Quem completar um descanso longo dentro do jardim recupera um Dado de Vida adicional e remove dois níveis de exaustão em vez de um.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Jardim Invadido</i>.</p>
+		</description>
+		<sheet>
+			<description>Jardim murado de 9 m de raio por 8 horas: clima ameno, água e comida para 10, abrigo. Hostis só entram passando em resistência de Carisma. Descanso longo dentro: +1 Dado de Vida e remove 2 níveis de exaustão.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">10 minutos</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">8 horas</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<!-- 10 DE OUROS -->
+	<element name="O Patrimônio" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_O_PATRIMONIO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>10 de Ouros, lida direita.</i></p>
+			<p>Três gerações na mesma soleira: o que um perde, o outro herda. Escolha até seis criaturas que possa ver. Cada uma ganha 15 pontos de vida temporários.</p>
+			<p class="indent">Quando uma das criaturas escolhidas perde o último desses pontos temporários ou cai a 0 pontos de vida, cada uma das demais recupera 15 pontos de vida temporários. Cada criatura só pode desencadear essa herança uma vez.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> +5 pontos de vida temporários por nível acima do 5º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Espólio</i>.</p>
+		</description>
+		<sheet>
+			<description>Até 6 criaturas ganham 15 PV temporários. Quando uma perde os temporários ou cai a 0 PV, as demais recuperam 15 PV temporários. Cada criatura desencadeia isso uma única vez.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- VALETE DE OUROS -->
+	<element name="O Aprendiz de Barro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_APRENDIZ_DE_BARRO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Valete de Ouros, lida direita.</i></p>
+			<p>Você amassa terra e uma moeda até virar gente. O aprendiz usa o bloco de estatísticas de um elemental da terra, é amistoso a você e aos seus aliados, age no seu turno e obedece a ordens verbais. Sem ordens, ele trabalha no que estiver mais perto de inacabado.</p>
+			<p class="indent">Ele também sabe o ofício: em 1 hora, faz o serviço especializado de um dia inteiro de trabalho, e com uma ação você pode mandá-lo avaliar um objeto, sabendo o valor de mercado dele e se carrega ressonância.</p>
+			<p class="indent">Se sua concentração cair, ele desmorona num monte de terra e a moeda cai no chão, gasta.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O ND do aprendiz sobe 1 por nível acima do 6º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Aprendiz Rebelde</i>.</p>
+		</description>
+		<sheet>
+			<description>Invoca um elemental da terra amistoso que age no seu turno. Faz um dia de trabalho especializado em 1 hora e avalia objetos (valor de mercado e se há ressonância). Concentração perdida: desmorona.</description>
+		</sheet>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 minuto</set>
+			<set name="range">27 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- CAVALEIRO DE OUROS -->
+	<element name="Passo de Ferro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_PASSO_DE_FERRO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Cavaleiro de Ouros, lida direita.</i></p>
+			<p>O único cavaleiro do baralho que está parado, e é o único que sempre chega. Seu corpo vira pedra e ferro: você ganha +2 na CA, resistência a dano de concussão, perfurante e cortante, e não pode ser derrubado, empurrado, agarrado nem teleportado contra a sua vontade.</p>
+			<p class="indent">Seu deslocamento diminui em 3 metros, mas você ignora terreno difícil e atravessa terra e pedra sem soltar escombros, como se fossem ar.</p>
+			<p class="indent">Uma vez por turno, quando você acerta um ataque corpo a corpo depois de ter se movido ao menos 3 metros no mesmo turno, o alvo sofre +3d8 de dano de concussão e deve passar num teste de resistência de Força ou cair caído.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Cavalo Empacado</i>.</p>
+		</description>
+		<sheet>
+			<description>+2 CA, resistência a concussão/perfurante/cortante, imune a ser derrubado, empurrado, agarrado ou teleportado à força. -3 m de deslocamento, ignora terreno difícil e atravessa terra e pedra. 1×/turno após mover 3 m: acerto corpo a corpo causa +3d8 de concussão e Força ou caído.</description>
+		</sheet>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- RAINHA DE OUROS -->
+	<element name="O Toque de Ouros" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_TOQUE_DE_OUROS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rainha de Ouros, lida direita.</i></p>
+			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar e queima a carta, que sai do baralho até ser repintada.</p>
+			<p class="indent">A Rainha de Ouros dá de comer a quem chega. Lida assim, ela decide que uma pessoa vale mais como bem do que como gente. Escolha uma criatura que possa ver: ela faz um teste de resistência de Constituição.</p>
+			<p class="indent">Falhando, ela começa a endurecer em ouro maciço e fica impedida durante a duração. Ela repete o teste no fim de cada turno dela: com três sucessos a magia acaba, e com três falhas ela fica <b>petrificada em ouro</b> pelo tempo que for, até que <i>dissipar magia</i>, <i>restauração maior</i> ou algo do porte a desfaça.</p>
+			<p class="indent">O corpo dourado vale cerca de 5.000 po em ouro puro, e é aí que mora o preço da carta: se qualquer parte dele for retirada, derretida ou vendida, a criatura <b>não pode mais ser restaurada</b> por nada aquém de <i>desejo</i>.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Mais um alvo por nível acima do 8º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Toque Devolvido</i>.</p>
+		</description>
+		<sheet>
+			<description>✦ Resistência de Constituição ou o alvo começa a virar ouro e fica impedido. Três falhas nos testes seguintes: petrificado em ouro. Se qualquer parte do corpo dourado for retirada, ele não pode mais ser restaurado. Queima a carta.</description>
+		</sheet>
+		<setters>
+			<set name="level">8</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<!-- REI DE OUROS -->
+	<element name="A Montanha Obedece" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_OUROS_A_MONTANHA_OBEDECE">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rei de Ouros, lida direita.</i></p>
+			<p>O chão num raio de 30 metros a partir de um ponto que você escolher passa a ser seu. Ao conjurar e no início de cada turno seu, escolha um efeito:</p>
+			<ul>
+				<li><strong>Erguer.</strong> Colunas e paredes de rocha sobem onde você mandar. Cada criatura à sua escolha na área faz um teste de resistência de Destreza, sofrendo 8d10 de dano de concussão e ficando impedida pela pedra, ou metade do dano e sem ficar impedida num sucesso.</li>
+				<li><strong>Abrir.</strong> Fendas rasgam o chão. Cada criatura à sua escolha na área faz um teste de resistência de Destreza ou cai 6 metros, sofrendo o dano de queda e ficando caída.</li>
+				<li><strong>Amolecer.</strong> Toda a área vira lama funda. Ela conta como terreno difícil, e criaturas hostis que comecem o turno nela fazem um teste de resistência de Força ou ficam impedidas até saírem.</li>
+			</ul>
+			<p class="indent">Você e as criaturas à sua escolha ignoram o terreno difícil criado pela magia e somam +2 na CA enquanto estiverem dentro da área: a terra desvia o que vem contra vocês.</p>
+			<p class="indent">Quando a magia acaba, o terreno fica como você o deixou, permanentemente.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Montanha Cede</i>.</p>
+		</description>
+		<sheet>
+			<description>Área de 30 m de raio. Ao conjurar e no início de cada turno seu, escolha: erguer (Destreza ou 8d10 de concussão e impedido), abrir (Destreza ou cai 6 m e fica caído) ou amolecer (terreno difícil, Força ou impedido). Aliados ignoram o terreno difícil e somam +2 CA. O terreno fica permanente.</description>
+		</sheet>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">90 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+</elements>

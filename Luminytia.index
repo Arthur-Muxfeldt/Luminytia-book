@@ -4,7 +4,7 @@
 		<name>Luminytia</name>
 		<description>Conteúdo customizado do mundo de Luminytia para D&amp;D 5e.</description>
 		<author url="https://github.com/Arthur-Muxfeldt/Luminytia-book">Arthur Muxfeldt</author>
-		<update version="0.3.0">
+		<update version="0.4.0">
 			<file name="Luminytia.index" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/Luminytia.index" />
 		</update>
 	</info>
@@ -17,6 +17,7 @@
 		<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
 		<file name="magias/exclusivas-de-via.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/exclusivas-de-via.xml" />
 		<file name="magias/paus.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus.xml" />
+		<file name="magias/ouros.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/ouros.xml" />
 		<file name="magias/magias.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/magias.xml" />
 	</files>
 </index>

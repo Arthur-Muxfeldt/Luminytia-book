@@ -1,0 +1,36 @@
+name: Discord — novidades do livro
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.xml'
+      - 'Luminytia.index'
+  workflow_dispatch:
+    inputs:
+      before:
+        description: 'Commit de comparação (padrão: o commit anterior)'
+        required: false
+        default: ''
+
+concurrency:
+  group: discord-novidades
+  cancel-in-progress: false
+
+jobs:
+  notificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # precisa do histórico para comparar os dois commits
+
+      - name: Publicar novidades no Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          BEFORE_SHA: ${{ github.event.inputs.before || github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+          ACTOR: ${{ github.actor }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: python3 .github/scripts/notify_discord.py
