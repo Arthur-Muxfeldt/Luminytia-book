@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Espadas</name>
 		<description>As catorze cartas de Espadas lidas direitas, do Ás ao Rei. Ar: intelecto, conflito, verdade, palavra, decisão. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="magias/espadas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/espadas.xml" />
 		</update>
 	</info>
@@ -75,7 +75,7 @@
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Coração Costurado</i>.</p>
 		</description>
 		<sheet>
-			<description>Resistência de Sabedoria ou 3d6 psíquico e desvantagem na próxima jogada de ataque; metade e sem desvantagem num sucesso. +1d6 se houver aliado do alvo a 1,5 m dele.</description>
+			<description>Resistência de Sabedoria ou 3d6 psíquico e desvantagem na próxima jogada de ataque. Metade e sem desvantagem num sucesso. +1d6 se houver aliado do alvo a 1,5 m dele.</description>
 		</sheet>
 		<setters>
 			<set name="level">1</set>
@@ -208,7 +208,7 @@
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Corda Solta</i>.</p>
 		</description>
 		<sheet>
-			<description>Resistência de Sabedoria ou fica impedido por lâminas ilusórias; tentar mover-se custa 4d8 psíquico e perde o movimento. Repete o teste no fim de cada turno, ou gasta a ação num teste de Investigação para desfazer.</description>
+			<description>Resistência de Sabedoria ou fica impedido por lâminas ilusórias. Tentar mover-se custa 4d8 psíquico e perde o movimento. Repete o teste no fim de cada turno, ou gasta a ação num teste de Investigação para desfazer.</description>
 		</sheet>
 		<setters>
 			<set name="level">4</set>
@@ -339,7 +339,7 @@
 		<supports>Spell, Cartomante</supports>
 		<description>
 			<p><i>Rainha de Espadas, lida direita.</i></p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar e queima a carta, que sai do baralho até ser repintada.</p>
+			<p><strong>Carta queimada.</strong> Conjurar esta carta apaga a tinta dela: a tela sai do baralho até ser repintada.</p>
 			<p class="indent">A Rainha de Espadas é a única figura do baralho que olha de frente e não sorri. Ela não pune: ela corta fora.</p>
 			<p class="indent">Escolha uma criatura que possa ver e nomeie em voz alta <b>uma coisa</b> que ela sabe: um idioma que ela fala, uma perícia em que é proficiente, uma magia que ela conhece, ou o nome de uma criatura de quem ela gosta.</p>
 			<p class="indent">Ela faz um teste de resistência de Carisma. Falhando, sofre 10d8 de dano psíquico e aquilo é <b>cortado dela permanentemente</b>. Ela não perde a memória de ter perdido: ela simplesmente nunca soube. Ninguém em volta esquece junto, e é aí que a carta machuca.</p>
@@ -348,7 +348,7 @@
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Sentença Cassada</i>.</p>
 		</description>
 		<sheet>
-			<description>✦ Nomeie um idioma, perícia, magia conhecida ou afeto do alvo. Resistência de Carisma ou 10d8 psíquico e aquilo é cortado permanentemente, como se nunca tivesse existido nele. Só volta com desejo ou restauração maior de quem saiba o que foi tirado. Queima a carta.</description>
+			<description>Nomeie um idioma, perícia, magia conhecida ou afeto do alvo. Resistência de Carisma ou 10d8 psíquico e aquilo é cortado permanentemente, como se nunca tivesse existido nele. Só volta com desejo ou restauração maior de quem saiba o que foi tirado. Queima a carta.</description>
 		</sheet>
 		<setters>
 			<set name="level">8</set>
@@ -381,7 +381,7 @@
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Lei Sem Juiz</i>.</p>
 		</description>
 		<sheet>
-			<description>Esfera de 30 m com uma lei declarada: ninguém ataca, ninguém conjura, ninguém corre ou ninguém mente. Hostis fazem resistência de Sabedoria ao conjurar e ao começar o turno na área; sujeitos que quebrarem a lei perdem a ação e sofrem 12d8 psíquico. Você sabe quem quebrou e o que tentava fazer.</description>
+			<description>Esfera de 30 m com uma lei declarada: ninguém ataca, ninguém conjura, ninguém corre ou ninguém mente. Hostis fazem resistência de Sabedoria ao conjurar e ao começar o turno na área. Quem quebra a lei perde a ação e sofre 12d8 psíquico. Você sabe quem quebrou e o que tentava fazer.</description>
 		</sheet>
 		<setters>
 			<set name="level">9</set>

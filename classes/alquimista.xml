@@ -3,7 +3,7 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>
@@ -104,7 +104,7 @@
 			</center>
 			<h5>FOCO DE CONJURAÇÃO</h5>
 			<p>Suas próprias mãos, moldadas pela sua Via, servem como foco de conjuração para suas magias de Alquimista.</p>
-			<p class="indent"><i>Nota de mesa: por enquanto o Alquimista usa a lista de magias do Mago. Uma lista própria está planejada; as magias que contam como efeitos proibidos serão marcadas conforme cada Via é finalizada.</i></p>
+			<p class="indent"><i>Nota de mesa: por enquanto o Alquimista usa a lista de magias do Mago. Uma lista própria está planejada. As magias que contam como efeitos proibidos serão marcadas conforme cada Via é finalizada.</i></p>
 		</description>
 		<sheet display="false">
 			<description>Suas próprias mãos, moldadas pela sua Via, são seu foco de conjuração.</description>
@@ -214,17 +214,17 @@
 	<element name="Passo Transmutado" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_PASSO">
 		<supports>Manifestação</supports>
 		<description>
-			<p><strong>1 PR, ação bônus.</strong> O terreno num raio de 6 metros ao seu redor vira terreno difícil para seus inimigos até o início do seu próximo turno; ou você ignora terreno difícil neste turno.</p>
+			<p><strong>1 PR, ação bônus.</strong> O terreno num raio de 6 metros ao seu redor vira terreno difícil para seus inimigos até o início do seu próximo turno, ou você ignora terreno difícil neste turno.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1 PR">
-			<description>O terreno em 6 m ao seu redor vira terreno difícil para seus inimigos até o início do seu próximo turno; ou você ignora terreno difícil neste turno.</description>
+			<description>O terreno em 6 m ao seu redor vira terreno difícil para seus inimigos até o início do seu próximo turno, ou você ignora terreno difícil neste turno.</description>
 		</sheet>
 	</element>
 
 	<element name="Sobrecarga" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_SOBRECARGA">
 		<supports>Manifestação</supports>
 		<description>
-			<p><strong>X PR, ao conjurar.</strong> Gaste até metade do seu bônus de proficiência em PR ao lançar uma magia de dano; adicione 1d6 do mesmo tipo de dano por PR gasto.</p>
+			<p><strong>X PR, ao conjurar.</strong> Gaste até metade do seu bônus de proficiência em PR ao lançar uma magia de dano. Adicione 1d6 do mesmo tipo de dano por PR gasto.</p>
 		</description>
 		<sheet usage="X PR">
 			<description>Ao lançar uma magia de dano, gaste até metade do seu bônus de proficiência em PR e adicione 1d6 do mesmo tipo por PR gasto.</description>
@@ -245,17 +245,17 @@
 	<element name="O Fardo" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO">
 		<supports>Class Feature</supports>
 		<description>
-			<p>A partir do 3º nível, certos efeitos são proibidos (marcados com ✦): exigem vitalidade, não só ressonância. Sempre que você usa um efeito proibido além do que sua Via permite de graça, ganha 1 nível de Fardo. Você também pode escolher tomar Fardo voluntariamente para intensificar esses efeitos, como descrito em cada Via.</p>
+			<p>A partir do 3º nível, certos efeitos são <strong>proibidos</strong>: exigem vitalidade, não só ressonância. Sempre que você usa um efeito proibido além do que sua Via permite de graça, ganha 1 nível de Fardo. Você também pode escolher tomar Fardo voluntariamente para intensificar esses efeitos, como descrito em cada Via.</p>
 			<p class="indent">O Fardo não é lei de homem nenhum: é o deus no sangue cobrando juros por ser chamado.</p>
 			<h5>LIMIAR GRATUITO POR VIA</h5>
 			<ul>
 				<li><strong>Transmutação</strong> (nenhuma herança): nunca gera Fardo.</li>
 				<li><strong>Piromancia</strong> (Ílios): limiar gratuito de 2× seu bônus de proficiência usos por descanso longo.</li>
 				<li><strong>Vitamancia</strong> (Ílios): limiar gratuito de seu bônus de proficiência usos por descanso longo.</li>
-				<li><strong>Animancia</strong> (ambos): limiar de seu bônus de proficiência; efeitos maiores sempre cobram.</li>
+				<li><strong>Animancia</strong> (ambos): limiar de seu bônus de proficiência, e efeitos maiores sempre cobram.</li>
 				<li><strong>Necromancia</strong> (Kólasi): cada excesso cobra por criatura ou por uso.</li>
 			</ul>
-			<p class="indent">Passado o limiar gratuito da sua Via, cada uso de efeito ✦ gera 1 nível de Fardo.</p>
+			<p class="indent">Passado o limiar gratuito da sua Via, cada uso de efeito proibido gera 1 nível de Fardo.</p>
 			<h5>A TRILHA DO FARDO</h5>
 			<p>O Fardo é uma trilha própria de 0 a 6, distinta de exaustão.</p>
 			<ul>
@@ -263,14 +263,14 @@
 				<li><strong>2.</strong> -1 em jogadas de ataque e na sua CD de conjuração.</li>
 				<li><strong>3.</strong> Desvantagem em jogadas de ataque e testes de resistência. Você esquece algo (você e o mestre narram uma memória perdida).</li>
 				<li><strong>4.</strong> Seus PV máximos e seu deslocamento são reduzidos à metade.</li>
-				<li><strong>5.</strong> Deslocamento 0; desvantagem em tudo.</li>
+				<li><strong>5.</strong> Deslocamento 0 e desvantagem em tudo.</li>
 				<li><strong>6.</strong> A ressonância consome você. O personagem é perdido e vira um NPC (a critério do mestre).</li>
 			</ul>
 			<h5>REDUZINDO O FARDO</h5>
 			<p>Você remove 1 nível ao terminar um descanso longo somente se não usou nenhum efeito proibido naquele dia. <i>Restauração Maior</i> remove 1 nível. Descanso curto e cura comum não afetam o Fardo.</p>
 		</description>
 		<sheet>
-			<description>Efeitos proibidos (✦) além do limiar da sua Via geram 1 nível de Fardo. Trilha de 0 a 6, distinta de exaustão. Só cai em descanso longo sem uso de efeito proibido, ou com Restauração Maior.</description>
+			<description>Efeitos proibidos além do limiar da sua Via geram 1 nível de Fardo. Trilha de 0 a 6, distinta de exaustão. Só cai em descanso longo sem uso de efeito proibido, ou com Restauração Maior.</description>
 		</sheet>
 	</element>
 

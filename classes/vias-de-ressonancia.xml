@@ -3,7 +3,7 @@
 	<info>
 		<name>Vias de Ressonância</name>
 		<description>As cinco Vias de Ressonância, subclasses do Alquimista de Luminytia.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
 		</update>
 	</info>
@@ -37,7 +37,7 @@
 			<p>No 3º nível, você ganha proficiência em armaduras médias e escudos.</p>
 			<p class="indent">Escolha um metal predileto (ferro, aço, cobre, prata, titânio). Ele define a aparência das suas transmutações.</p>
 			<p class="indent">Com uma ação bônus, você conjura na sua mão uma arma marcial feita desse metal. Ela dura até você largá-la, conta como mágica, e você é proficiente com ela.</p>
-			<p class="indent">Além disso, com uma ação, gaste 1 PR para fazer metal irromper do solo sob uma criatura a até 9 metros: ela faz um teste de resistência de Força contra sua CD de Ressonância; falhando, fica agarrada (ação para repetir o teste e escapar).</p>
+			<p class="indent">Além disso, com uma ação, gaste 1 PR para fazer metal irromper do solo sob uma criatura a até 9 metros: ela faz um teste de resistência de Força contra sua CD de Ressonância. Falhando, fica agarrada (ação para repetir o teste e escapar).</p>
 		</description>
 		<sheet action="Bonus Action">
 			<description>Conjure na sua mão uma arma marcial do seu metal predileto (mágica, você é proficiente, dura até largá-la). Ação, 1 PR: metal irrompe sob uma criatura a 9 m, resistência de Força CD {{ressonancia:dc}} ou fica agarrada.</description>
@@ -76,9 +76,9 @@
 		<description>
 			<p>No 15º nível, com uma ação bônus, gaste 3 PR para transmutar sua pele por 1 minuto. Durante esse tempo:</p>
 			<ul>
-				<li>você ganha +2 na CA;</li>
-				<li>você tem resistência a todo dano físico não-mágico;</li>
-				<li>você é imune às condições amedrontado e envenenado;</li>
+				<li>você ganha +2 na CA.</li>
+				<li>você tem resistência a todo dano físico não-mágico.</li>
+				<li>você é imune às condições amedrontado e envenenado.</li>
 				<li>você não pode ser surpreendido.</li>
 			</ul>
 		</description>
@@ -93,7 +93,7 @@
 			<p><i>A Chama Ressonante.</i></p>
 			<p class="indent">Quando o corpo de Ílios foi devorado, o calor se espalhou primeiro: a parte dele voltada para fora, que aquece sem tocar ninguém. O deus deixa os herdeiros gastarem à vontade, mas force além do que ele dá de bom grado e o sangue cobra uma queimadura por dentro.</p>
 			<p class="indent">Artilharia mágica à distância, rara e espetacular, mas permitida.</p>
-			<p class="indent"><strong>Peso do Fardo: leve.</strong> Seus efeitos ✦ têm um limiar gratuito de 2× seu bônus de proficiência usos por descanso longo; além disso, cada uso gera 1 Fardo.</p>
+			<p class="indent"><strong>Peso do Fardo: leve.</strong> Seus efeitos proibidos têm um limiar gratuito de 2× seu bônus de proficiência usos por descanso longo. Além disso, cada uso gera 1 Fardo.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_EXCLUSIVAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" />
@@ -115,10 +115,10 @@
 	<element name="Chama Interior" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR">
 		<description>
 			<p>No 3º nível, você aprende o truque <i>raio de fogo</i>. Ele não conta no seu limite de truques conhecidos.</p>
-			<p class="indent">Com uma ação, gaste 1 PR ✦ para exalar uma linha de fogo de 4,5 m × 1,5 m. Cada criatura na área faz um teste de resistência de Destreza contra sua CD de Ressonância, sofrendo 2d6 de dano de fogo, ou metade num sucesso.</p>
+			<p class="indent">Com uma ação, gaste 1 PR num efeito proibido para exalar uma linha de fogo de 4,5 m × 1,5 m. Cada criatura na área faz um teste de resistência de Destreza contra sua CD de Ressonância, sofrendo 2d6 de dano de fogo, ou metade num sucesso.</p>
 			<p class="indent">O dano sobe para 3d6 no 6º nível, 4d6 no 11º e 5d6 no 15º.</p>
 		</description>
-		<sheet action="Action" usage="1 PR ✦">
+		<sheet action="Action" usage="1 PR (proibido)">
 			<description>Linha de fogo de 4,5 m × 1,5 m. Resistência de Destreza CD {{ressonancia:dc}}: 2d6 de fogo, metade num sucesso.</description>
 			<description level="6">Linha de fogo de 4,5 m × 1,5 m. Resistência de Destreza CD {{ressonancia:dc}}: 3d6 de fogo, metade num sucesso.</description>
 			<description level="11">Linha de fogo de 4,5 m × 1,5 m. Resistência de Destreza CD {{ressonancia:dc}}: 4d6 de fogo, metade num sucesso.</description>
@@ -141,10 +141,10 @@
 
 	<element name="Tempestade de Fogo" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE">
 		<description>
-			<p>No 9º nível, com uma ação, gaste 4 PR ✦ para criar uma explosão num ponto a até 30 metros: uma esfera de 6 metros de raio, causando 6d6 de dano de fogo, ou metade num teste de resistência de Destreza bem-sucedido.</p>
+			<p>No 9º nível, com uma ação, gaste 4 PR num efeito proibido para criar uma explosão num ponto a até 30 metros: uma esfera de 6 metros de raio, causando 6d6 de dano de fogo, ou metade num teste de resistência de Destreza bem-sucedido.</p>
 			<p class="indent">A área queima até o início do seu próximo turno, causando 2d6 de dano de fogo a quem entrar nela ou terminar o turno ali.</p>
 		</description>
-		<sheet action="Action" usage="4 PR ✦">
+		<sheet action="Action" usage="4 PR (proibido)">
 			<description>Explosão a até 30 m: esfera de 6 m de raio, 6d6 de fogo, metade com resistência de Destreza CD {{ressonancia:dc}}. A área queima até o início do seu próximo turno (2d6 a quem entrar ou terminar o turno nela).</description>
 		</sheet>
 	</element>
@@ -153,8 +153,8 @@
 		<description>
 			<p>No 15º nível, com uma ação bônus, gaste 4 PR para se envolver em chamas vivas por 1 minuto. Durante esse tempo:</p>
 			<ul>
-				<li>você é imune a dano de fogo;</li>
-				<li>você emite luz brilhante num raio de 9 metros;</li>
+				<li>você é imune a dano de fogo.</li>
+				<li>você emite luz brilhante num raio de 9 metros.</li>
 				<li>quem te acertar com um ataque corpo a corpo ou terminar o turno a 1,5 metro de você sofre 1d10 de dano de fogo.</li>
 			</ul>
 		</description>
@@ -167,9 +167,9 @@
 		<supports>Via de Ressonância</supports>
 		<description>
 			<p><i>A Vida Voltada para Dentro.</i></p>
-			<p class="indent">É a vida de Ílios correndo na carne de quem o comeu; as curas pequenas ele dá de presente. Mas curar por dentro é segurar a vida na mão, e o que se segura pode se apertar. Ao drenar ou reviver, o vitamante estica o dom até onde encosta a sombra de Kólasi, e ali paga.</p>
+			<p class="indent">É a vida de Ílios correndo na carne de quem o comeu, e as curas pequenas ele dá de presente. Mas curar por dentro é segurar a vida na mão, e o que se segura pode se apertar. Ao drenar ou reviver, o vitamante estica o dom até onde encosta a sombra de Kólasi, e ali paga.</p>
 			<p class="indent">Cura e dreno no mesmo gesto.</p>
-			<p class="indent"><strong>Peso do Fardo: médio.</strong> Limiar gratuito de seu bônus de proficiência usos de Manipular Vitalidade por descanso longo; além disso, cada uso gera 1 Fardo.</p>
+			<p class="indent"><strong>Peso do Fardo: médio.</strong> Limiar gratuito de seu bônus de proficiência usos de Manipular Vitalidade por descanso longo. Além disso, cada uso gera 1 Fardo.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_EXCLUSIVAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" />
@@ -193,43 +193,43 @@
 			<p>No 3º nível, com uma ação, gaste 1 PR e escolha uma criatura a até 9 metros:</p>
 			<ul>
 				<li><strong>Restaurar:</strong> ela recupera 1d8 + seu modificador de Inteligência em pontos de vida.</li>
-				<li><strong>Drenar:</strong> ela sofre a mesma quantia como dano necrótico; um teste de resistência de Constituição bem-sucedido reduz o dano à metade.</li>
+				<li><strong>Drenar:</strong> ela sofre a mesma quantia como dano necrótico. Um teste de resistência de Constituição bem-sucedido reduz o dano à metade.</li>
 			</ul>
 			<p class="indent">Os dados sobem para 2d8 no 5º nível e 3d8 no 11º.</p>
-			<p class="indent">Dentro do limiar da Via, o uso é gratuito; além dele, cada uso gera 1 Fardo ✦. Você pode tomar 1 Fardo voluntário para dobrar os dados de um uso.</p>
+			<p class="indent">Dentro do limiar da Via, o uso é gratuito. Além dele, cada uso gera 1 Fardo. Você pode tomar 1 Fardo voluntário para dobrar os dados de um uso.</p>
 		</description>
 		<sheet action="Action" usage="1 PR">
-			<description>Restaurar (1d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo ✦.</description>
-			<description level="5">Restaurar (2d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo ✦.</description>
-			<description level="11">Restaurar (3d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo ✦.</description>
+			<description>Restaurar (1d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo.</description>
+			<description level="5">Restaurar (2d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo.</description>
+			<description level="11">Restaurar (3d8 + INT PV) ou drenar (mesmo valor em dano necrótico, resistência de Constituição CD {{ressonancia:dc}} para metade) uma criatura a 9 m. Além do limiar, gera 1 Fardo.</description>
 		</sheet>
 	</element>
 
 	<element name="Transfusão" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO">
 		<description>
-			<p>No 5º nível, com uma ação, gaste 2 PR ✦ para drenar até 4d8 de uma criatura a até 9 metros (um teste de resistência de Constituição bem-sucedido reduz à metade) e distribuir essa cura entre criaturas à sua escolha que você possa ver.</p>
+			<p>No 5º nível, com uma ação, gaste 2 PR num efeito proibido para drenar até 4d8 de uma criatura a até 9 metros (um teste de resistência de Constituição bem-sucedido reduz à metade) e distribuir essa cura entre criaturas à sua escolha que você possa ver.</p>
 		</description>
-		<sheet action="Action" usage="2 PR ✦">
+		<sheet action="Action" usage="2 PR (proibido)">
 			<description>Drene até 4d8 de uma criatura a 9 m (resistência de Constituição CD {{ressonancia:dc}} para metade) e distribua essa cura entre criaturas à sua escolha que possa ver.</description>
 		</sheet>
 	</element>
 
 	<element name="Restaurar Vitalidade" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR">
 		<description>
-			<p>No 9º nível, com uma ação, gaste 4 PR ✦ para curar 6d8 pontos de vida e encerrar uma condição entre cego, surdo, paralisado ou envenenado.</p>
+			<p>No 9º nível, com uma ação, gaste 4 PR num efeito proibido para curar 6d8 pontos de vida e encerrar uma condição entre cego, surdo, paralisado ou envenenado.</p>
 			<p class="indent">Alternativamente, tomando 2 Fardo voluntários, você revive uma criatura morta no último minuto com 1 ponto de vida, como <i>revivificar</i>.</p>
 		</description>
-		<sheet action="Action" usage="4 PR ✦">
+		<sheet action="Action" usage="4 PR (proibido)">
 			<description>Cure 6d8 e encerre uma condição entre cego, surdo, paralisado ou envenenado. Alternativa: tomando 2 Fardo voluntários, revive uma criatura morta no último minuto com 1 PV.</description>
 		</sheet>
 	</element>
 
 	<element name="Senhor da Vida e da Morte" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_SENHOR">
 		<description>
-			<p>No 15º nível, com uma ação, gaste 5 PR ✦ e escolha criaturas a até 9 metros: distribua 10d8 entre cura (aliados) e dano necrótico (inimigos; um teste de resistência de Constituição bem-sucedido reduz à metade).</p>
+			<p>No 15º nível, com uma ação, gaste 5 PR num efeito proibido e escolha criaturas a até 9 metros: distribua 10d8 entre cura (aliados) e dano necrótico (inimigos, e um teste de resistência de Constituição bem-sucedido reduz à metade).</p>
 			<p class="indent">Uma vez por descanso longo, você pode estabilizar ou reviver uma criatura sem gastar PR, mas isso gera 2 níveis de Fardo.</p>
 		</description>
-		<sheet action="Action" usage="5 PR ✦">
+		<sheet action="Action" usage="5 PR (proibido)">
 			<description>Distribua 10d8 entre cura (aliados) e dano necrótico (inimigos, resistência de Constituição CD {{ressonancia:dc}} para metade) a até 9 m. 1/descanso longo: estabilize ou revive sem gastar PR, gerando 2 níveis de Fardo.</description>
 		</sheet>
 	</element>
@@ -261,19 +261,19 @@
 
 	<element name="Sussurro Anímico" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO">
 		<description>
-			<p>No 3º nível, com uma ação, gaste 1 PR ✦: uma criatura a até 18 metros faz um teste de resistência de Sabedoria contra sua CD de Ressonância. Falhando, você lê seus pensamentos de superfície e ela fica com desvantagem na próxima jogada de ataque ou teste contra você, por 1 minuto.</p>
+			<p>No 3º nível, com uma ação, gaste 1 PR num efeito proibido: uma criatura a até 18 metros faz um teste de resistência de Sabedoria contra sua CD de Ressonância. Falhando, você lê seus pensamentos de superfície e ela fica com desvantagem na próxima jogada de ataque ou teste contra você, por 1 minuto.</p>
 			<p class="indent">Você pode tomar 1 Fardo voluntário para, em vez disso, deixá-la enfeitiçada por 1 minuto. Ela repete o teste se sofrer dano.</p>
 		</description>
-		<sheet action="Action" usage="1 PR ✦">
+		<sheet action="Action" usage="1 PR (proibido)">
 			<description>Criatura a 18 m, resistência de Sabedoria CD {{ressonancia:dc}}: você lê os pensamentos de superfície dela e ela fica com desvantagem na próxima jogada contra você (1 min). Com 1 Fardo voluntário, fica enfeitiçada por 1 minuto.</description>
 		</sheet>
 	</element>
 
 	<element name="Dominar Emoções" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES">
 		<description>
-			<p>No 5º nível, com uma ação, gaste 3 PR ✦: criaturas à sua escolha num raio de 4,5 metros, centrado num ponto a até 18 metros, fazem um teste de resistência de Sabedoria ou ficam amedrontadas ou enfeitiçadas (você escolhe) por 1 minuto. Cada criatura repete o teste no fim de cada turno dela.</p>
+			<p>No 5º nível, com uma ação, gaste 3 PR num efeito proibido: criaturas à sua escolha num raio de 4,5 metros, centrado num ponto a até 18 metros, fazem um teste de resistência de Sabedoria ou ficam amedrontadas ou enfeitiçadas (você escolhe) por 1 minuto. Cada criatura repete o teste no fim de cada turno dela.</p>
 		</description>
-		<sheet action="Action" usage="3 PR ✦">
+		<sheet action="Action" usage="3 PR (proibido)">
 			<description>Criaturas à sua escolha em 4,5 m (a até 18 m), resistência de Sabedoria CD {{ressonancia:dc}} ou ficam amedrontadas ou enfeitiçadas (você escolhe) por 1 minuto, repetindo o teste no fim de cada turno.</description>
 		</sheet>
 	</element>
@@ -281,20 +281,20 @@
 	<element name="Invadir a Mente" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR">
 		<description>
 			<p>No 9º nível, você pode lançar <i>dominar pessoa</i> e <i>modificar memórias</i> gastando 4 PR em vez de um espaço de magia.</p>
-			<p class="indent">Cada conjuração dessas gera Fardo ✦, mesmo dentro do limiar da Via.</p>
+			<p class="indent">Cada conjuração dessas gera Fardo, mesmo dentro do limiar da Via.</p>
 		</description>
-		<sheet usage="4 PR ✦">
+		<sheet usage="4 PR (proibido)">
 			<description>Lance dominar pessoa e modificar memórias gastando 4 PR em vez de espaço de magia. Cada conjuração dessas sempre gera Fardo.</description>
 		</sheet>
 	</element>
 
 	<element name="Transferência" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_TRANSFERENCIA">
 		<description>
-			<p>No 15º nível, com uma ação, gaste 5 PR e tome 2 Fardo obrigatórios ✦ para projetar sua alma no corpo de uma criatura disposta ou incapacitada a até 9 metros.</p>
+			<p>No 15º nível, com uma ação, gaste 5 PR e tome 2 Fardo obrigatórios para projetar sua alma no corpo de uma criatura disposta ou incapacitada a até 9 metros.</p>
 			<p class="indent">Você controla o corpo dela e usa seus atributos físicos, mantendo seus próprios atributos mentais, características e magias. Seu corpo original fica inconsciente e estável.</p>
 			<p class="indent">O efeito termina quando você quiser, quando um dos corpos morrer, ou após 1 hora.</p>
 		</description>
-		<sheet action="Action" usage="5 PR + 2 Fardo ✦">
+		<sheet action="Action" usage="5 PR + 2 Fardo (proibido)">
 			<description>Projete sua alma no corpo de uma criatura disposta ou incapacitada a 9 m. Você usa os atributos físicos dela e mantém os seus mentais, características e magias. Seu corpo fica inconsciente e estável. Dura até 1 hora.</description>
 		</sheet>
 	</element>
@@ -303,7 +303,7 @@
 		<supports>Via de Ressonância</supports>
 		<description>
 			<p><i>A Colheita dos Mortos.</i></p>
-			<p class="indent">Sangue puro de Kólasi, que reclama tudo o que morre e não gosta de emprestar. O necromante manda nos restos que já são do deus, e o deus permite como um credor permite. Erguer um morto já pesa; erguer muitos é dívida que se acumula por cabeça.</p>
+			<p class="indent">Sangue puro de Kólasi, que reclama tudo o que morre e não gosta de emprestar. O necromante manda nos restos que já são do deus, e o deus permite como um credor permite. Erguer um morto já pesa. Erguer muitos é dívida que se acumula por cabeça.</p>
 			<p class="indent">Invocador de mortos-vivos. A disciplina mais tabu do mundo e a que mais cobra.</p>
 			<p class="indent"><strong>Peso do Fardo: alto.</strong> Cada excesso cobra por criatura ou por uso.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA" />
@@ -327,11 +327,11 @@
 	<element name="Erguer Necrotralo" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER">
 		<description>
 			<p>No 3º nível, com uma ação, gaste 2 PR e toque um cadáver ou pilha de ossos de humanoide Médio ou Pequeno a até 3 metros. Ele se ergue como necrotralo, usando o bloco de estatísticas de esqueleto ou zumbi, sob seu controle.</p>
-			<p class="indent">Você controla até seu bônus de proficiência em necrotralos sem custo adicional. Erguer além disso gera 1 Fardo por criatura ✦.</p>
+			<p class="indent">Você controla até seu bônus de proficiência em necrotralos sem custo adicional. Erguer além disso gera 1 Fardo por criatura.</p>
 			<p class="indent">A cada turno, uma única ação bônus comanda todos eles. Sem comando, apenas se defendem.</p>
 		</description>
 		<sheet action="Action" usage="2 PR">
-			<description>Toque um cadáver ou pilha de ossos humanoide Médio ou Pequeno a 3 m: ele se ergue como necrotralo (esqueleto ou zumbi) sob seu controle. Até seu bônus de proficiência sem custo; além disso, 1 Fardo por criatura ✦. Uma ação bônus comanda todos.</description>
+			<description>Toque um cadáver ou pilha de ossos humanoide Médio ou Pequeno a 3 m: ele se ergue como necrotralo (esqueleto ou zumbi) sob seu controle. Até seu bônus de proficiência sem custo. Além disso, 1 Fardo por criatura. Uma ação bônus comanda todos.</description>
 		</sheet>
 	</element>
 
@@ -348,20 +348,20 @@
 	<element name="Colheita" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA">
 		<description>
 			<p>No 9º nível, quando uma criatura morre a até 9 metros de você, você pode usar sua reação para recuperar 2 PR ou ganhar pontos de vida temporários iguais ao seu bônus de proficiência.</p>
-			<p class="indent">Além disso, uma vez por descanso longo, você ergue um necrotralo maior: uma criatura de ND até metade do seu nível, que serve por 24 horas. Isso gera 1 Fardo ✦.</p>
+			<p class="indent">Além disso, uma vez por descanso longo, você ergue um necrotralo maior: uma criatura de ND até metade do seu nível, que serve por 24 horas. Isso gera 1 Fardo.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>Quando uma criatura morre a 9 m, recupere 2 PR ou ganhe PV temporários iguais ao seu bônus de proficiência. 1/descanso longo: ergue um necrotralo maior (ND até metade do seu nível) por 24 h, gerando 1 Fardo ✦.</description>
+			<description>Quando uma criatura morre a 9 m, recupere 2 PR ou ganhe PV temporários iguais ao seu bônus de proficiência. 1/descanso longo: ergue um necrotralo maior (ND até metade do seu nível) por 24 h, gerando 1 Fardo.</description>
 		</sheet>
 	</element>
 
 	<element name="Senhor dos Mortos" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_SENHOR_MORTOS">
 		<description>
 			<p>No 15º nível, você tem resistência a dano necrótico e não pode ser amedrontado por mortos-vivos.</p>
-			<p class="indent">Com uma ação, gaste 5 PR e tome 2 Fardo obrigatórios ✦ para erguer uma horda: até seis necrotralos de uma vez, que não contam no seu limite e permanecem por 1 hora.</p>
+			<p class="indent">Com uma ação, gaste 5 PR e tome 2 Fardo obrigatórios para erguer uma horda: até seis necrotralos de uma vez, que não contam no seu limite e permanecem por 1 hora.</p>
 		</description>
-		<sheet action="Action" usage="5 PR + 2 Fardo ✦">
-			<description>Resistência a dano necrótico; você não pode ser amedrontado por mortos-vivos. Erga uma horda de até seis necrotralos que não contam no seu limite e duram 1 hora.</description>
+		<sheet action="Action" usage="5 PR + 2 Fardo (proibido)">
+			<description>Resistência a dano necrótico. Você não pode ser amedrontado por mortos-vivos. Erga uma horda de até seis necrotralos que não contam no seu limite e duram 1 hora.</description>
 		</sheet>
 	</element>
 
@@ -376,10 +376,10 @@
 				<li><strong>4º nível:</strong> <i>Fabricar</i></li>
 				<li><strong>5º nível:</strong> <i>Animar Objetos</i></li>
 			</ul>
-			<p class="indent">Nenhuma delas é ✦, e essa é a característica que define a Via: a Transmutação não herdou de ninguém, não deve nada e nunca toca a trilha do Fardo.</p>
+			<p class="indent">Nenhuma delas é proibida, e essa é a característica que define a Via: a Transmutação não herdou de ninguém, não deve nada e nunca toca a trilha do Fardo.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Transmutação, fora do limite de preparadas: 1º Graxa; 2º Aumentar/Reduzir; 3º Dissipar Magia; 4º Fabricar; 5º Animar Objetos.</description>
+			<description>Magias sempre preparadas da Via da Transmutação, fora do limite de preparadas: 1º Graxa, 2º Aumentar/Reduzir, 3º Dissipar Magia, 4º Fabricar, 5º Animar Objetos.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_GREASE" spellcasting="Alquimista" prepared="true" level="3" />
@@ -401,10 +401,10 @@
 				<li><strong>4º nível:</strong> <i>Muralha de Fogo</i></li>
 				<li><strong>5º nível:</strong> <i>Coluna de Chamas</i></li>
 			</ul>
-			<p class="indent">Nenhuma é ✦: o fogo do calor não exige vitalidade, só ressonância. O que cobra Fardo nesta Via são as características de classe, não as magias.</p>
+			<p class="indent">Nenhuma é proibida: o fogo do calor não exige vitalidade, só ressonância. O que cobra Fardo nesta Via são as características de classe, não as magias.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Piromancia, fora do limite de preparadas: 1º Mãos Flamejantes; 2º Raio Ardente; 3º Bola de Fogo; 4º Muralha de Fogo; 5º Coluna de Chamas.</description>
+			<description>Magias sempre preparadas da Via da Piromancia, fora do limite de preparadas: 1º Mãos Flamejantes, 2º Raio Ardente, 3º Bola de Fogo, 4º Muralha de Fogo, 5º Coluna de Chamas.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Alquimista" prepared="true" level="3" />
@@ -422,14 +422,14 @@
 			<ul>
 				<li><strong>1º nível:</strong> <i>Curar Ferimentos</i></li>
 				<li><strong>2º nível:</strong> <i>Restauração Menor</i></li>
-				<li><strong>3º nível:</strong> <i>Toque Vampírico ✦</i></li>
-				<li><strong>4º nível:</strong> <i>Praga ✦</i></li>
+				<li><strong>3º nível:</strong> <i>Toque Vampírico</i> (proibida)</li>
+				<li><strong>4º nível:</strong> <i>Praga</i> (proibida)</li>
 				<li><strong>5º nível:</strong> <i>Restauração Maior</i></li>
 			</ul>
-			<p class="indent">Duas ✦ em cinco, e nessa ordem de propósito. A Via começa curando de graça e termina curando de graça; o que fica no meio é o que ela cobra.</p>
+			<p class="indent">Duas proibidas em cinco, e nessa ordem de propósito. A Via começa curando de graça e termina curando de graça. O que fica no meio é o que ela cobra.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Vitamancia, fora do limite de preparadas: 1º Curar Ferimentos; 2º Restauração Menor; 3º Toque Vampírico ✦; 4º Praga ✦; 5º Restauração Maior.</description>
+			<description>Magias sempre preparadas da Via da Vitamancia, fora do limite de preparadas: 1º Curar Ferimentos, 2º Restauração Menor, 3º Toque Vampírico (proibida), 4º Praga (proibida), 5º Restauração Maior.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Alquimista" prepared="true" level="3" />
@@ -445,16 +445,16 @@
 			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
 			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
 			<ul>
-				<li><strong>1º nível:</strong> <i>Enfeitiçar Pessoa ✦</i></li>
+				<li><strong>1º nível:</strong> <i>Enfeitiçar Pessoa</i> (proibida)</li>
 				<li><strong>2º nível:</strong> <i>Detectar Pensamentos</i></li>
-				<li><strong>3º nível:</strong> <i>Sugestão ✦</i></li>
-				<li><strong>4º nível:</strong> <i>Confusão ✦</i></li>
-				<li><strong>5º nível:</strong> <i>Modificar Memória ✦</i></li>
+				<li><strong>3º nível:</strong> <i>Sugestão</i> (proibida)</li>
+				<li><strong>4º nível:</strong> <i>Confusão</i> (proibida)</li>
+				<li><strong>5º nível:</strong> <i>Modificar Memória</i> (proibida)</li>
 			</ul>
-			<p class="indent">Quatro ✦ em cinco, herança dos dois deuses. A única limpa é Detectar Pensamentos, e ela é limpa por um motivo só: ler não é reescrever.</p>
+			<p class="indent">Quatro proibidas em cinco, herança dos dois deuses. A única limpa é Detectar Pensamentos, e ela é limpa por um motivo só: ler não é reescrever.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Animancia, fora do limite de preparadas: 1º Enfeitiçar Pessoa ✦; 2º Detectar Pensamentos; 3º Sugestão ✦; 4º Confusão ✦; 5º Modificar Memória ✦.</description>
+			<description>Magias sempre preparadas da Via da Animancia, fora do limite de preparadas: 1º Enfeitiçar Pessoa (proibida), 2º Detectar Pensamentos, 3º Sugestão (proibida), 4º Confusão (proibida), 5º Modificar Memória (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Alquimista" prepared="true" level="3" />
@@ -470,16 +470,16 @@
 			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
 			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
 			<ul>
-				<li><strong>1º nível:</strong> <i>Falsa Vida ✦</i></li>
-				<li><strong>2º nível:</strong> <i>Raio de Enfraquecimento ✦</i></li>
-				<li><strong>3º nível:</strong> <i>Animar os Mortos ✦</i></li>
-				<li><strong>4º nível:</strong> <i>Proteção contra a Morte ✦</i></li>
-				<li><strong>5º nível:</strong> <i>Erguer Morto ✦</i></li>
+				<li><strong>1º nível:</strong> <i>Falsa Vida</i> (proibida)</li>
+				<li><strong>2º nível:</strong> <i>Raio de Enfraquecimento</i> (proibida)</li>
+				<li><strong>3º nível:</strong> <i>Animar os Mortos</i> (proibida)</li>
+				<li><strong>4º nível:</strong> <i>Proteção contra a Morte</i> (proibida)</li>
+				<li><strong>5º nível:</strong> <i>Erguer Morto</i> (proibida)</li>
 			</ul>
-			<p class="indent">Cinco ✦ em cinco. Nenhuma magia limpa, porque não existe jeito limpo de mexer no que já é de Kólasi. É por isso que esta é a Via de Fardo alto.</p>
+			<p class="indent">Cinco proibidas em cinco. Nenhuma magia limpa, porque não existe jeito limpo de mexer no que já é de Kólasi. É por isso que esta é a Via de Fardo alto.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Necromancia, fora do limite de preparadas: 1º Falsa Vida ✦; 2º Raio de Enfraquecimento ✦; 3º Animar os Mortos ✦; 4º Proteção contra a Morte ✦; 5º Erguer Morto ✦.</description>
+			<description>Magias sempre preparadas da Via da Necromancia, fora do limite de preparadas: 1º Falsa Vida (proibida), 2º Raio de Enfraquecimento (proibida), 3º Animar os Mortos (proibida), 4º Proteção contra a Morte (proibida), 5º Erguer Morto (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" spellcasting="Alquimista" prepared="true" level="3" />
@@ -499,10 +499,10 @@
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Reescrever a Peça</i></li>
 				<li><strong>5º nível (17º nível de classe):</strong> <i>Cidadela de um Minuto</i></li>
 			</ul>
-			<p class="indent">Nenhuma das três é ✦. A Transmutação não herdou de ninguém, não deve nada, e nem as magias exclusivas dela tocam a trilha do Fardo.</p>
+			<p class="indent">Nenhuma das três é proibida. A Transmutação não herdou de ninguém, não deve nada, e nem as magias exclusivas dela tocam a trilha do Fardo.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: 1º Liga Viva; 3º Reescrever a Peça; 5º Cidadela de um Minuto.</description>
+			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: 1º Liga Viva, 3º Reescrever a Peça, 5º Cidadela de um Minuto.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA" spellcasting="Alquimista" level="3" />
@@ -520,10 +520,10 @@
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Sopro de Meio-Dia</i></li>
 				<li><strong>5º nível (17º nível de classe):</strong> <i>A Parte Voltada Para Fora</i></li>
 			</ul>
-			<p class="indent">Nenhuma das três é ✦: o fogo do calor não exige vitalidade, só ressonância.</p>
+			<p class="indent">Nenhuma das três é proibida: o fogo do calor não exige vitalidade, só ressonância.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Brasa Guardada; 3º Sopro de Meio-Dia; 5º A Parte Voltada Para Fora.</description>
+			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Brasa Guardada, 3º Sopro de Meio-Dia, 5º A Parte Voltada Para Fora.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA" spellcasting="Alquimista" level="3" />
@@ -538,13 +538,13 @@
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
 				<li><strong>1º nível (3º nível de classe):</strong> <i>Costura</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Balança de Ílios ✦</i></li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>Dividir a Vida ✦</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Balança de Ílios</i> (proibida)</li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>Dividir a Vida</i> (proibida)</li>
 			</ul>
 			<p class="indent">A primeira cura de graça e as duas seguintes cobram. É a Via inteira em três magias: cura pequena é presente de Ílios, e mover vida de um corpo para outro nunca foi.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: 1º Costura; 3º Balança de Ílios ✦; 5º Dividir a Vida ✦.</description>
+			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: 1º Costura, 3º Balança de Ílios (proibida), 5º Dividir a Vida (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_COSTURA" spellcasting="Alquimista" level="3" />
@@ -558,14 +558,14 @@
 			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Nome na Boca ✦</i></li>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Nome na Boca</i> (proibida)</li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Empréstimo de Perícia</i></li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>Segunda Voz ✦</i></li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>Segunda Voz</i> (proibida)</li>
 			</ul>
-			<p class="indent">Duas ✦ e uma limpa, e a limpa é Empréstimo de Perícia por um motivo só: exige que a pessoa queira. A Via inteira gira nessa dobradiça.</p>
+			<p class="indent">Duas proibidas e uma limpa, e a limpa é Empréstimo de Perícia por um motivo só: exige que a pessoa queira. A Via inteira gira nessa dobradiça.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: 1º Nome na Boca ✦; 3º Empréstimo de Perícia; 5º Segunda Voz ✦.</description>
+			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: 1º Nome na Boca (proibida), 3º Empréstimo de Perícia, 5º Segunda Voz (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA" spellcasting="Alquimista" level="3" />
@@ -579,14 +579,14 @@
 			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Adiamento ✦</i></li>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Adiamento</i> (proibida)</li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Inventário de Ossos</i></li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>A Conta Aberta ✦</i></li>
+				<li><strong>5º nível (17º nível de classe):</strong> <i>A Conta Aberta</i> (proibida)</li>
 			</ul>
-			<p class="indent">Duas ✦ e uma limpa. Inventário de Ossos é limpa por razão técnica: contar não é atrasar. Todo o resto que esta Via faz é atrasar.</p>
+			<p class="indent">Duas proibidas e uma limpa. Inventário de Ossos é limpa por razão técnica: contar não é atrasar. Todo o resto que esta Via faz é atrasar.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Adiamento ✦; 3º Inventário de Ossos; 5º A Conta Aberta ✦.</description>
+			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Adiamento (proibida), 3º Inventário de Ossos, 5º A Conta Aberta (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO" spellcasting="Alquimista" level="3" />

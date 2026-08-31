@@ -3,7 +3,7 @@
 	<info>
 		<name>Magias Exclusivas de Via</name>
 		<description>Quinze magias que só existem em Luminytia, três por Via de Ressonância. Nenhuma outra Via as aprende.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="magias/exclusivas-de-via.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/exclusivas-de-via.xml" />
 		</update>
 	</info>
@@ -66,7 +66,7 @@
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você bate o pé no chão e a terra sobe organizada.</p>
 			<p class="indent">Num ponto que possa ver, ergue-se uma fortificação de pedra e metal ressonante: um círculo de até 9 metros de diâmetro, com muro de 3 metros de altura e 30 centímetros de espessura, com uma abertura no lugar que você escolher. O muro tem CA 17, 60 PV por seção de 3 metros, e é imune a dano psíquico e venenoso.</p>
-			<p class="indent">Criaturas no espaço ocupado pelo muro ao ser erguido fazem teste de resistência de Destreza; falhando, são empurradas para o lado que você escolher.</p>
+			<p class="indent">Criaturas no espaço ocupado pelo muro ao ser erguido fazem teste de resistência de Destreza. Falhando, são empurradas para o lado que você escolher.</p>
 			<p class="indent">Ao fim da duração a estrutura afunda de volta sem deixar marca.</p>
 			<p class="indent"><b>Em Níveis Superiores.</b> A altura sobe 1,5 metro e os PV sobem 15 por seção a cada nível acima do 5º.</p>
 		</description>
@@ -117,7 +117,7 @@
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Uma linha de fogo branco de 18 metros por 1,5 metro, saindo de você.</p>
 			<p class="indent">Cada criatura na linha faz teste de resistência de Destreza e sofre 6d6 de dano de fogo, metade num sucesso.</p>
-			<p class="indent">O que separa esta magia de qualquer outro fogo: você escolhe quem ela ignora. Escolha um número de criaturas na linha até o seu modificador de Inteligência; elas não são afetadas e não fazem teste.</p>
+			<p class="indent">O que separa esta magia de qualquer outro fogo: você escolhe quem ela ignora. Escolha um número de criaturas na linha até o seu modificador de Inteligência. Elas não são afetadas e não fazem teste.</p>
 			<p class="indent">O fogo não incendeia objetos que não estejam sendo carregados.</p>
 			<p class="indent"><b>Em Níveis Superiores.</b> +1d6 por nível acima do 3º, e uma criatura poupada adicional a cada dois níveis.</p>
 		</description>
@@ -193,7 +193,7 @@
 		<supports>Spell, Alquimista</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
 			<p class="indent">Você equilibra duas vidas na mesma mão.</p>
 			<p class="indent">Escolha duas criaturas que possa ver, uma doadora e uma receptora. A doadora perde até 4d8 PV, à sua escolha, sem teste de resistência se estiver disposta, ou com teste de Constituição para metade se não estiver. A receptora recupera exatamente a mesma quantia.</p>
 			<p class="indent">Se a doadora estiver disposta e for você mesmo, a receptora recupera o dobro.</p>
@@ -201,7 +201,7 @@
 			<p class="indent"><b>Em Níveis Superiores.</b> +1d8 por nível acima do 3º.</p>
 		</description>
 		<sheet>
-			<description>✦ Doadora perde até 4d8 PV (Constituição para metade se não estiver disposta) e a receptora recupera a mesma quantia. Se a doadora for você e estiver disposto, dobra. Nunca leva a doadora abaixo de 1 PV.</description>
+			<description>Efeito proibido. Doadora perde até 4d8 PV (Constituição para metade se não estiver disposta) e a receptora recupera a mesma quantia. Se a doadora for você e estiver disposto, dobra. Nunca leva a doadora abaixo de 1 PV.</description>
 		</sheet>
 		<setters>
 			<set name="level">3</set>
@@ -220,7 +220,7 @@
 		<supports>Spell, Alquimista</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
 			<p class="indent">Você amarra duas vitalidades numa só.</p>
 			<p class="indent">Toque duas criaturas dispostas, que podem incluir você. Enquanto durar, sempre que uma delas sofrer dano, metade desse dano é transferida para a outra e a primeira sofre só a outra metade. Cura recebida por qualquer uma das duas é dividida do mesmo jeito.</p>
 			<p class="indent">Se uma das duas cair a 0 PV, o vínculo se rompe e a outra sofre 4d10 de dano necrótico imediatamente.</p>
@@ -228,7 +228,7 @@
 			<p class="indent"><b>Em Níveis Superiores.</b> A duração sobe para 8 horas no 7º nível.</p>
 		</description>
 		<sheet>
-			<description>✦ Duas criaturas dispostas dividem dano e cura pela metade. Se uma cair a 0 PV, o vínculo rompe e a outra sofre 4d10 necrótico.</description>
+			<description>Efeito proibido. Duas criaturas dispostas dividem dano e cura pela metade. Se uma cair a 0 PV, o vínculo rompe e a outra sofre 4d10 necrótico.</description>
 		</sheet>
 		<setters>
 			<set name="level">5</set>
@@ -248,7 +248,7 @@
 		<supports>Spell, Alquimista</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
 			<p class="indent">Você tira uma palavra de alguém.</p>
 			<p class="indent">Escolha uma criatura que possa ver e uma palavra que você tenha ouvido dela ou que saiba que ela conhece: um nome, um lugar, uma senha, um comando. A criatura faz teste de resistência de Inteligência.</p>
 			<p class="indent">Falhando, pelo próximo minuto ela não consegue dizer, escrever nem indicar aquela palavra, e sabe que existe algo que não está conseguindo dizer. Ela ainda pensa normalmente sobre o assunto.</p>
@@ -256,7 +256,7 @@
 			<p class="indent"><b>Em Níveis Superiores.</b> Uma palavra adicional por nível acima do 1º.</p>
 		</description>
 		<sheet>
-			<description>✦ Resistência de Inteligência ou o alvo não consegue dizer, escrever nem indicar uma palavra por 1 minuto. Magia, item ou ordem que dependa dela não funciona.</description>
+			<description>Efeito proibido. Resistência de Inteligência ou o alvo não consegue dizer, escrever nem indicar uma palavra por 1 minuto. Magia, item ou ordem que dependa dela não funciona.</description>
 		</sheet>
 		<setters>
 			<set name="level">1</set>
@@ -303,7 +303,7 @@
 		<supports>Spell, Alquimista</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
 			<p class="indent">Você deixa uma voz dentro de alguém.</p>
 			<p class="indent">Toque uma criatura e sussurre uma instrução de até uma frase, que deve soar razoável. A criatura faz teste de resistência de Sabedoria, com vantagem se a instrução for claramente contra os interesses dela.</p>
 			<p class="indent">Falhando, ela carrega a instrução por até 30 dias. Ela não a obedece o tempo todo: ela a obedece quando as circunstâncias que você descreveu acontecerem, e nesse momento acredita que a ideia é dela.</p>
@@ -312,7 +312,7 @@
 			<p class="indent"><b>Em Níveis Superiores.</b> A duração sobe para 1 ano no 7º nível.</p>
 		</description>
 		<sheet>
-			<description>✦ Resistência de Sabedoria (vantagem se for contra os interesses dela) ou carrega uma instrução por 30 dias, executada quando as circunstâncias acontecerem. Uma por criatura.</description>
+			<description>Efeito proibido. Resistência de Sabedoria (vantagem se for contra os interesses dela) ou carrega uma instrução por 30 dias, executada quando as circunstâncias acontecerem. Uma por criatura.</description>
 		</sheet>
 		<setters>
 			<set name="level">5</set>
@@ -331,7 +331,7 @@
 		<supports>Spell, Alquimista</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
 			<p class="indent">Você adia a cobrança por alguns segundos.</p>
 			<p class="indent">A criatura não cai: fica com 1 PV até o fim do próximo turno dela, e sabe exatamente quanto tempo tem.</p>
 			<p class="indent">Ao fim desse prazo, se ainda estiver com 1 PV e não tiver recebido cura, ela cai automaticamente e falha em um teste de resistência contra a morte.</p>
@@ -339,7 +339,7 @@
 			<p class="indent"><b>Em Níveis Superiores.</b> A criatura fica com PV iguais ao nível de magia usado, em vez de 1.</p>
 		</description>
 		<sheet>
-			<description>✦ Reação quando alguém cai a 0 PV: fica com 1 PV até o fim do próximo turno dele. Sem cura até lá, cai e falha um teste contra a morte. 1× por criatura entre descansos longos.</description>
+			<description>Efeito proibido. Reação quando alguém cai a 0 PV: fica com 1 PV até o fim do próximo turno dele. Sem cura até lá, cai e falha um teste contra a morte. 1× por criatura entre descansos longos.</description>
 		</sheet>
 		<setters>
 			<set name="level">1</set>
@@ -385,7 +385,7 @@
 		<supports>Spell, Alquimista</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
+			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
 			<p class="indent">Você declara que uma dívida não vai ser paga hoje.</p>
 			<p class="indent">Escolha até três criaturas mortas há no máximo 10 dias que possa ver. Elas se levantam imediatamente com metade dos PV que tinham em vida, mantêm as estatísticas que tinham, e agem no seu turno seguindo suas ordens, sem precisar de nova ação para comandá-las.</p>
 			<p class="indent">Elas não são mortos-vivos comuns: mantêm a perícia, o idioma e o ofício que tinham, e obedecem literalmente, sem iniciativa própria.</p>
@@ -394,7 +394,7 @@
 			<p class="indent"><b>Em Níveis Superiores.</b> Uma criatura adicional por nível acima do 5º.</p>
 		</description>
 		<sheet>
-			<description>✦ Ergue até 3 mortos de no máximo 10 dias com metade dos PV e as estatísticas, perícia e ofício que tinham. Ao fim caem de vez e não podem ser erguidos por meio nenhum. Cada um conta como um uso ✦.</description>
+			<description>Efeito proibido. Ergue até 3 mortos de no máximo 10 dias com metade dos PV e as estatísticas, perícia e ofício que tinham. Ao fim caem de vez e não podem ser erguidos por meio nenhum. Cada um conta como um uso proibido.</description>
 		</sheet>
 		<setters>
 			<set name="level">5</set>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Cartomante</name>
 		<description>Classe-base Cartomante do mundo de Luminytia. Conjurador completo de Sabedoria, movido a cartas pintadas à mão.</description>
-		<update version="0.2.0">
+		<update version="0.2.1">
 			<file name="classes/cartomante.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/cartomante.xml" />
 		</update>
 	</info>
@@ -153,7 +153,7 @@
 			<p class="indent">Se você perder o baralho, perde a conjuração até refazê-lo. Vale a tabela de Repintar a Carta, com a concessão de que cartas de até 2º nível de magia podem ser repintadas em lote, todas de uma vez, num único descanso longo com material suficiente.</p>
 		</description>
 		<sheet alt="O Baralho">
-			<description>Você conhece as cartas que pintou; cada magia conhecida é uma tela física. Baralho não pintado por você não conjura nada. Carta alheia custa 1 dia e 50 po por nível de magia e fica fora do limite.</description>
+			<description>Você conhece as cartas que pintou, e cada magia conhecida é uma tela física. Baralho não pintado por você não conjura nada. Carta alheia custa 1 dia e 50 po por nível de magia e fica fora do limite.</description>
 		</sheet>
 		<rules>
 			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="4" spellcasting="Cartomante" level="1" />
@@ -185,10 +185,10 @@
 			<p class="indent">Você recupera 1 carta ao terminar um descanso curto, e a mão inteira ao terminar um descanso longo.</p>
 		</description>
 		<sheet alt="A Mão" usage="{{proficiency}}/Descanso Longo">
-			<description>Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d6 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d6 de um ataque ou teste de um hostil a 18 m. Recupera 1 carta no descanso curto.</description>
-			<description level="5">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d8 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d8 de um ataque ou teste de um hostil a 18 m. Recupera 1 carta no descanso curto.</description>
-			<description level="11">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d10 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d10 de um ataque ou teste de um hostil a 18 m.</description>
-			<description level="17">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d12 a um ataque, teste ou resistência de alguém a 18 m; carta invertida subtrai 1d12 de um ataque ou teste de um hostil a 18 m.</description>
+			<description>Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d6 a um ataque, teste ou resistência de alguém a 18 m. Carta invertida subtrai 1d6 de um ataque ou teste de um hostil a 18 m. Recupera 1 carta no descanso curto.</description>
+			<description level="5">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d8 a um ataque, teste ou resistência de alguém a 18 m. Carta invertida subtrai 1d8 de um ataque ou teste de um hostil a 18 m. Recupera 1 carta no descanso curto.</description>
+			<description level="11">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d10 a um ataque, teste ou resistência de alguém a 18 m. Carta invertida subtrai 1d10 de um ataque ou teste de um hostil a 18 m.</description>
+			<description level="17">Sem ação, 1×/turno, após ver a rolagem: carta direita soma 1d12 a um ataque, teste ou resistência de alguém a 18 m. Carta invertida subtrai 1d12 de um ataque ou teste de um hostil a 18 m.</description>
 		</sheet>
 	</element>
 
@@ -204,9 +204,8 @@
 
 	<element name="Carta Queimada e Repintar" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_CARTOMANTE_CARTA_QUEIMADA">
 		<description>
-			<p>No 3º nível, as magias marcadas com <strong>✦</strong> na lista do Cartomante passam a seguir as regras do Fardo.</p>
-			<p class="indent"><strong>Limiar gratuito:</strong> seu bônus de proficiência em usos de efeitos ✦ por descanso longo. Passado o limiar, cada uso gera 1 nível de Fardo.</p>
-			<p class="indent"><strong>Carta queimada:</strong> toda vez que você conjura um efeito ✦, a tinta da carta usada <strong>apaga</strong>. A tela fica cinza e lisa, como se nunca tivesse sido pintada, e sai do baralho. Você não pode conjurar aquela magia até repintá-la.</p>
+			<p>No 3º nível, as cartas mais pesadas do baralho passam a cobrar a tinta. As magias marcadas como <strong>carta queimada</strong> na lista do Cartomante gastam a tela junto com o espaço de magia.</p>
+			<p class="indent"><strong>Carta queimada:</strong> toda vez que você conjura uma dessas cartas, a tinta dela <strong>apaga</strong>. A tela fica cinza e lisa, como se nunca tivesse sido pintada, e sai do baralho. Você não pode conjurar aquela magia até repintá-la.</p>
 			<p class="indent"><strong>Recuperação:</strong> não há recuperação automática. A carta volta quando você repinta a tela, e não antes.</p>
 			<h5>REPINTAR A CARTA</h5>
 			<ul>
@@ -219,8 +218,8 @@
 			</ul>
 			<p class="indent">Durante um descanso longo você consegue pintar cartas de até 2º nível de magia, uma por descanso. Qualquer coisa acima disso exige tempo de inatividade de verdade, em lugar seguro e com luz. Trabalho interrompido não se perde, mas também não avança. Você não pode pintar uma carta que não conheça.</p>
 		</description>
-		<sheet alt="Carta Queimada" usage="{{proficiency}} ✦/Descanso Longo">
-			<description>Limiar gratuito de efeitos ✦ igual ao bônus de proficiência; além disso, 1 nível de Fardo por uso. Todo efeito ✦ queima a carta, que sai do baralho até ser repintada. Não há recuperação automática.</description>
+		<sheet alt="Carta Queimada">
+			<description>Magias marcadas como carta queimada apagam a tela ao serem conjuradas e saem do baralho até você repintá-las. Não há recuperação automática.</description>
 		</sheet>
 	</element>
 

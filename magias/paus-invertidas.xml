@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Paus (Invertido)</name>
 		<description>As catorze cartas de Paus lidas ao contrário, do Ás ao Rei. O mesmo fogo virado do avesso: o que não pega, o que não anda, o que queima para dentro. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="magias/paus-invertidas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus-invertidas.xml" />
 		</update>
 	</info>
@@ -131,7 +131,7 @@
 			<p class="indent">Lida direita, a mesma carta conjura <i>Rixa</i>.</p>
 		</description>
 		<sheet>
-			<description>Resistência de Sabedoria ou o alvo não pode usar a ação de Ataque nem conjurar magias de dano. Acaba na hora se ele sofrer dano; ele também repete o teste no fim de cada turno dele.</description>
+			<description>Resistência de Sabedoria ou o alvo não pode usar a ação de Ataque nem conjurar magias de dano. Acaba na hora se ele sofrer dano. Ele também repete o teste no fim de cada turno dele.</description>
 		</sheet>
 		<setters>
 			<set name="level">2</set>
@@ -296,7 +296,7 @@
 			<p class="indent">Lida direita, a mesma carta conjura <i>Arauto da Faísca</i>.</p>
 		</description>
 		<sheet>
-			<description>Invoca um elemental do fogo hostil a tudo, com vantagem em ataques e o dobro de PV. Ele ataca a criatura viva mais próxima; sua ação + teste de Sabedoria CD 15 escolhe o alvo dele no turno. Concentração perdida: ele fica solto por 1 minuto.</description>
+			<description>Invoca um elemental do fogo hostil a tudo, com vantagem em ataques e o dobro de PV. Ele ataca a criatura viva mais próxima. Sua ação + teste de Sabedoria CD 15 escolhe o alvo dele no turno. Concentração perdida: ele fica solto por 1 minuto.</description>
 		</sheet>
 		<setters>
 			<set name="level">6</set>
@@ -344,7 +344,7 @@
 		<supports>Spell, Cartomante</supports>
 		<description>
 			<p><i>Rainha de Paus, lida ao contrário.</i></p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar e queima a carta, que sai do baralho até ser repintada.</p>
+			<p><strong>Carta queimada.</strong> Conjurar esta carta apaga a tinta dela: a tela sai do baralho até ser repintada.</p>
 			<p class="indent">A Rainha direita manda. Esta cobra. Cada criatura hostil que possa ver você numa esfera de 9 metros de raio centrada em você faz um teste de resistência de Carisma. Falhando, fica <b>vassala</b> durante a duração.</p>
 			<p class="indent">Uma criatura vassala não pode atacar você nem seus aliados. No início de cada turno dela, ela deve pagar o tributo: ou usa a ação dela para Ajudar você ou um aliado seu, ou sofre 8d6 de dano psíquico.</p>
 			<p class="indent">Ela repete o teste sempre que sofrer dano vindo de qualquer outra fonte, encerrando o efeito sobre si com um sucesso.</p>
@@ -352,7 +352,7 @@
 			<p class="indent">Lida direita, a mesma carta conjura <i>Coroa Ardente</i>.</p>
 		</description>
 		<sheet>
-			<description>✦ Hostis numa esfera de 9 m: resistência de Carisma ou ficam vassalas — não podem atacar você nem seus aliados e, a cada turno, ou usam a ação para Ajudar ou sofrem 8d6 psíquico. Repetem o teste ao sofrer dano de outra fonte. Queima a carta.</description>
+			<description>Hostis numa esfera de 9 m: resistência de Carisma ou ficam vassalas. Não podem atacar você nem seus aliados e, a cada turno, ou usam a ação para Ajudar ou sofrem 8d6 psíquico. Repetem o teste ao sofrer dano de outra fonte. Queima a carta.</description>
 		</sheet>
 		<setters>
 			<set name="level">8</set>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipes Regentes</name>
 		<description>Os Naipes Regentes, subclasses do Cartomante de Luminytia. O cartomante lê os quatro naipes, mas um deles lê ele de volta.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="classes/naipes-regentes.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/naipes-regentes.xml" />
 		</update>
 	</info>
@@ -44,10 +44,10 @@
 				<li><strong>8º nível (15º):</strong> <i>Coroa Ardente</i></li>
 				<li><strong>9º nível (17º):</strong> <i>A Vontade Que Queima</i></li>
 			</ul>
-			<p class="indent">A Rainha continua sendo a Rainha: <i>Coroa Ardente</i> e <i>Coroa Exigida</i> seguem ✦, queimam a carta e cobram Fardo como qualquer efeito proibido. O naipe te dá a carta, não o perdão.</p>
+			<p class="indent">A Rainha continua sendo a Rainha: <i>Coroa Ardente</i> e <i>Coroa Exigida</i> continuam queimando a carta como qualquer outra. O naipe te dá a carta, não o perdão.</p>
 		</description>
 		<sheet>
-			<description>Cartas de Paus concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Faísca, Sinal de Avanço e Fogueira Festiva (3º); Estandarte da Vitória (5º); Salva Veloz (7º); Peso das Chamas (9º); Arauto da Faísca (11º); Carga Flamejante (13º); Coroa Ardente (15º); A Vontade Que Queima (17º).</description>
+			<description>Cartas de Paus concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Faísca, Sinal de Avanço e Fogueira Festiva (3º). Estandarte da Vitória (5º). Salva Veloz (7º). Peso das Chamas (9º). Arauto da Faísca (11º). Carga Flamejante (13º). Coroa Ardente (15º). A Vontade Que Queima (17º).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_PAUS_FAISCA" spellcasting="Cartomante" prepared="true" level="3" />
@@ -97,10 +97,10 @@
 	<element name="O Rei no Punho" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PAUS_REI_NO_PUNHO">
 		<description>
 			<p>No 14º nível, o naipe já queimou o que tinha para queimar em você. Você fica <strong>imune a dano de fogo</strong> e não pode ficar amedrontado.</p>
-			<p class="indent">Além disso, uma vez por descanso longo, você conjura uma carta de Paus do seu baralho <strong>sem gastar espaço de magia</strong>. Se ela for ✦, ela ainda queima a carta e cobra o Fardo normalmente: o espaço é de graça, o preço não.</p>
+			<p class="indent">Além disso, uma vez por descanso longo, você conjura uma carta de Paus do seu baralho <strong>sem gastar espaço de magia</strong>. Se ela for uma carta queimada, a tela ainda apaga normalmente: o espaço é de graça, a tinta não.</p>
 		</description>
 		<sheet usage="1/Descanso Longo">
-			<description>Imune a dano de fogo e não pode ficar amedrontado. 1×/descanso longo, conjure uma carta de Paus sem gastar espaço de magia (efeitos ✦ ainda queimam a carta e cobram Fardo).</description>
+			<description>Imune a dano de fogo e não pode ficar amedrontado. 1×/descanso longo, conjure uma carta de Paus sem gastar espaço de magia (cartas queimadas ainda apagam a tela).</description>
 		</sheet>
 	</element>
 
@@ -108,7 +108,7 @@
 		<supports>Naipe Regente</supports>
 		<description>
 			<p><i>Terra. Matéria, ofício, patrimônio, corpo, paciência.</i></p>
-			<p class="indent">Suas telas duram. A tinta assenta, o linho endurece, e cartas suas de dez anos atrás ainda conjuram como no dia em que secaram. Cartomantes de outros naipes trocam de baralho; o de Ouros herda o dele.</p>
+			<p class="indent">Suas telas duram. A tinta assenta, o linho endurece, e cartas suas de dez anos atrás ainda conjuram como no dia em que secaram. Cartomantes de outros naipes trocam de baralho. O de Ouros herda o dele.</p>
 			<p class="indent">O regente de Ouros lê devagar, porque leitura feita depressa é material desperdiçado. É a única leitura que trata o baralho como patrimônio e não como munição.</p>
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_OUROS_CARTAS" />
 			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_OUROS_LASTRO" />
@@ -140,10 +140,10 @@
 				<li><strong>8º nível (15º):</strong> <i>O Toque de Ouros</i></li>
 				<li><strong>9º nível (17º):</strong> <i>A Montanha Obedece</i></li>
 			</ul>
-			<p class="indent">A Rainha continua sendo a Rainha: <i>O Toque de Ouros</i> segue ✦, queima a carta e cobra Fardo como qualquer efeito proibido. O naipe te dá a carta, não o perdão.</p>
+			<p class="indent">A Rainha continua sendo a Rainha: <i>O Toque de Ouros</i> continua queimando a carta como qualquer outra. O naipe te dá a carta, não o perdão.</p>
 		</description>
 		<sheet>
-			<description>Cartas de Ouros concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Semente de Chumbo, Obra de Três e Punho Fechado (3º); A Espera da Colheita (5º); Martelo do Aprendiz (7º); O Patrimônio (9º); O Aprendiz de Barro (11º); Passo de Ferro (13º); O Toque de Ouros (15º); A Montanha Obedece (17º).</description>
+			<description>Cartas de Ouros concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Semente de Chumbo, Obra de Três e Punho Fechado (3º). A Espera da Colheita (5º). Martelo do Aprendiz (7º). O Patrimônio (9º). O Aprendiz de Barro (11º). Passo de Ferro (13º). O Toque de Ouros (15º). A Montanha Obedece (17º).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_OUROS_SEMENTE_DE_CHUMBO" spellcasting="Cartomante" prepared="true" level="3" />

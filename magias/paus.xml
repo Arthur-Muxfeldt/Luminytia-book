@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Paus</name>
 		<description>As catorze cartas de Paus lidas direitas, do Ás ao Rei. Fogo: energia, ação, criatividade, paixão. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="magias/paus.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus.xml" />
 		</update>
 	</info>
@@ -201,7 +201,7 @@
 		<supports>Spell, Cartomante</supports>
 		<description>
 			<p><i>8 de Paus, lida direita.</i></p>
-			<p>Dispare oito faíscas de fogo e distribua-as entre criaturas que possa ver. Faça uma jogada de ataque mágico separada para cada faísca; cada acerto causa 1d8 de dano de fogo.</p>
+			<p>Dispare oito faíscas de fogo e distribua-as entre criaturas que possa ver. Faça uma jogada de ataque mágico separada para cada faísca. Cada acerto causa 1d8 de dano de fogo.</p>
 			<p class="indent">Seu deslocamento dobra até o fim do turno.</p>
 			<p class="indent"><b>Em Níveis Superiores.</b> Mais uma faísca por nível acima do 4º.</p>
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Salva Descontrolada</i>.</p>
@@ -333,14 +333,14 @@
 		<supports>Spell, Cartomante</supports>
 		<description>
 			<p><i>Rainha de Paus, lida direita.</i></p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar e queima a carta, que sai do baralho até ser repintada.</p>
+			<p><strong>Carta queimada.</strong> Conjurar esta carta apaga a tinta dela: a tela sai do baralho até ser repintada.</p>
 			<p class="indent">Escolha até quatro criaturas que possam ver você. Cada uma faz um teste de resistência de Sabedoria. Falhando, fica dominada por você durante a duração, como em <i>dominar monstro</i>: você pode gastar sua ação para ditar o que uma delas fará no turno seguinte.</p>
 			<p class="indent">Sempre que uma criatura dominada sofrer dano, ela repete o teste, encerrando o efeito sobre si com um sucesso.</p>
 			<p class="indent"><b>Em Níveis Superiores.</b> Mais uma criatura por nível acima do 8º.</p>
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Coroa Exigida</i>.</p>
 		</description>
 		<sheet>
-			<description>✦ Até 4 criaturas: resistência de Sabedoria ou dominadas como dominar monstro. Repetem o teste ao sofrer dano. Queima a carta.</description>
+			<description>Até 4 criaturas: resistência de Sabedoria ou dominadas como dominar monstro. Repetem o teste ao sofrer dano. Queima a carta.</description>
 		</sheet>
 		<setters>
 			<set name="level">8</set>

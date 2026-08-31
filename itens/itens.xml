@@ -23,4 +23,40 @@
 		</sheet>
 	</element>
 
+	<element name="Bate Aí" type="Magic Item" source="Luminytia" id="ID_ITEM_LUMINYTIA_BATE_AI">
+		<supports>Magic Item</supports>
+		<description>
+			<p><i>Item maravilhoso, comum. Não requer sintonização.</i></p>
+			<p class="indent">"5 feet, bate?"</p>
+			<p class="indent">É uma luva de couro gasto, só a da mão direita, com a palma manchada de tinta velha. Não tem inscrição, não tem runa, não brilha. Tem só o cheiro de quem usou muito.</p>
+			<p class="indent">Quando uma criatura que você possa ver a até <strong>1,5 metro</strong> te acerta com um ataque, você pode usar sua <strong>reação</strong> para levantar a mão aberta na direção dela. O ataque <strong>erra</strong>. Não importa por quanto tinha acertado, não importa se era crítico.</p>
+			<p class="indent">Depois disso a luva vira couro comum e nunca mais funciona.</p>
+			<p class="indent"><strong>Se a criatura bater de volta.</strong> Se o atacante tiver Inteligência 4 ou mais, entender o gesto e escolher completar o cumprimento, a luva recupera a magia imediatamente. O mestre decide, ou pede um teste de Carisma (Persuasão) CD 15 se quiser dar chance.</p>
+			<p class="indent">Criatura que bate de volta não fica enfeitiçada, não fica pacificada e não perde o turno. Ela só bateu de volta. O que ela faz depois é problema seu.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Reação quando alguém a até 1,5 m te acerta: o ataque erra, mesmo crítico. Depois a luva vira couro comum, e só volta a funcionar se o atacante (INT 4+) escolher bater de volta.</description>
+		</sheet>
+	</element>
+
+	<element name="5 Feet Bate" type="Magic Item" source="Luminytia" id="ID_ITEM_LUMINYTIA_5_FEET_BATE">
+		<supports>Magic Item</supports>
+		<description>
+			<p><i>Anel, raro. Requer sintonização.</i></p>
+			<p class="indent">Um aro de latão sem pedra, do tamanho errado para qualquer dedo até você calçar. Não desmancha um golpe: desmancha a briga inteira e devolve ela do jeito mais antigo que existe.</p>
+			<p class="indent">Com uma <strong>ação</strong>, você bate o anel em qualquer superfície dura e chama uma criatura que possa ver a até <strong>1,5 metro</strong>. Ela faz um teste de resistência de Carisma contra CD 15, falhando automaticamente se aceitar a briga de bom grado. Numa falha, está declarado o <strong>bate</strong>: um cerco de 1,5 metro fecha em volta de vocês dois e dura <strong>1 minuto</strong>.</p>
+			<h5>ENQUANTO O BATE DURA</h5>
+			<ul>
+				<li><strong>Só na mão.</strong> Você e ela só podem atacar com <strong>golpes desarmados</strong>. Ataque com arma, arremesso, disparo e conjuração de magia simplesmente não saem: a mão abre sozinha, a palavra morre na boca e o turno vira só a vontade de bater.</li>
+				<li><strong>Só a 1,5 metro.</strong> Nenhum dos dois pode se afastar voluntariamente mais de 1,5 metro do outro. Deslocamento forçado, teleporte e Disparada para fora do cerco não funcionam: o que sai do bate não é permitido.</li>
+				<li><strong>Só vocês dois.</strong> Ataque, magia ou efeito vindo de fora do cerco e mirado em qualquer um de vocês <strong>falha</strong>, sem gastar espaço de magia nem uso. Cura de fora também não passa. A briga é de quem está nela.</li>
+			</ul>
+			<p class="indent">A criatura repete o teste de resistência no fim de cada turno dela, terminando o efeito para os dois numa passagem. O bate também acaba se um dos dois cair a 0 pontos de vida, e aí o cerco abre e o mundo volta a valer.</p>
+			<p class="indent">Uma criatura com Inteligência 3 ou menos não entende o convite e é imune ao efeito. O anel só funciona de novo no próximo amanhecer.</p>
+		</description>
+		<sheet action="Action" usage="1/Amanhecer">
+			<description>Chame uma criatura a até 1,5 m: Carisma CD 15 (falha automática se aceitar) ou por 1 minuto vocês dois só podem usar golpes desarmados, não podem se afastar mais de 1,5 m um do outro, e ataques, magias e curas vindos de fora falham. Ela repete o teste no fim de cada turno. Acaba se alguém cair a 0 PV. Imune com Inteligência 3 ou menos.</description>
+		</sheet>
+	</element>
+
 </elements>

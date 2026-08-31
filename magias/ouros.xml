@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Ouros</name>
 		<description>As catorze cartas de Ouros lidas direitas, do Ás ao Rei. Terra: matéria, ofício, patrimônio, corpo, paciência. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="magias/ouros.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/ouros.xml" />
 		</update>
 	</info>
@@ -155,7 +155,7 @@
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Mão que Retém</i>.</p>
 		</description>
 		<sheet>
-			<description>Dê até 15 dos seus PV; uma criatura a 9 m recupera o dobro. Nunca leva você abaixo de 1 PV e não pode vir de PV temporários.</description>
+			<description>Dê até 15 dos seus PV e uma criatura a 9 m recupera o dobro. Nunca leva você abaixo de 1 PV e não pode vir de PV temporários.</description>
 		</sheet>
 		<setters>
 			<set name="level">3</set>
@@ -339,7 +339,7 @@
 		<supports>Spell, Cartomante</supports>
 		<description>
 			<p><i>Rainha de Ouros, lida direita.</i></p>
-			<p><strong>✦ Efeito proibido.</strong> Gera Fardo passado o limiar e queima a carta, que sai do baralho até ser repintada.</p>
+			<p><strong>Carta queimada.</strong> Conjurar esta carta apaga a tinta dela: a tela sai do baralho até ser repintada.</p>
 			<p class="indent">A Rainha de Ouros dá de comer a quem chega. Lida assim, ela decide que uma pessoa vale mais como bem do que como gente. Escolha uma criatura que possa ver: ela faz um teste de resistência de Constituição.</p>
 			<p class="indent">Falhando, ela começa a endurecer em ouro maciço e fica impedida durante a duração. Ela repete o teste no fim de cada turno dela: com três sucessos a magia acaba, e com três falhas ela fica <b>petrificada em ouro</b> pelo tempo que for, até que <i>dissipar magia</i>, <i>restauração maior</i> ou algo do porte a desfaça.</p>
 			<p class="indent">O corpo dourado vale cerca de 5.000 po em ouro puro, e é aí que mora o preço da carta: se qualquer parte dele for retirada, derretida ou vendida, a criatura <b>não pode mais ser restaurada</b> por nada aquém de <i>desejo</i>.</p>
@@ -347,7 +347,7 @@
 			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Toque Devolvido</i>.</p>
 		</description>
 		<sheet>
-			<description>✦ Resistência de Constituição ou o alvo começa a virar ouro e fica impedido. Três falhas nos testes seguintes: petrificado em ouro. Se qualquer parte do corpo dourado for retirada, ele não pode mais ser restaurado. Queima a carta.</description>
+			<description>Resistência de Constituição ou o alvo começa a virar ouro e fica impedido. Três falhas nos testes seguintes: petrificado em ouro. Se qualquer parte do corpo dourado for retirada, ele não pode mais ser restaurado. Queima a carta.</description>
 		</sheet>
 		<setters>
 			<set name="level">8</set>
