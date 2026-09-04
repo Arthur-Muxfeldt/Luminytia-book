@@ -3,7 +3,7 @@
 	<info>
 		<name>Magias de Luminytia</name>
 		<description>Magias avulsas do mundo de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="magias/magias.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/magias.xml" />
 		</update>
 	</info>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Magias Exclusivas de Via</name>
 		<description>Quinze magias que só existem em Luminytia, três por Via de Ressonância. Nenhuma outra Via as aprende.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="magias/exclusivas-de-via.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/exclusivas-de-via.xml" />
 		</update>
 	</info>

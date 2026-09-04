@@ -3,7 +3,7 @@
 	<info>
 		<name>Raças de Luminytia</name>
 		<description>Raças jogáveis do mundo de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="racas/racas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/racas/racas.xml" />
 		</update>
 	</info>

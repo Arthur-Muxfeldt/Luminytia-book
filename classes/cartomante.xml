@@ -3,7 +3,7 @@
 	<info>
 		<name>Cartomante</name>
 		<description>Classe-base Cartomante do mundo de Luminytia. Conjurador completo de Sabedoria, movido a cartas pintadas à mão.</description>
-		<update version="0.2.1">
+		<update version="0.2.2">
 			<file name="classes/cartomante.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/cartomante.xml" />
 		</update>
 	</info>

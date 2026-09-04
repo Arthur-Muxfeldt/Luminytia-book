@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Ouros</name>
 		<description>As catorze cartas de Ouros lidas direitas, do Ás ao Rei. Terra: matéria, ofício, patrimônio, corpo, paciência. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="magias/ouros.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/ouros.xml" />
 		</update>
 	</info>

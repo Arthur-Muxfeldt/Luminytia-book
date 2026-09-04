@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Espadas</name>
 		<description>As catorze cartas de Espadas lidas direitas, do Ás ao Rei. Ar: intelecto, conflito, verdade, palavra, decisão. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="magias/espadas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/espadas.xml" />
 		</update>
 	</info>

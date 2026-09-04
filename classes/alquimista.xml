@@ -3,7 +3,7 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>

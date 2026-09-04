@@ -3,7 +3,7 @@
 	<info>
 		<name>Vias de Ressonância</name>
 		<description>As cinco Vias de Ressonância, subclasses do Alquimista de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
 		</update>
 	</info>

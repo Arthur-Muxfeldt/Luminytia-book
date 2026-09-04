@@ -3,7 +3,7 @@
 	<info>
 		<name>Itens de Luminytia</name>
 		<description>Itens mágicos e artefatos do mundo de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="itens/itens.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/itens/itens.xml" />
 		</update>
 	</info>

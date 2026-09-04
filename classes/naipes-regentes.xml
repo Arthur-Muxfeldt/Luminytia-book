@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipes Regentes</name>
 		<description>Os Naipes Regentes, subclasses do Cartomante de Luminytia. O cartomante lê os quatro naipes, mas um deles lê ele de volta.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="classes/naipes-regentes.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/naipes-regentes.xml" />
 		</update>
 	</info>

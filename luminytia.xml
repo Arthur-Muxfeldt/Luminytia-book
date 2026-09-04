@@ -3,7 +3,7 @@
 	<info>
 		<name>Luminytia</name>
 		<description>Fonte e lore do mundo de Luminytia.</description>
-		<update version="0.1.0">
+		<update version="0.1.2">
 			<file name="luminytia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/luminytia.xml" />
 		</update>
 	</info>

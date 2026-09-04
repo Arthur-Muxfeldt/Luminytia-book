@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Paus</name>
 		<description>As catorze cartas de Paus lidas direitas, do Ás ao Rei. Fogo: energia, ação, criatividade, paixão. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="magias/paus.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus.xml" />
 		</update>
 	</info>

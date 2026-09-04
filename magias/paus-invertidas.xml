@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipe de Paus (Invertido)</name>
 		<description>As catorze cartas de Paus lidas ao contrário, do Ás ao Rei. O mesmo fogo virado do avesso: o que não pega, o que não anda, o que queima para dentro. Lista do Cartomante de Luminytia.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="magias/paus-invertidas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus-invertidas.xml" />
 		</update>
 	</info>
