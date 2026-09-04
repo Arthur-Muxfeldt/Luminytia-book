@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
+	<info>
+		<name>Raças de Luminytia</name>
+		<description>Raças jogáveis do mundo de Luminytia.</description>
+		<update version="0.1.1">
+			<file name="racas/racas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/racas/racas.xml" />
+		</update>
+	</info>
 
 	<element name="Filho da Aurora" type="Race" source="Luminytia" id="ID_RACE_FILHO_DA_AURORA">
 		<supports>Race</supports>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
+	<info>
+		<name>Itens de Luminytia</name>
+		<description>Itens mágicos e artefatos do mundo de Luminytia.</description>
+		<update version="0.1.1">
+			<file name="itens/itens.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/itens/itens.xml" />
+		</update>
+	</info>
 
 	<element name="Espada da Aurora" type="Magic Item" source="Luminytia" id="ID_ITEM_ESPADA_DA_AURORA">
 		<supports>Magic Item</supports>

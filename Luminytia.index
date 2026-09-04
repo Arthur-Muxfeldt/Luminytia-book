@@ -4,7 +4,7 @@
 		<name>Luminytia</name>
 		<description>Conteúdo customizado do mundo de Luminytia para D&amp;D 5e.</description>
 		<author url="https://github.com/Arthur-Muxfeldt/Luminytia-book">Arthur Muxfeldt</author>
-		<update version="0.7.2">
+		<update version="0.7.3">
 			<file name="Luminytia.index" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/Luminytia.index" />
 		</update>
 	</info>
