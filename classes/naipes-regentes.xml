@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipes Regentes</name>
 		<description>Os Naipes Regentes, subclasses do Cartomante de Luminytia. O cartomante lê os quatro naipes, mas um deles lê ele de volta.</description>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="classes/naipes-regentes.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/naipes-regentes.xml" />
 		</update>
 	</info>
@@ -169,7 +169,7 @@
 			<description>+3 PV máximos no 3º nível e +1 por nível de Cartomante depois. Proficiência em uma ferramenta de artesão e vantagem para avaliar objetos. 1×/turno, conjurar uma carta de Ouros dá PV temporários iguais ao seu modificador de Sabedoria.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Ferramenta de Artesão (Ouros)" supports="Artisan's Tools" number="1" />
+			<select type="Proficiency" name="Ferramenta de Artesão (Ouros)" supports="Artisan tools" number="1" />
 		</rules>
 	</element>
 

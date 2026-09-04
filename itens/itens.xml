@@ -3,13 +3,18 @@
 	<info>
 		<name>Itens de Luminytia</name>
 		<description>Itens mágicos e artefatos do mundo de Luminytia.</description>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="itens/itens.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/itens/itens.xml" />
 		</update>
 	</info>
 
 	<element name="Espada da Aurora" type="Magic Item" source="Luminytia" id="ID_ITEM_ESPADA_DA_AURORA">
-		<supports>Magic Item</supports>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
 		<description>
 			<p>Uma lâmina longa que reluz com as cores do amanhecer. Rara, requer sintonização.</p>
 			<p>Você recebe +1 nas jogadas de ataque e dano com esta arma mágica. Além disso, a espada emite luz plena em um raio de 6 metros e luz fraca por mais 6 metros. Uma vez por turno, ao acertar um ataque, você pode causar 1d6 de dano radiante adicional.</p>
@@ -20,7 +25,12 @@
 	</element>
 
 	<element name="Amuleto de Luminytia" type="Magic Item" source="Luminytia" id="ID_ITEM_AMULETO_DE_LUMINYTIA">
-		<supports>Magic Item</supports>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
 		<description>
 			<p>Um amuleto incomum gravado com o símbolo de Luminytia. Requer sintonização.</p>
 			<p>Enquanto usa este amuleto, você tem vantagem em testes de resistência contra ficar amedrontado.</p>
@@ -31,7 +41,11 @@
 	</element>
 
 	<element name="Bate Aí" type="Magic Item" source="Luminytia" id="ID_ITEM_LUMINYTIA_BATE_AI">
-		<supports>Magic Item</supports>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
 		<description>
 			<p><i>Item maravilhoso, comum. Não requer sintonização.</i></p>
 			<p class="indent">"5 feet, bate?"</p>
@@ -47,7 +61,12 @@
 	</element>
 
 	<element name="5 Feet Bate" type="Magic Item" source="Luminytia" id="ID_ITEM_LUMINYTIA_5_FEET_BATE">
-		<supports>Magic Item</supports>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
 		<description>
 			<p><i>Anel, raro. Requer sintonização.</i></p>
 			<p class="indent">Um aro de latão sem pedra, do tamanho errado para qualquer dedo até você calçar. Não desmancha um golpe: desmancha a briga inteira e devolve ela do jeito mais antigo que existe.</p>

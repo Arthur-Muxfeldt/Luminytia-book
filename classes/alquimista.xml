@@ -3,7 +3,7 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>
@@ -188,7 +188,7 @@
 	</element>
 
 	<element name="Lâmina Ressonante" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_LAMINA">
-		<supports>Manifestação</supports>
+		<supports>Manifestacao</supports>
 		<description>
 			<p><strong>1 PR, ação bônus.</strong> O próximo acerto com arma ou desarmado neste turno causa +1d8 de dano de força.</p>
 			<p class="indent">O dano sobe para +2d8 no 10º nível.</p>
@@ -200,7 +200,7 @@
 	</element>
 
 	<element name="Reforço" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_REFORCO">
-		<supports>Manifestação</supports>
+		<supports>Manifestacao</supports>
 		<description>
 			<p><strong>1 PR, reação.</strong> Ao ser atingido, você ganha +3 na CA contra esse ataque.</p>
 			<p class="indent">O bônus sobe para +4 no 10º nível.</p>
@@ -212,7 +212,7 @@
 	</element>
 
 	<element name="Passo Transmutado" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_PASSO">
-		<supports>Manifestação</supports>
+		<supports>Manifestacao</supports>
 		<description>
 			<p><strong>1 PR, ação bônus.</strong> O terreno num raio de 6 metros ao seu redor vira terreno difícil para seus inimigos até o início do seu próximo turno, ou você ignora terreno difícil neste turno.</p>
 		</description>
@@ -222,7 +222,7 @@
 	</element>
 
 	<element name="Sobrecarga" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_SOBRECARGA">
-		<supports>Manifestação</supports>
+		<supports>Manifestacao</supports>
 		<description>
 			<p><strong>X PR, ao conjurar.</strong> Gaste até metade do seu bônus de proficiência em PR ao lançar uma magia de dano. Adicione 1d6 do mesmo tipo de dano por PR gasto.</p>
 		</description>
@@ -238,7 +238,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Via de Ressonância" supports="Via de Ressonância" />
+			<select type="Archetype" name="Via de Ressonância" supports="Via de Ressonancia" />
 		</rules>
 	</element>
 
