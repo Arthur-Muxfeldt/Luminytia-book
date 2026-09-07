@@ -3,7 +3,7 @@
 	<info>
 		<name>Cartomante</name>
 		<description>Classe-base Cartomante do mundo de Luminytia. Conjurador completo de Sabedoria, movido a cartas pintadas à mão.</description>
-		<update version="0.2.3">
+		<update version="0.2.4">
 			<file name="classes/cartomante.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/cartomante.xml" />
 		</update>
 	</info>
@@ -156,22 +156,22 @@
 			<description>Você conhece as cartas que pintou, e cada magia conhecida é uma tela física. Baralho não pintado por você não conjura nada. Carta alheia custa 1 dia e 50 po por nível de magia e fica fora do limite.</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="4" spellcasting="Cartomante" level="1" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="2" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="3" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="4" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="5" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="6" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="7" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="8" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="9" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="2" spellcasting="Cartomante" level="10" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="11" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="13" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="2" spellcasting="Cartomante" level="14" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="15" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="1" spellcasting="Cartomante" level="17" />
-			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante" number="2" spellcasting="Cartomante" level="18" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="4" spellcasting="Cartomante" level="1" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="2" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="3" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="4" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="5" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="6" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="7" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="8" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="9" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="2" spellcasting="Cartomante" level="10" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="11" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="13" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="2" spellcasting="Cartomante" level="14" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="15" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="1" spellcasting="Cartomante" level="17" />
+			<select type="Spell" name="Carta (Cartomante)" supports="Cartomante, $(spellcasting:slots)" number="2" spellcasting="Cartomante" level="18" />
 		</rules>
 	</element>
 
