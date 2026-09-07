@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipes Regentes</name>
 		<description>Os Naipes Regentes, subclasses do Cartomante de Luminytia. O cartomante lê os quatro naipes, mas um deles lê ele de volta.</description>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="classes/naipes-regentes.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/naipes-regentes.xml" />
 		</update>
 	</info>
@@ -200,6 +200,200 @@
 		</description>
 		<sheet usage="1/Descanso Longo">
 			<description>Não pode ser derrubado, empurrado, puxado, agarrado nem teleportado contra a vontade. 1×/descanso longo, ao cair a 0 PV: fica com 1 PV e resistência a todo dano até o fim do próximo turno.</description>
+		</sheet>
+	</element>
+
+	<element name="Naipe Regente: Espadas" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_NAIPE_ESPADAS">
+		<supports>Naipe Regente</supports>
+		<description>
+			<p><i>Ar. Verdade, corte, consequência, mente, clareza sem cuidado.</i></p>
+			<p class="indent">Espadas é o naipe que corta sem tocar. O cartomante de Espadas recebe a verdade em estado bruto, sem cuidado com a hora nem com quem está ouvindo, e a maioria aprende cedo que saber e poder dizer são duas coisas diferentes.</p>
+			<p class="indent">É o naipe de A Justiça, que devolve a consequência adiantada, e de A Torre, que só mostra o que já estava mal construído. É também onde A Sacerdotisa e O Enforcado falam, e por isso é o único naipe em que a carta invertida costuma ser mais verdadeira que a direita.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_CARTAS" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_MAO_FRIA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_CORTE_NA_MENTIRA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_SEGUNDA_LEITURA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_SENTENCA_ANTECIPADA" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_CARTAS" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_MAO_FRIA" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_CORTE_NA_MENTIRA" level="6" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_SEGUNDA_LEITURA" level="10" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_SENTENCA_ANTECIPADA" level="14" />
+		</rules>
+	</element>
+
+	<element name="Cartas de Espadas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_CARTAS">
+		<description>
+			<p>A partir do 3º nível, o naipe te dá as cartas que você não precisou pintar. Elas entram no seu baralho já prontas, <strong>não contam no limite da tabela</strong> e não podem ser trocadas nem repintadas por outra coisa.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço de magia correspondente. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
+			<ul>
+				<li><strong>Ás e 1º–2º nível (3º nível de classe):</strong> <i>Fio da Verdade</i></li>
+				<li><strong>:</strong> <i>Venda nos Olhos</i></li>
+				<li><strong>:</strong> <i>Repouso do Cavaleiro</i></li>
+				<li><strong>3º nível (5º):</strong> <i>Sete Espadas</i></li>
+				<li><strong>4º nível (7º):</strong> <i>O Cerco de Lâminas</i></li>
+				<li><strong>5º nível (9º):</strong> <i>Dez nas Costas</i></li>
+				<li><strong>6º nível (11º):</strong> <i>O Vigia</i></li>
+				<li><strong>7º nível (13º):</strong> <i>A Carga Sem Rédea</i></li>
+				<li><strong>8º nível (15º):</strong> <i>Sentença</i></li>
+				<li><strong>9º nível (17º):</strong> <i>O Juízo</i></li>
+			</ul>
+			<p class="indent">O Juízo continua sendo O Juízo. O naipe te dá a carta, não a absolvição de quem a lê.</p>
+		</description>
+		<sheet>
+			<description>Cartas de Espadas concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Fio da Verdade, Venda nos Olhos e Repouso do Cavaleiro (3º). Sete Espadas (5º). O Cerco de Lâminas (7º). Dez nas Costas (9º). O Vigia (11º). A Carga Sem Rédea (13º). Sentença (15º). O Juízo (17º).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_FIO_DA_VERDADE" spellcasting="Cartomante" prepared="true" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_VENDA_NOS_OLHOS" spellcasting="Cartomante" prepared="true" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_REPOUSO_DO_CAVALEIRO" spellcasting="Cartomante" prepared="true" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_SETE_ESPADAS" spellcasting="Cartomante" prepared="true" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_CERCO_DE_LAMINAS" spellcasting="Cartomante" prepared="true" level="7" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_DEZ_NAS_COSTAS" spellcasting="Cartomante" prepared="true" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_O_VIGIA" spellcasting="Cartomante" prepared="true" level="11" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_CARGA_SEM_REDEA" spellcasting="Cartomante" prepared="true" level="13" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_SENTENCA" spellcasting="Cartomante" prepared="true" level="15" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_O_JUIZO" spellcasting="Cartomante" prepared="true" level="17" />
+		</rules>
+	</element>
+
+	<element name="Mão Fria" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_MAO_FRIA">
+		<description>
+			<p>No 3º nível, quando você gasta uma carta invertida d'&lt;strong&gt;A Mão&lt;/strong&gt; contra uma criatura, ela também sofre dano psíquico igual ao resultado do Dado da Mão.</p>
+			<p class="indent">A leitura invertida de Espadas não erra por acaso. Ela diz a parte que a pessoa vinha evitando, e dizer isso dói.</p>
+		</description>
+		<sheet>
+			<description>Ao gastar uma carta invertida da Mão contra uma criatura, ela também sofre dano psíquico igual ao resultado do Dado da Mão.</description>
+		</sheet>
+	</element>
+
+	<element name="Corte na Mentira" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_CORTE_NA_MENTIRA">
+		<description>
+			<p>No 6º nível, você sabe quando uma criatura que possa ver e ouvir diz uma mentira deliberada.</p>
+			<p class="indent">Você não sabe qual é a verdade, só que aquilo não é. Além disso, você tem vantagem em testes de resistência contra ilusões.</p>
+		</description>
+		<sheet>
+			<description>Você sabe quando uma criatura que possa ver e ouvir mente deliberadamente. Vantagem em resistências contra ilusões.</description>
+		</sheet>
+	</element>
+
+	<element name="Segunda Leitura" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_SEGUNDA_LEITURA">
+		<description>
+			<p>No 10º nível, uma vez por descanso curto, você força uma criatura a repetir um teste de resistência contra uma magia sua, com desvantagem, e ela precisa usar o segundo resultado.</p>
+			<p class="indent">Você não muda a carta. Você obriga a mesa a ler de novo.</p>
+		</description>
+		<sheet usage="1/Descanso Curto">
+			<description>1×/descanso curto, force uma criatura a repetir um teste de resistência contra uma magia sua, com desvantagem, e usar o segundo resultado.</description>
+		</sheet>
+	</element>
+
+	<element name="Sentença Antecipada" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_SENTENCA_ANTECIPADA">
+		<description>
+			<p>No 14º nível, uma vez por descanso longo, ao conjurar uma carta de Espadas, um alvo à sua escolha tem desvantagem no teste de resistência.</p>
+			<p class="indent">Se ele falhar, fica &lt;strong&gt;incapacitado&lt;/strong&gt; até o fim do seu próximo turno. É A Justiça cobrando adiantado, e o naipe inteiro existe para essa frase.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>1×/descanso longo, ao conjurar uma carta de Espadas: um alvo tem desvantagem no teste e, falhando, fica incapacitado até o fim do seu próximo turno.</description>
+		</sheet>
+	</element>
+
+	<element name="Naipe Regente: Copas" type="Archetype" source="Luminytia" id="ID_ARCHETYPE_LUMINYTIA_NAIPE_COPAS">
+		<supports>Naipe Regente</supports>
+		<description>
+			<p><i>Água. Sentimento, vínculo, cura, memória, medida.</i></p>
+			<p class="indent">Copas é o naipe que sabe o que você está sentindo antes de você admitir. O cartomante de Copas não lê o futuro: lê a mesa. Puxa a carta e sabe quem está mentindo por medo, quem está prestes a ceder e quem já cedeu e não contou a ninguém.</p>
+			<p class="indent">É o naipe de A Estrela, que dá pouco e dá de graça, e de A Temperança, que é a única medida certa que este mundo tem. Também é onde O Diabo entra invertido, porque a diferença entre acolher alguém e prender alguém é fina demais para caber numa carta.</p>
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_CARTAS" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_MAO_ABERTA" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_LEITURA_DE_GENTE" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_TRANSBORDAR" />
+			<div element="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_MARE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_CARTAS" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_MAO_ABERTA" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_LEITURA_DE_GENTE" level="6" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_TRANSBORDAR" level="10" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_MARE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Cartas de Copas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_CARTAS">
+		<description>
+			<p>A partir do 3º nível, o naipe te dá as cartas que você não precisou pintar. Elas entram no seu baralho já prontas, <strong>não contam no limite da tabela</strong> e não podem ser trocadas nem repintadas por outra coisa.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço de magia correspondente. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
+			<ul>
+				<li><strong>Ás e 1º–2º nível (3º nível de classe):</strong> <i>Gole de Ânimo</i></li>
+				<li><strong>:</strong> <i>Taça Transbordante</i></li>
+				<li><strong>:</strong> <i>Brinde dos Três</i></li>
+				<li><strong>3º nível (5º):</strong> <i>Maré de Memória</i></li>
+				<li><strong>4º nível (7º):</strong> <i>A Carta dos Desejos</i></li>
+				<li><strong>5º nível (9º):</strong> <i>Mensageiro de Água</i></li>
+				<li><strong>6º nível (11º):</strong> <i>Coração Aberto</i></li>
+				<li><strong>7º nível (13º):</strong> <i>A Corrente Que Leva</i></li>
+				<li><strong>8º nível (15º):</strong> <i>A Cheia</i></li>
+				<li><strong>9º nível (17º):</strong> <i>O Mar Inteiro</i></li>
+			</ul>
+			<p class="indent">O Mar Inteiro salva uma vez por pessoa e depois solta. O naipe te dá a carta, não a promessa de segurar todo mundo para sempre.</p>
+		</description>
+		<sheet>
+			<description>Cartas de Copas concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Gole de Ânimo, Taça Transbordante e Brinde dos Três (3º). Maré de Memória (5º). A Carta dos Desejos (7º). Mensageiro de Água (9º). Coração Aberto (11º). A Corrente Que Leva (13º). A Cheia (15º). O Mar Inteiro (17º).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_GOLE_DE_ANIMO" spellcasting="Cartomante" prepared="true" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_TACA_TRANSBORDANTE" spellcasting="Cartomante" prepared="true" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_BRINDE_DOS_TRES" spellcasting="Cartomante" prepared="true" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_MARE_DE_MEMORIA" spellcasting="Cartomante" prepared="true" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_CARTA_DOS_DESEJOS" spellcasting="Cartomante" prepared="true" level="7" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_MENSAGEIRO_DE_AGUA" spellcasting="Cartomante" prepared="true" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_CORACAO_ABERTO" spellcasting="Cartomante" prepared="true" level="11" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_CORRENTE_QUE_LEVA" spellcasting="Cartomante" prepared="true" level="13" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_A_CHEIA" spellcasting="Cartomante" prepared="true" level="15" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_O_MAR_INTEIRO" spellcasting="Cartomante" prepared="true" level="17" />
+		</rules>
+	</element>
+
+	<element name="Mão Aberta" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_MAO_ABERTA">
+		<description>
+			<p>No 3º nível, quando você gasta uma carta direita d'&lt;strong&gt;A Mão&lt;/strong&gt; em favor de uma criatura, ela também recupera pontos de vida iguais ao resultado do Dado da Mão.</p>
+			<p class="indent">Copas é o único naipe em que a leitura direita já vem com a mão estendida. Isso é conveniente, e é também o começo do problema: todo mundo passa a esperar.</p>
+		</description>
+		<sheet>
+			<description>Ao gastar uma carta direita da Mão em favor de uma criatura, ela também recupera PV iguais ao resultado do Dado da Mão.</description>
+		</sheet>
+	</element>
+
+	<element name="Leitura de Gente" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_LEITURA_DE_GENTE">
+		<description>
+			<p>No 6º nível, você percebe o estado emocional de qualquer criatura que possa ver a até 9 metros, sem teste e sem que ela perceba.</p>
+			<p class="indent">Além disso, você tem vantagem em testes de Intuição contra criaturas que possa ver.</p>
+		</description>
+		<sheet>
+			<description>Percebe o estado emocional de qualquer criatura a até 9 m que possa ver. Vantagem em testes de Intuição contra criaturas visíveis.</description>
+		</sheet>
+	</element>
+
+	<element name="Transbordar" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_TRANSBORDAR">
+		<description>
+			<p>No 10º nível, sempre que você conjura uma carta que cure uma criatura, a criatura ferida mais próxima a até 9 metros dela também recupera metade dessa cura.</p>
+			<p class="indent">A taça do naipe não sabe parar na borda, e isso vale mesmo quando você preferia que soubesse.</p>
+		</description>
+		<sheet>
+			<description>Sempre que uma carta sua cura alguém, a criatura ferida mais próxima a até 9 m dela recupera metade dessa cura.</description>
+		</sheet>
+	</element>
+
+	<element name="Maré" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_MARE">
+		<description>
+			<p>No 14º nível, uma vez por descanso longo, ao conjurar uma carta de Copas que exija concentração, ela dura 1 minuto sem exigir concentração.</p>
+			<p class="indent">A maré não precisa que ninguém segure ela.</p>
+		</description>
+		<sheet usage="1/Descanso Longo">
+			<description>1×/descanso longo, uma carta de Copas que exija concentração dura 1 minuto sem exigir concentração.</description>
 		</sheet>
 	</element>
 

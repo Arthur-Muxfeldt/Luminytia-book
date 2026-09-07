@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Cartas de Copas</name>
+		<description>As catorze cartas do naipe de Copas do Cartomante, na leitura direita.</description>
+		<update version="0.1.0">
+			<file name="magias/copas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/copas.xml" />
+		</update>
+	</info>
+
+	<element name="Gole de Ânimo" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_GOLE_DE_ANIMO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Ás de Copas, lida direita.</i></p>
+			<p>Você oferece a taça sem sair do lugar e alguém do outro lado bebe.</p>
+			<p class="indent">Uma criatura voluntária que você possa ver ganha pontos de vida temporários iguais a 1d4 mais seu modificador de Sabedoria, e pode encerrar imediatamente o efeito amedrontado sobre ela.</p>
+			<p class="indent">Os temporários sobem para 2d4 no 5º nível, 3d4 no 11º e 4d4 no 17º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Gole Amargo</i>.</p>
+		</description>
+		<sheet>
+			<description>Uma criatura a 18 m ganha 1d4 mais SAB em PV temporários e pode encerrar amedrontado.</description>
+			<description level="5">Uma criatura a 18 m ganha 2d4 mais SAB em PV temporários e pode encerrar amedrontado.</description>
+			<description level="11">Uma criatura a 18 m ganha 3d4 mais SAB em PV temporários e pode encerrar amedrontado.</description>
+			<description level="17">Uma criatura a 18 m ganha 4d4 mais SAB em PV temporários e pode encerrar amedrontado.</description>
+		</sheet>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<element name="Taça Transbordante" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_TACA_TRANSBORDANTE">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Ás de Copas, lida direita.</i></p>
+			<p>A taça do Ás nunca está pela metade, e o que sobra dela não volta para dentro.</p>
+			<p class="indent">Uma criatura que você toque recupera 2d8 mais seu modificador de Sabedoria em pontos de vida. O que passar do máximo dela não se perde: vira pontos de vida temporários e dura 1 hora.</p>
+			<p class="indent">Mais 1d8 de cura por nível acima do 1º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Taça Vazia</i>.</p>
+		</description>
+		<sheet>
+			<description>Cura 2d8 mais SAB. O excedente vira PV temporários por 1 hora.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<element name="Espelho d'Água" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_ESPELHO_DAGUA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>2 de Copas, lida direita.</i></p>
+			<p>Duas taças erguidas de uma vez, e a água de uma mostra o que a outra sente.</p>
+			<p class="indent">Escolha uma criatura voluntária que você possa ver. Enquanto durar, você sabe a distância e a direção dela, sabe quantos pontos de vida ela tem e sabe se ela está sob algum efeito que force a vontade.</p>
+			<p class="indent">Uma criatura adicional por nível acima do 1º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Espelho Trincado</i>.</p>
+		</description>
+		<sheet>
+			<description>Você sabe a direção, a distância, os PV e se o alvo voluntário está sob efeito que force a vontade.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 10 minutos</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Brinde dos Três" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_BRINDE_DOS_TRES">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>3 de Copas, lida direita.</i></p>
+			<p>Três taças que se tocam, e o som delas alcança quem não estava na roda.</p>
+			<p class="indent">Escolha até três criaturas voluntárias a até 9 metros. Enquanto durar, cada uma delas soma seu modificador de Sabedoria a uma jogada de ataque, teste de habilidade ou teste de resistência por turno.</p>
+			<p class="indent">Uma criatura adicional por nível acima do 2º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Brinde Sozinho</i>.</p>
+		</description>
+		<sheet>
+			<description>Até três aliados somam seu modificador de Sabedoria a uma jogada por turno, por 1 minuto.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Apatia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_APATIA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>4 de Copas, lida direita.</i></p>
+			<p>O 4 de Copas é a carta de quem tem a taça na frente e não estende a mão.</p>
+			<p class="indent">Uma criatura que você possa ver faz um teste de resistência de Sabedoria contra sua CD de conjuração. Falhando, até o fim da duração ela não pode realizar reações e precisa gastar a ação bônus dela para conseguir se mover no turno.</p>
+			<p class="indent">Uma criatura adicional por nível acima do 2º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Apetite</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou a criatura perde as reações e precisa gastar ação bônus para se mover, por 1 minuto.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Maré de Memória" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_MARE_DE_MEMORIA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>6 de Copas, lida direita.</i></p>
+			<p>A carta da infância, a que traz de volta o que estava guardado sem ser pedido.</p>
+			<p class="indent">Toque uma criatura voluntária. Ela recupera uma lembrança perdida, revertida ou apagada por magia, incluindo memória removida por Modificar Memória, e fica imune a efeitos que alterem memória enquanto durar.</p>
+			<p class="indent">Além disso, ela ganha proficiência temporária numa perícia ou ferramenta que já teve em algum momento da vida e perdeu, ou que você e o mestre determinem que ela conheceu na infância.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Maré Que Não Volta</i>.</p>
+		</description>
+		<sheet>
+			<description>Recupera memória perdida ou apagada por magia, imuniza contra alteração de memória por 10 minutos, e devolve uma proficiência antiga.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 10 minutos</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Águas Paradas" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_AGUAS_PARADAS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>5 de Copas, lida direita.</i></p>
+			<p>Três taças caídas e duas ainda de pé. O naipe insiste que você olhe para as duas.</p>
+			<p class="indent">Escolha um cubo de 6 metros a até 18 metros. Dentro dele, criaturas à sua escolha não podem ser amedrontadas nem enfeitiçadas, e qualquer um desses efeitos em curso fica suspenso enquanto elas permanecerem ali.</p>
+			<p class="indent">Ao entrar na área pela primeira vez no turno, uma criatura à sua escolha recupera 1d8 pontos de vida, uma vez por criatura por conjuração.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Águas Turvas</i>.</p>
+		</description>
+		<sheet>
+			<description>Cubo de 6 m: aliados na área não podem ser amedrontados nem enfeitiçados e curam 1d8 ao entrar, uma vez cada.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="A Carta dos Desejos" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_CARTA_DOS_DESEJOS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>9 de Copas, lida direita.</i></p>
+			<p>O 9 é a carta do desejo atendido, e ninguém do naipe finge que isso é sempre bom.</p>
+			<p class="indent">Uma criatura que você possa ver faz um teste de resistência de Sabedoria contra sua CD de conjuração. Falhando, ela passa a acreditar que já conseguiu aquilo que mais quer no momento.</p>
+			<p class="indent">Enquanto durar, ela não pode atacar nem conjurar magias hostis, e tem desvantagem em testes de Percepção e Intuição. O efeito termina se ela sofrer dano, e ela lembra de tudo o que sentiu. Uma criatura adicional por nível acima do 4º.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>O Desejo Cobrado</i>.</p>
+		</description>
+		<sheet>
+			<description>Resistência de Sabedoria ou a criatura acredita ter conseguido o que mais quer: não ataca, não conjura magia hostil e tem desvantagem em Percepção e Intuição. Acaba se sofrer dano.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Lar de Dez Taças" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_LAR_DE_DEZ_TACAS">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>10 de Copas, lida direita.</i></p>
+			<p>A carta do lar. Não é um teto, é o efeito de ter um.</p>
+			<p class="indent">Você marca um ponto e o lugar em volta passa a acolher. Até dez criaturas dentro do raio ganham o benefício de um descanso longo com apenas 4 horas de repouso, e recuperam um nível de exaustão a mais que o normal.</p>
+			<p class="indent">Enquanto durar, criaturas hostis não podem se teleportar para dentro da área, e você sabe no instante em que qualquer criatura hostil cruza a borda.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Casa Vazia</i>.</p>
+		</description>
+		<sheet>
+			<description>Até dez criaturas descansam por completo em 4 horas e curam um nível extra de exaustão. Hostis não teleportam para dentro e você percebe quem cruza a borda.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">10 minutos</set>
+			<set name="range">Pessoal (raio de 9 metros)</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">8 horas</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+		</setters>
+	</element>
+
+	<element name="Mensageiro de Água" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_MENSAGEIRO_DE_AGUA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Valete de Copas, lida direita.</i></p>
+			<p>O Valete é o que leva recado, e água chega em todo lugar.</p>
+			<p class="indent">Você conjura um mensageiro de água com o seu rosto, que viaja até uma criatura que você conheça, em qualquer distância no mesmo plano, e entrega uma mensagem de até vinte e cinco palavras.</p>
+			<p class="indent">O mensageiro pode trazer uma resposta do mesmo tamanho. Além disso, se a criatura estiver ferida, ela recupera 4d8 pontos de vida quando o mensageiro a alcança, sem que você precise saber onde ela está.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Mensageiro Afogado</i>.</p>
+		</description>
+		<sheet>
+			<description>Mensageiro de água entrega e traz recado de 25 palavras a qualquer distância no plano, e cura 4d8 no destinatário ferido.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">Ilimitado</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Coração Aberto" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_CORACAO_ABERTO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rainha de Copas, lida direita.</i></p>
+			<p>A Rainha é a que sente tudo o que está na mesa, e a carta não pergunta se ela quer.</p>
+			<p class="indent">Enquanto durar, você percebe o estado emocional, as intenções imediatas e toda mentira deliberada de qualquer criatura no raio, sem teste de resistência e sem que ela perceba.</p>
+			<p class="indent">Você também pode, com uma ação, curar 6d8 pontos de vida distribuídos como quiser entre criaturas no raio. Fazer isso encerra a magia, porque a Rainha dá tudo de uma vez ou não dá.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>Coração Fechado</i>.</p>
+		</description>
+		<sheet>
+			<description>Percebe emoção, intenção e mentira de todos num raio de 18 m. Com uma ação, distribua 6d8 de cura e encerre a magia.</description>
+		</sheet>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Divination</set>
+			<set name="time">1 ação</set>
+			<set name="range">Pessoal (raio de 18 metros)</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 10 minutos</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="A Corrente Que Leva" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_CORRENTE_QUE_LEVA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rei de Copas, lida direita.</i></p>
+			<p>O Rei não segura a água. Ele decide para onde ela corre.</p>
+			<p class="indent">Uma corrente invisível toma um cubo de 12 metros à sua escolha. No começo de cada um dos seus turnos, você move todas as criaturas na área até 9 metros na direção que quiser.</p>
+			<p class="indent">Criaturas relutantes fazem um teste de resistência de Força contra sua CD de conjuração para ficar onde estão. Criaturas voluntárias não gastam deslocamento e não provocam ataques de oportunidade ao serem movidas.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Corrente Que Prende</i>.</p>
+		</description>
+		<sheet>
+			<description>Cubo de 12 m: no começo do seu turno, mova todas as criaturas até 9 m na direção que quiser. Relutantes resistem com Força.</description>
+		</sheet>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">36 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="A Cheia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_A_CHEIA">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>8 de Copas, lida direita.</i></p>
+			<p>O 8 é a carta de virar as costas e ir embora, e esta é a água indo embora com tudo junto.</p>
+			<p class="indent">Um cubo de 18 metros se enche de água que não estava ali. Criaturas na área fazem um teste de resistência de Força ou sofrem 8d8 de dano de concussão e são empurradas até 12 metros para fora, caindo derrubadas.</p>
+			<p class="indent">A área permanece alagada e vira terreno difícil enquanto durar. No começo de cada um dos seus turnos, criaturas hostis ainda na área repetem o teste, sofrendo metade do dano numa falha.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Vazante</i>.</p>
+		</description>
+		<sheet>
+			<description>Cubo de 18 m alagado: resistência de Força ou 8d8 de concussão, empurrado 12 m e derrubado. A área vira terreno difícil e repete metade do dano por turno.</description>
+		</sheet>
+		<setters>
+			<set name="level">8</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 ação</set>
+			<set name="range">36 metros</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="O Mar Inteiro" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COPAS_O_MAR_INTEIRO">
+		<supports>Spell, Cartomante</supports>
+		<description>
+			<p><i>Rei de Copas, lida direita.</i></p>
+			<p>A última carta do naipe é a única que não distingue quem merece.</p>
+			<p class="indent">Enquanto durar, toda criatura à sua escolha no raio recupera 3d8 pontos de vida no começo de cada um dos seus turnos, não pode cair abaixo de 1 ponto de vida, e é imune a amedrontado, enfeitiçado e às condições que forcem a vontade dela.</p>
+			<p class="indent">Uma criatura que morreria enquanto está na área não morre: ela fica com 1 ponto de vida e sai do efeito imediatamente, pelo resto da duração. O mar dá muito, mas dá uma vez por pessoa.</p>
+			<p class="indent">Lida ao contrário, a mesma carta conjura <i>A Ressaca</i>.</p>
+		</description>
+		<sheet>
+			<description>Aliados no raio curam 3d8 por turno, não caem abaixo de 1 PV e são imunes a amedrontado e enfeitiçado. Quem morreria fica com 1 PV e sai do efeito.</description>
+		</sheet>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">Pessoal (raio de 18 metros)</set>
+			<set name="components">V, G, M (a carta correspondente do baralho)</set>
+			<set name="materialComponent">a carta correspondente do baralho</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+</elements>

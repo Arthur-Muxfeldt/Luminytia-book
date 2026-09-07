@@ -3,7 +3,7 @@
 	<info>
 		<name>Vias de Ressonância</name>
 		<description>As cinco Vias de Ressonância, subclasses do Alquimista de Luminytia.</description>
-		<update version="0.1.3">
+		<update version="0.1.5">
 			<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
 		</update>
 	</info>
@@ -492,105 +492,155 @@
 
 	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_EXCLUSIVAS">
 		<description>
-			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
 				<li><strong>1º nível (3º nível de classe):</strong> <i>Liga Viva</i></li>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Chave de Toda Fechadura</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>A Ponte de Um Passo</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Peso Falso</i></li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Reescrever a Peça</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>A Parede Que Não Estava</i></li>
+				<li><strong>4º nível (13º nível de classe):</strong> <i>A Forja de Campanha</i></li>
 				<li><strong>5º nível (17º nível de classe):</strong> <i>Cidadela de um Minuto</i></li>
 			</ul>
-			<p class="indent">Nenhuma das três é proibida. A Transmutação não herdou de ninguém, não deve nada, e nem as magias exclusivas dela tocam a trilha do Fardo.</p>
+			<p class="indent">Nenhuma das oito é proibida, e essa é a característica que define a Via. A Transmutação não deve nada a deus nenhum, então nem as magias dela tocam a trilha do Fardo.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: 1º Liga Viva, 3º Reescrever a Peça, 5º Cidadela de um Minuto.</description>
+			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: 1º Liga Viva, 1º Chave de Toda Fechadura, 2º A Ponte de Um Passo, 2º Peso Falso, 3º Reescrever a Peça, 3º A Parede Que Não Estava, 4º A Forja de Campanha, 5º Cidadela de um Minuto.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_CHAVE_DE_TODA_FECHADURA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PONTE_DE_UM_PASSO" spellcasting="Alquimista" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PESO_FALSO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_REESCREVER_A_PECA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PAREDE_QUE_NAO_ESTAVA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_FORJA_DE_CAMPANHA" spellcasting="Alquimista" level="13" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_CIDADELA_DE_UM_MINUTO" spellcasting="Alquimista" level="17" />
 		</rules>
 	</element>
 
 	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_EXCLUSIVAS">
 		<description>
-			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
 				<li><strong>1º nível (3º nível de classe):</strong> <i>Brasa Guardada</i></li>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Aviso de Brasa</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>O Que Aquece de Longe</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Ferro em Brasa</i></li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Sopro de Meio-Dia</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>O Calor Que Fica</i></li>
+				<li><strong>4º nível (13º nível de classe):</strong> <i>A Hora Sem Sombra</i></li>
 				<li><strong>5º nível (17º nível de classe):</strong> <i>A Parte Voltada Para Fora</i></li>
 			</ul>
-			<p class="indent">Nenhuma das três é proibida: o fogo do calor não exige vitalidade, só ressonância.</p>
+			<p class="indent">Nenhuma das oito é proibida. O fogo do calor não exige vitalidade, só ressonância. Nesta Via quem cobra Fardo são as características de classe, não as magias.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Brasa Guardada, 3º Sopro de Meio-Dia, 5º A Parte Voltada Para Fora.</description>
+			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Brasa Guardada, 1º Aviso de Brasa, 2º O Que Aquece de Longe, 2º Ferro em Brasa, 3º Sopro de Meio-Dia, 3º O Calor Que Fica, 4º A Hora Sem Sombra, 5º A Parte Voltada Para Fora.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_AVISO_DE_BRASA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_AQUECE_DE_LONGE" spellcasting="Alquimista" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_FERRO_EM_BRASA" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_SOPRO_DE_MEIO_DIA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_CALOR_QUE_FICA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_HORA_SEM_SOMBRA" spellcasting="Alquimista" level="13" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_A_PARTE_VOLTADA_PARA_FORA" spellcasting="Alquimista" level="17" />
 		</rules>
 	</element>
 
 	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_EXCLUSIVAS">
 		<description>
-			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
 				<li><strong>1º nível (3º nível de classe):</strong> <i>Costura</i></li>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Pulso Firme</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Remendo Firme</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Emprestar Fôlego</i></li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Balança de Ílios</i> (proibida)</li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Repartir a Dor</i> (proibida)</li>
+				<li><strong>4º nível (13º nível de classe):</strong> <i>Torniquete</i> (proibida)</li>
 				<li><strong>5º nível (17º nível de classe):</strong> <i>Dividir a Vida</i> (proibida)</li>
 			</ul>
-			<p class="indent">A primeira cura de graça e as duas seguintes cobram. É a Via inteira em três magias: cura pequena é presente de Ílios, e mover vida de um corpo para outro nunca foi.</p>
+			<p class="indent">Quatro limpas e quatro proibidas. As limpas remendam por fora, e isso Ílios dá de presente. As proibidas seguram a vida na mão, e ali começa a sombra de Kólasi.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: 1º Costura, 3º Balança de Ílios (proibida), 5º Dividir a Vida (proibida).</description>
+			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: 1º Costura, 1º Pulso Firme, 2º Remendo Firme, 2º Emprestar Fôlego, 3º Balança de Ílios (proibida), 3º Repartir a Dor (proibida), 4º Torniquete (proibida), 5º Dividir a Vida (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_COSTURA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PULSO_FIRME" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_REMENDO_FIRME" spellcasting="Alquimista" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTAR_FOLEGO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BALANCA_DE_ILIOS" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_REPARTIR_A_DOR" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_TORNIQUETE" spellcasting="Alquimista" level="13" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_DIVIDIR_A_VIDA" spellcasting="Alquimista" level="17" />
 		</rules>
 	</element>
 
 	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_EXCLUSIVAS">
 		<description>
-			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
 				<li><strong>1º nível (3º nível de classe):</strong> <i>Nome na Boca</i> (proibida)</li>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Ouvido na Parede</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Eco de Intenção</i></li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Esquecer o Rosto</i> (proibida)</li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Empréstimo de Perícia</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Mão Emprestada</i> (proibida)</li>
+				<li><strong>4º nível (13º nível de classe):</strong> <i>Trocar de Lado</i> (proibida)</li>
 				<li><strong>5º nível (17º nível de classe):</strong> <i>Segunda Voz</i> (proibida)</li>
 			</ul>
-			<p class="indent">Duas proibidas e uma limpa, e a limpa é Empréstimo de Perícia por um motivo só: exige que a pessoa queira. A Via inteira gira nessa dobradiça.</p>
+			<p class="indent">Cinco proibidas e três limpas. As limpas são exatamente as que só escutam. Toda vez que a Via impõe alguma coisa a outra vontade, ela cobra.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: 1º Nome na Boca (proibida), 3º Empréstimo de Perícia, 5º Segunda Voz (proibida).</description>
+			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: 1º Nome na Boca (proibida), 1º Ouvido na Parede, 2º Eco de Intenção, 2º Esquecer o Rosto (proibida), 3º Empréstimo de Perícia, 3º Mão Emprestada (proibida), 4º Trocar de Lado (proibida), 5º Segunda Voz (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_OUVIDO_NA_PAREDE" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ECO_DE_INTENCAO" spellcasting="Alquimista" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ESQUECER_O_ROSTO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTIMO_DE_PERICIA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_MAO_EMPRESTADA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_TROCAR_DE_LADO" spellcasting="Alquimista" level="13" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_SEGUNDA_VOZ" spellcasting="Alquimista" level="17" />
 		</rules>
 	</element>
 
 	<element name="Magias Exclusivas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_EXCLUSIVAS">
 		<description>
-			<p>Além das cinco magias concedidas, três magias que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
+			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
 				<li><strong>1º nível (3º nível de classe):</strong> <i>Adiamento</i> (proibida)</li>
+				<li><strong>1º nível (3º nível de classe):</strong> <i>Marca de Devedor</i> (proibida)</li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Penhor de Osso</i> (proibida)</li>
+				<li><strong>2º nível (5º nível de classe):</strong> <i>Fôlego Atrasado</i> (proibida)</li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Inventário de Ossos</i></li>
+				<li><strong>3º nível (9º nível de classe):</strong> <i>Serviço Cobrado</i> (proibida)</li>
+				<li><strong>4º nível (13º nível de classe):</strong> <i>Chamada de Credor</i> (proibida)</li>
 				<li><strong>5º nível (17º nível de classe):</strong> <i>A Conta Aberta</i> (proibida)</li>
 			</ul>
-			<p class="indent">Duas proibidas e uma limpa. Inventário de Ossos é limpa por razão técnica: contar não é atrasar. Todo o resto que esta Via faz é atrasar.</p>
+			<p class="indent">Sete proibidas e uma limpa. Inventário de Ossos é limpa por razão técnica: contar não é atrasar. Todo o resto que esta Via faz é atrasar.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Adiamento (proibida), 3º Inventário de Ossos, 5º A Conta Aberta (proibida).</description>
+			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Adiamento (proibida), 1º Marca de Devedor (proibida), 2º Penhor de Osso (proibida), 2º Fôlego Atrasado (proibida), 3º Inventário de Ossos, 3º Serviço Cobrado (proibida), 4º Chamada de Credor (proibida), 5º A Conta Aberta (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_MARCA_DE_DEVEDOR" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PENHOR_DE_OSSO" spellcasting="Alquimista" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_FOLEGO_ATRASADO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_INVENTARIO_DE_OSSOS" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_SERVICO_COBRADO" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_CHAMADA_DE_CREDOR" spellcasting="Alquimista" level="13" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_A_CONTA_ABERTA" spellcasting="Alquimista" level="17" />
 		</rules>
 	</element>
