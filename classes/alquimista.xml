@@ -3,7 +3,7 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>
@@ -93,7 +93,7 @@
 		<description>
 			<p>Você canaliza a ressonância como uma ciência arcana. Inteligência é sua habilidade de conjuração.</p>
 			<h5>A LISTA DO ALQUIMISTA</h5>
-			<p>Sua lista é a do estudo arcano menos a parte que não é sua. O alquimista não conjura <strong>ilusão</strong>, porque imagem é a via do Cartomante e não a dele. O que sobra é o que as cinco Vias alcançam: matéria que se reescreve, calor, vitalidade, vontade e o que já morreu.</p>
+			<p>O alquimista prepara da lista do estudo arcano, porque é onde a matéria, o calor, a vontade e o que já morreu foram catalogados por quem teve tempo de escrever. A diferença é que ele não estuda nada disso: ele herdou.</p>
 			<h5>TRUQUES</h5>
 			<p>No 1º nível, você conhece dois truques da lista do Alquimista. Você aprende truques adicionais nos níveis 10 e 14.</p>
 			<h5>MAGIAS PREPARADAS</h5>
@@ -111,7 +111,7 @@
 			<description>Suas próprias mãos, moldadas pela sua Via, são seu foco de conjuração.</description>
 		</sheet>
 		<spellcasting name="Alquimista" ability="Intelligence" prepare="true">
-			<list known="true">Wizard,(Abjuration||Conjuration||Divination||Enchantment||Evocation||Necromancy||Transmutation)</list>
+			<list known="true">Wizard</list>
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
