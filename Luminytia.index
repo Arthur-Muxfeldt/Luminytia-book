@@ -4,7 +4,7 @@
 		<name>Luminytia</name>
 		<description>Conteúdo customizado do mundo de Luminytia para D&amp;D 5e.</description>
 		<author url="https://github.com/Arthur-Muxfeldt/Luminytia-book">Arthur Muxfeldt</author>
-		<update version="0.7.10">
+		<update version="0.7.11">
 			<file name="Luminytia.index" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/Luminytia.index" />
 		</update>
 	</info>
@@ -16,7 +16,6 @@
 		<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		<file name="classes/naipes-regentes.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/naipes-regentes.xml" />
 		<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
-		<file name="magias/lista-alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/lista-alquimista.xml" />
 		<file name="magias/exclusivas-de-via.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/exclusivas-de-via.xml" />
 		<file name="magias/paus.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus.xml" />
 		<file name="magias/paus-invertidas.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/paus-invertidas.xml" />
