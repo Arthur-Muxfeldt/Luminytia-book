@@ -3,13 +3,13 @@
 	<info>
 		<name>Magias Exclusivas de Via</name>
 		<description>Quarenta magias que só existem em Luminytia, oito por Via de Ressonância. Nenhuma outra Via as aprende.</description>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="magias/exclusivas-de-via.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/exclusivas-de-via.xml" />
 		</update>
 	</info>
 
 	<element name="Liga Viva" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você corre a mão por uma arma ou peça de armadura não mágica e o metal dela responde, reorganizando-se sozinho enquanto você mantiver a atenção.</p>
@@ -36,7 +36,7 @@
 	</element>
 
 	<element name="Reescrever a Peça" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_REESCREVER_A_PECA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Uma versão grande e deliberada do seu Toque Alquímico. Você toca um objeto inorgânico não mágico de até 1,5 metro em qualquer dimensão e o converte inteiro em outro material não mágico de densidade semelhante: pedra em ferro, corda em corrente, vidro em aço, uma porta trancada em areia.</p>
@@ -61,7 +61,7 @@
 	</element>
 
 	<element name="Cidadela de um Minuto" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_CIDADELA_DE_UM_MINUTO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você bate o pé no chão e a terra sobe organizada.</p>
@@ -87,7 +87,7 @@
 	</element>
 
 	<element name="Brasa Guardada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você recolhe calor e guarda. Ao conjurar, escolha uma fonte de fogo a até 3 metros, ou gaste 1 PR: uma brasa fica alojada na palma da sua mão, visível, quente e inofensiva para você.</p>
@@ -112,7 +112,7 @@
 	</element>
 
 	<element name="Sopro de Meio-Dia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_SOPRO_DE_MEIO_DIA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Uma linha de fogo branco de 18 metros por 1,5 metro, saindo de você.</p>
@@ -138,7 +138,7 @@
 	</element>
 
 	<element name="A Parte Voltada Para Fora" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_A_PARTE_VOLTADA_PARA_FORA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você deixa de conter o calor.</p>
@@ -165,7 +165,7 @@
 	</element>
 
 	<element name="Costura" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_COSTURA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você fecha o que está aberto. Uma criatura que você toque recupera 1d8 + seu modificador de Inteligência PV, e qualquer sangramento ou ferida em carne viva fecha na hora.</p>
@@ -190,7 +190,7 @@
 	</element>
 
 	<element name="Balança de Ílios" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_BALANCA_DE_ILIOS">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
@@ -217,7 +217,7 @@
 	</element>
 
 	<element name="Dividir a Vida" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_DIVIDIR_A_VIDA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
@@ -245,7 +245,7 @@
 	</element>
 
 	<element name="Nome na Boca" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
@@ -272,7 +272,7 @@
 	</element>
 
 	<element name="Empréstimo de Perícia" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTIMO_DE_PERICIA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você pede emprestado o que outra pessoa sabe.</p>
@@ -300,7 +300,7 @@
 	</element>
 
 	<element name="Segunda Voz" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_SEGUNDA_VOZ">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
@@ -328,7 +328,7 @@
 	</element>
 
 	<element name="Adiamento" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
@@ -355,7 +355,7 @@
 	</element>
 
 	<element name="Inventário de Ossos" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_INVENTARIO_DE_OSSOS">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você faz a contagem do que já foi cobrado.</p>
@@ -382,7 +382,7 @@
 	</element>
 
 	<element name="A Conta Aberta" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_A_CONTA_ABERTA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p><strong>Efeito proibido.</strong> Gera Fardo passado o limiar da sua Via, e pode ser intensificado tomando Fardo voluntário.</p>
@@ -412,7 +412,7 @@
 
 
 	<element name="A Ponte de Um Passo" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_PONTE_DE_UM_PASSO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você aponta para um vão de até 9 metros e o metal vem de onde não estava, montando uma passarela de meio metro de largura, com corrimão de um lado só.</p>
@@ -438,7 +438,7 @@
 	</element>
 
 	<element name="A Forja de Campanha" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_FORJA_DE_CAMPANHA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você abre um círculo de terra batida e a sucata sobe dele já com forma. Ao fim da conjuração, escolha até seis armas simples ou marciais, escudos, ou peças de munição em qualquer combinação.</p>
@@ -464,7 +464,7 @@
 	</element>
 
 	<element name="O Que Aquece de Longe" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_AQUECE_DE_LONGE">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">O calor de Ílios é a parte dele voltada para fora, e esta magia é a lição inteira num gesto só: aquece sem encostar.</p>
@@ -490,7 +490,7 @@
 	</element>
 
 	<element name="A Hora Sem Sombra" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_HORA_SEM_SOMBRA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Por um minuto, o meio-dia do planalto heliásio se instala em volta de você e nada dentro do raio projeta sombra.</p>
@@ -516,7 +516,7 @@
 	</element>
 
 	<element name="Remendo Firme" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_REMENDO_FIRME">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Uma cura que não fecha a ferida, e sim segura ela fechada. Toque uma criatura e escolha um efeito em curso entre sangramento, veneno ou dano contínuo.</p>
@@ -542,7 +542,7 @@
 	</element>
 
 	<element name="Torniquete" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_TORNIQUETE">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Reação, que você toma quando uma criatura visível a até 9 metros cai a 0 pontos de vida.</p>
@@ -568,7 +568,7 @@
 	</element>
 
 	<element name="Eco de Intenção" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_ECO_DE_INTENCAO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">A Animancia é a única Via que toca o que os dois deuses dividiam, e o mais barato que ela faz é escutar.</p>
@@ -594,7 +594,7 @@
 	</element>
 
 	<element name="Trocar de Lado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_TROCAR_DE_LADO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você não convence a criatura de nada. Você troca de lugar quem ela chama de nosso.</p>
@@ -620,7 +620,7 @@
 	</element>
 
 	<element name="Penhor de Osso" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_PENHOR_DE_OSSO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Kólasi permite como um credor permite, e credor aceita penhor. Escolha um necrotralo seu a até 9 metros e desfaça ele.</p>
@@ -646,7 +646,7 @@
 	</element>
 
 	<element name="Chamada de Credor" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_CHAMADA_DE_CREDOR">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você não ergue ninguém. Você avisa que a conta está sendo conferida, e tudo o que morreu por perto nos últimos cem anos responde à chamada.</p>
@@ -673,7 +673,7 @@
 
 
 	<element name="Chave de Toda Fechadura" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_CHAVE_DE_TODA_FECHADURA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você encosta o polegar na fechadura e o metal dela lembra que já foi minério, sem dono e sem segredo.</p>
@@ -699,7 +699,7 @@
 	</element>
 
 	<element name="Peso Falso" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_PESO_FALSO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">A densidade é só mais uma coisa que o metal aceita discutir.</p>
@@ -725,7 +725,7 @@
 	</element>
 
 	<element name="A Parede Que Não Estava" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_PAREDE_QUE_NAO_ESTAVA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Transmutação.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Reação, que você toma quando enxerga um ataque à distância ou uma linha de efeito mirada em você ou em alguém a até 18 metros.</p>
@@ -751,7 +751,7 @@
 	</element>
 
 	<element name="Aviso de Brasa" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_AVISO_DE_BRASA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Uma lição de Ílios em escala pequena: o calor avisa antes de chegar.</p>
@@ -777,7 +777,7 @@
 	</element>
 
 	<element name="Ferro em Brasa" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_FERRO_EM_BRASA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">O metal de um inimigo é o jeito mais barato de encostar nele sem encostar.</p>
@@ -803,7 +803,7 @@
 	</element>
 
 	<element name="O Calor Que Fica" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_CALOR_QUE_FICA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Piromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Nem todo fogo precisa de chama. Este é o que sobra num forno depois que o forno apaga.</p>
@@ -829,7 +829,7 @@
 	</element>
 
 	<element name="Pulso Firme" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_PULSO_FIRME">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Reação, que você toma quando uma criatura a até 9 metros faz um teste de resistência.</p>
@@ -855,7 +855,7 @@
 	</element>
 
 	<element name="Emprestar Fôlego" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTAR_FOLEGO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você abre mão de parte do seu para que outro tenha.</p>
@@ -881,7 +881,7 @@
 	</element>
 
 	<element name="Repartir a Dor" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_REPARTIR_A_DOR">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Vitamancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Curar por dentro é segurar a vida na mão, e o que se segura pode ser dividido.</p>
@@ -907,7 +907,7 @@
 	</element>
 
 	<element name="Ouvido na Parede" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_OUVIDO_NA_PAREDE">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">A parte mais barata da Animancia é a que só escuta.</p>
@@ -933,7 +933,7 @@
 	</element>
 
 	<element name="Esquecer o Rosto" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_ESQUECER_O_ROSTO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Você não some. Você deixa de ter sido.</p>
@@ -959,7 +959,7 @@
 	</element>
 
 	<element name="Mão Emprestada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_MAO_EMPRESTADA">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Animancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Uma vontade só, por um gesto só.</p>
@@ -985,7 +985,7 @@
 	</element>
 
 	<element name="Marca de Devedor" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_MARCA_DE_DEVEDOR">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Kólasi reclama tudo o que começa. Você só está anotando o nome antes.</p>
@@ -1011,7 +1011,7 @@
 	</element>
 
 	<element name="Fôlego Atrasado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_FOLEGO_ATRASADO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Reação, que você toma quando uma criatura visível a até 18 metros morre.</p>
@@ -1037,7 +1037,7 @@
 	</element>
 
 	<element name="Serviço Cobrado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_VIA_SERVICO_COBRADO">
-		<supports>Spell, Alquimista</supports>
+		<supports>Spell</supports>
 		<description>
 			<p><i>Exclusiva da Via da Necromancia.</i> Nenhuma outra Via aprende esta magia, e ela não existe em lista de mago, clérigo ou druida: é sangue, não estudo.</p>
 			<p class="indent">Não é erguer. É cobrar uma tarefa antes de arquivar o processo.</p>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>
@@ -92,6 +92,8 @@
 	<element name="Conjuração" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CONJURACAO">
 		<description>
 			<p>Você canaliza a ressonância como uma ciência arcana. Inteligência é sua habilidade de conjuração.</p>
+			<h5>A LISTA DO ALQUIMISTA</h5>
+			<p>Sua lista não é a de nenhum estudioso. Ela é o que as cinco Vias alcançam juntas: matéria que se reescreve, calor, vitalidade, vontade e o que já morreu. Um alquimista prepara dentro dela, e o que está fora dela não é assunto do sangue dele.</p>
 			<h5>TRUQUES</h5>
 			<p>No 1º nível, você conhece dois truques da lista do Alquimista. Você aprende truques adicionais nos níveis 10 e 14.</p>
 			<h5>MAGIAS PREPARADAS</h5>
@@ -104,13 +106,12 @@
 			</center>
 			<h5>FOCO DE CONJURAÇÃO</h5>
 			<p>Suas próprias mãos, moldadas pela sua Via, servem como foco de conjuração para suas magias de Alquimista.</p>
-			<p class="indent"><i>Nota de mesa: por enquanto o Alquimista usa a lista de magias do Mago. Uma lista própria está planejada. As magias que contam como efeitos proibidos serão marcadas conforme cada Via é finalizada.</i></p>
 		</description>
 		<sheet display="false">
 			<description>Suas próprias mãos, moldadas pela sua Via, são seu foco de conjuração.</description>
 		</sheet>
 		<spellcasting name="Alquimista" ability="Intelligence" prepare="true">
-			<list known="true">Wizard</list>
+			<list>Alquimista</list>
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
