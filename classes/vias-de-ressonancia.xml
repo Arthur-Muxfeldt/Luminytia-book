@@ -3,7 +3,7 @@
 	<info>
 		<name>Vias de Ressonância</name>
 		<description>As cinco Vias de Ressonância, subclasses do Alquimista de Luminytia.</description>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
 		</update>
 	</info>
@@ -23,9 +23,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_EXCLUSIVAS" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_EXCLUSIVAS" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE" level="1" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_ARMAMENTO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_FORTALEZA" level="9" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_METAL_VIVO" level="15" />
@@ -34,7 +34,7 @@
 
 	<element name="Afinidade Metálica" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_AFINIDADE">
 		<description>
-			<p>No 3º nível, você ganha proficiência em armaduras médias e escudos.</p>
+			<p>No 1º nível, você ganha proficiência em armaduras médias e escudos.</p>
 			<p class="indent">Escolha um metal predileto (ferro, aço, cobre, prata, titânio). Ele define a aparência das suas transmutações.</p>
 			<p class="indent">Com uma ação bônus, você conjura na sua mão uma arma marcial feita desse metal. Ela dura até você largá-la, conta como mágica, e você é proficiente com ela.</p>
 			<p class="indent">Além disso, com uma ação, gaste 1 PR para fazer metal irromper do solo sob uma criatura a até 9 metros: ela faz um teste de resistência de Força contra sua CD de Ressonância. Falhando, fica agarrada (ação para repetir o teste e escapar).</p>
@@ -103,9 +103,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_EXCLUSIVAS" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR" level="1" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_COMBUSTAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_TEMPESTADE" level="9" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_ENCARNACAO" level="15" />
@@ -114,7 +114,7 @@
 
 	<element name="Chama Interior" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_CHAMA_INTERIOR">
 		<description>
-			<p>No 3º nível, você aprende o truque <i>raio de fogo</i>. Ele não conta no seu limite de truques conhecidos.</p>
+			<p>No 1º nível, você aprende o truque <i>raio de fogo</i>. Ele não conta no seu limite de truques conhecidos.</p>
 			<p class="indent">Com uma ação, gaste 1 PR num efeito proibido para exalar uma linha de fogo de 4,5 m × 1,5 m. Cada criatura na área faz um teste de resistência de Destreza contra sua CD de Ressonância, sofrendo 2d6 de dano de fogo, ou metade num sucesso.</p>
 			<p class="indent">O dano sobe para 3d6 no 6º nível, 4d6 no 11º e 5d6 no 15º.</p>
 		</description>
@@ -179,9 +179,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_EXCLUSIVAS" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR" level="1" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_TRANSFUSAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_RESTAURAR" level="9" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_SENHOR" level="15" />
@@ -190,7 +190,7 @@
 
 	<element name="Manipular Vitalidade" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MANIPULAR">
 		<description>
-			<p>No 3º nível, com uma ação, gaste 1 PR e escolha uma criatura a até 9 metros:</p>
+			<p>No 1º nível, com uma ação, gaste 1 PR e escolha uma criatura a até 9 metros:</p>
 			<ul>
 				<li><strong>Restaurar:</strong> ela recupera 1d8 + seu modificador de Inteligência em pontos de vida.</li>
 				<li><strong>Drenar:</strong> ela sofre a mesma quantia como dano necrótico. Um teste de resistência de Constituição bem-sucedido reduz o dano à metade.</li>
@@ -250,9 +250,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_EXCLUSIVAS" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO" level="1" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_DOMINAR_EMOCOES" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_INVADIR" level="9" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_TRANSFERENCIA" level="15" />
@@ -261,7 +261,7 @@
 
 	<element name="Sussurro Anímico" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_SUSSURRO">
 		<description>
-			<p>No 3º nível, com uma ação, gaste 1 PR num efeito proibido: uma criatura a até 18 metros faz um teste de resistência de Sabedoria contra sua CD de Ressonância. Falhando, você lê seus pensamentos de superfície e ela fica com desvantagem na próxima jogada de ataque ou teste contra você, por 1 minuto.</p>
+			<p>No 1º nível, com uma ação, gaste 1 PR num efeito proibido: uma criatura a até 18 metros faz um teste de resistência de Sabedoria contra sua CD de Ressonância. Falhando, você lê seus pensamentos de superfície e ela fica com desvantagem na próxima jogada de ataque ou teste contra você, por 1 minuto.</p>
 			<p class="indent">Você pode tomar 1 Fardo voluntário para, em vez disso, deixá-la enfeitiçada por 1 minuto. Ela repete o teste se sofrer dano.</p>
 		</description>
 		<sheet action="Action" usage="1 PR (proibido)">
@@ -315,9 +315,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_EXCLUSIVAS" level="3" />
-			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" level="3" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_EXCLUSIVAS" level="1" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER" level="1" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_LEGIAO" level="5" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_COLHEITA" level="9" />
 			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_SENHOR_MORTOS" level="15" />
@@ -326,7 +326,7 @@
 
 	<element name="Erguer Necrotralo" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_ERGUER">
 		<description>
-			<p>No 3º nível, com uma ação, gaste 2 PR e toque um cadáver ou pilha de ossos de humanoide Médio ou Pequeno a até 3 metros. Ele se ergue como necrotralo, usando o bloco de estatísticas de esqueleto ou zumbi, sob seu controle.</p>
+			<p>No 1º nível, com uma ação, gaste 2 PR e toque um cadáver ou pilha de ossos de humanoide Médio ou Pequeno a até 3 metros. Ele se ergue como necrotralo, usando o bloco de estatísticas de esqueleto ou zumbi, sob seu controle.</p>
 			<p class="indent">Você controla até seu bônus de proficiência em necrotralos sem custo adicional. Erguer além disso gera 1 Fardo por criatura.</p>
 			<p class="indent">A cada turno, uma única ação bônus comanda todos eles. Sem comando, apenas se defendem.</p>
 		</description>
@@ -368,7 +368,7 @@
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA">
 		<description>
 			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
 			<ul>
 				<li><strong>1º nível:</strong> <i>Graxa</i></li>
 				<li><strong>2º nível:</strong> <i>Aumentar/Reduzir</i></li>
@@ -382,7 +382,7 @@
 			<description>Magias sempre preparadas da Via da Transmutação, fora do limite de preparadas: 1º Graxa, 2º Aumentar/Reduzir, 3º Dissipar Magia, 4º Fabricar, 5º Animar Objetos.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_GREASE" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREASE" spellcasting="Alquimista" prepared="true" level="1" />
 			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Alquimista" prepared="true" level="5" />
 			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Alquimista" prepared="true" level="9" />
 			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Alquimista" prepared="true" level="13" />
@@ -393,7 +393,7 @@
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA">
 		<description>
 			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
 			<ul>
 				<li><strong>1º nível:</strong> <i>Mãos Flamejantes</i></li>
 				<li><strong>2º nível:</strong> <i>Raio Ardente</i></li>
@@ -407,7 +407,7 @@
 			<description>Magias sempre preparadas da Via da Piromancia, fora do limite de preparadas: 1º Mãos Flamejantes, 2º Raio Ardente, 3º Bola de Fogo, 4º Muralha de Fogo, 5º Coluna de Chamas.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Alquimista" prepared="true" level="1" />
 			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Alquimista" prepared="true" level="5" />
 			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Alquimista" prepared="true" level="9" />
 			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Alquimista" prepared="true" level="13" />
@@ -418,7 +418,7 @@
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA">
 		<description>
 			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
 			<ul>
 				<li><strong>1º nível:</strong> <i>Curar Ferimentos</i></li>
 				<li><strong>2º nível:</strong> <i>Restauração Menor</i></li>
@@ -432,7 +432,7 @@
 			<description>Magias sempre preparadas da Via da Vitamancia, fora do limite de preparadas: 1º Curar Ferimentos, 2º Restauração Menor, 3º Toque Vampírico (proibida), 4º Praga (proibida), 5º Restauração Maior.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Alquimista" prepared="true" level="1" />
 			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Alquimista" prepared="true" level="5" />
 			<grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" spellcasting="Alquimista" prepared="true" level="9" />
 			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" spellcasting="Alquimista" prepared="true" level="13" />
@@ -443,7 +443,7 @@
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA">
 		<description>
 			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
 			<ul>
 				<li><strong>1º nível:</strong> <i>Enfeitiçar Pessoa</i> (proibida)</li>
 				<li><strong>2º nível:</strong> <i>Detectar Pensamentos</i></li>
@@ -457,7 +457,7 @@
 			<description>Magias sempre preparadas da Via da Animancia, fora do limite de preparadas: 1º Enfeitiçar Pessoa (proibida), 2º Detectar Pensamentos, 3º Sugestão (proibida), 4º Confusão (proibida), 5º Modificar Memória (proibida).</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Alquimista" prepared="true" level="1" />
 			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Alquimista" prepared="true" level="5" />
 			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" spellcasting="Alquimista" prepared="true" level="9" />
 			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Alquimista" prepared="true" level="13" />
@@ -468,7 +468,7 @@
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA">
 		<description>
 			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente, o que num meio-conjurador é tarde: a de 1º nível no 3º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
 			<ul>
 				<li><strong>1º nível:</strong> <i>Falsa Vida</i> (proibida)</li>
 				<li><strong>2º nível:</strong> <i>Raio de Enfraquecimento</i> (proibida)</li>
@@ -482,7 +482,7 @@
 			<description>Magias sempre preparadas da Via da Necromancia, fora do limite de preparadas: 1º Falsa Vida (proibida), 2º Raio de Enfraquecimento (proibida), 3º Animar os Mortos (proibida), 4º Proteção contra a Morte (proibida), 5º Erguer Morto (proibida).</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" spellcasting="Alquimista" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" spellcasting="Alquimista" prepared="true" level="1" />
 			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Alquimista" prepared="true" level="5" />
 			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Alquimista" prepared="true" level="9" />
 			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Alquimista" prepared="true" level="13" />
@@ -495,8 +495,8 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Liga Viva</i></li>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Chave de Toda Fechadura</i></li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Liga Viva</i></li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Chave de Toda Fechadura</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>A Ponte de Um Passo</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Peso Falso</i></li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Reescrever a Peça</i></li>
@@ -510,8 +510,8 @@
 			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: 1º Liga Viva, 1º Chave de Toda Fechadura, 2º A Ponte de Um Passo, 2º Peso Falso, 3º Reescrever a Peça, 3º A Parede Que Não Estava, 4º A Forja de Campanha, 5º Cidadela de um Minuto.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA" spellcasting="Alquimista" level="3" />
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_CHAVE_DE_TODA_FECHADURA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA" spellcasting="Alquimista" level="1" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_CHAVE_DE_TODA_FECHADURA" spellcasting="Alquimista" level="1" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PONTE_DE_UM_PASSO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PESO_FALSO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_REESCREVER_A_PECA" spellcasting="Alquimista" level="9" />
@@ -526,8 +526,8 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Brasa Guardada</i></li>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Aviso de Brasa</i></li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Brasa Guardada</i></li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Aviso de Brasa</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>O Que Aquece de Longe</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Ferro em Brasa</i></li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Sopro de Meio-Dia</i></li>
@@ -541,8 +541,8 @@
 			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Brasa Guardada, 1º Aviso de Brasa, 2º O Que Aquece de Longe, 2º Ferro em Brasa, 3º Sopro de Meio-Dia, 3º O Calor Que Fica, 4º A Hora Sem Sombra, 5º A Parte Voltada Para Fora.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA" spellcasting="Alquimista" level="3" />
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_AVISO_DE_BRASA" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA" spellcasting="Alquimista" level="1" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_AVISO_DE_BRASA" spellcasting="Alquimista" level="1" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_AQUECE_DE_LONGE" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_FERRO_EM_BRASA" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_SOPRO_DE_MEIO_DIA" spellcasting="Alquimista" level="9" />
@@ -557,8 +557,8 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Costura</i></li>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Pulso Firme</i></li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Costura</i></li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Pulso Firme</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Remendo Firme</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Emprestar Fôlego</i></li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Balança de Ílios</i> (proibida)</li>
@@ -572,8 +572,8 @@
 			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: 1º Costura, 1º Pulso Firme, 2º Remendo Firme, 2º Emprestar Fôlego, 3º Balança de Ílios (proibida), 3º Repartir a Dor (proibida), 4º Torniquete (proibida), 5º Dividir a Vida (proibida).</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_COSTURA" spellcasting="Alquimista" level="3" />
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PULSO_FIRME" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_COSTURA" spellcasting="Alquimista" level="1" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PULSO_FIRME" spellcasting="Alquimista" level="1" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_REMENDO_FIRME" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTAR_FOLEGO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BALANCA_DE_ILIOS" spellcasting="Alquimista" level="9" />
@@ -588,8 +588,8 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Nome na Boca</i> (proibida)</li>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Ouvido na Parede</i></li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Nome na Boca</i> (proibida)</li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Ouvido na Parede</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Eco de Intenção</i></li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Esquecer o Rosto</i> (proibida)</li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Empréstimo de Perícia</i></li>
@@ -603,8 +603,8 @@
 			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: 1º Nome na Boca (proibida), 1º Ouvido na Parede, 2º Eco de Intenção, 2º Esquecer o Rosto (proibida), 3º Empréstimo de Perícia, 3º Mão Emprestada (proibida), 4º Trocar de Lado (proibida), 5º Segunda Voz (proibida).</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA" spellcasting="Alquimista" level="3" />
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_OUVIDO_NA_PAREDE" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA" spellcasting="Alquimista" level="1" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_OUVIDO_NA_PAREDE" spellcasting="Alquimista" level="1" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ECO_DE_INTENCAO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ESQUECER_O_ROSTO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_EMPRESTIMO_DE_PERICIA" spellcasting="Alquimista" level="9" />
@@ -619,8 +619,8 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Adiamento</i> (proibida)</li>
-				<li><strong>1º nível (3º nível de classe):</strong> <i>Marca de Devedor</i> (proibida)</li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Adiamento</i> (proibida)</li>
+				<li><strong>1º nível (1º nível de classe):</strong> <i>Marca de Devedor</i> (proibida)</li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Penhor de Osso</i> (proibida)</li>
 				<li><strong>2º nível (5º nível de classe):</strong> <i>Fôlego Atrasado</i> (proibida)</li>
 				<li><strong>3º nível (9º nível de classe):</strong> <i>Inventário de Ossos</i></li>
@@ -634,8 +634,8 @@
 			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Adiamento (proibida), 1º Marca de Devedor (proibida), 2º Penhor de Osso (proibida), 2º Fôlego Atrasado (proibida), 3º Inventário de Ossos, 3º Serviço Cobrado (proibida), 4º Chamada de Credor (proibida), 5º A Conta Aberta (proibida).</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO" spellcasting="Alquimista" level="3" />
-			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_MARCA_DE_DEVEDOR" spellcasting="Alquimista" level="3" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO" spellcasting="Alquimista" level="1" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_MARCA_DE_DEVEDOR" spellcasting="Alquimista" level="1" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_PENHOR_DE_OSSO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_FOLEGO_ATRASADO" spellcasting="Alquimista" level="5" />
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_INVENTARIO_DE_OSSOS" spellcasting="Alquimista" level="9" />

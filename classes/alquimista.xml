@@ -3,7 +3,7 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.1.6">
+		<update version="0.1.8">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>
@@ -64,10 +64,10 @@
 
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_CONJURACAO" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_SINTONIA" level="1" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACOES" level="2" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA" level="3" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO" level="3" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI" level="4" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FLUXO" level="6" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACAO_MAIOR" level="10" />
@@ -152,7 +152,8 @@
 	<element name="Pontos de Ressonância" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA">
 		<supports>Class Feature</supports>
 		<description>
-			<p>No 2º nível, você ganha um reservatório de Pontos de Ressonância (PR) igual ao seu nível de Alquimista. Gaste-os em Manifestações e em características de Via.</p>
+			<p>No 1º nível, você ganha um reservatório de Pontos de Ressonância (PR) igual ao seu nível de Alquimista. Gaste-os em Manifestações e em características de Via.</p>
+			<p class="indent">O reservatório não é treino acumulado: é o que o deus no seu sangue deixa você chamar por dia. Por isso ele existe desde o primeiro nível, e por isso ele é pequeno no começo.</p>
 			<p class="indent">Você recupera todos os seus PR ao terminar um descanso longo.</p>
 			<center>
 				<p><strong>CD de Ressonância</strong> = 8 + seu bônus de proficiência + seu modificador de Inteligência</p>
@@ -234,8 +235,8 @@
 
 	<element name="Via de Ressonância" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA">
 		<description>
-			<p>No 3º nível você escolhe uma das cinco Vias de Ressonância. As disciplinas do alquimista não são estilos escolhidos: são heranças de sangue.</p>
-			<p class="indent">Esta é a única escolha de subclasse da classe. Uma vez feita, é permanente, e você ganha as características dos níveis 3, 5, 9 e 15 automaticamente.</p>
+			<p>No 1º nível você já sabe qual das cinco Vias de Ressonância corre em você. As disciplinas do alquimista não são estilos escolhidos: são heranças de sangue, e sangue não espera ninguém treinar.</p>
+			<p class="indent">Esta é a única escolha de subclasse da classe. Uma vez feita, é permanente, e você ganha as características dos níveis 1, 5, 9 e 15 automaticamente.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -246,7 +247,7 @@
 	<element name="O Fardo" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO">
 		<supports>Class Feature</supports>
 		<description>
-			<p>A partir do 3º nível, certos efeitos são <strong>proibidos</strong>: exigem vitalidade, não só ressonância. Sempre que você usa um efeito proibido além do que sua Via permite de graça, ganha 1 nível de Fardo. Você também pode escolher tomar Fardo voluntariamente para intensificar esses efeitos, como descrito em cada Via.</p>
+			<p>A partir do 1º nível, certos efeitos são <strong>proibidos</strong>: exigem vitalidade, não só ressonância. Sempre que você usa um efeito proibido além do que sua Via permite de graça, ganha 1 nível de Fardo. Você também pode escolher tomar Fardo voluntariamente para intensificar esses efeitos, como descrito em cada Via.</p>
 			<p class="indent">O Fardo não é lei de homem nenhum: é o deus no sangue cobrando juros por ser chamado.</p>
 			<h5>LIMIAR GRATUITO POR VIA</h5>
 			<ul>
