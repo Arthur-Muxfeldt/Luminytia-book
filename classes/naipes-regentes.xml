@@ -3,7 +3,7 @@
 	<info>
 		<name>Naipes Regentes</name>
 		<description>Os Naipes Regentes, subclasses do Cartomante de Luminytia. O cartomante lê os quatro naipes, mas um deles lê ele de volta.</description>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="classes/naipes-regentes.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/naipes-regentes.xml" />
 		</update>
 	</info>
@@ -33,21 +33,21 @@
 	<element name="Cartas de Paus" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PAUS_CARTAS">
 		<description>
 			<p>A partir do 3º nível, o naipe te dá as cartas que você não precisou pintar. Elas entram no seu baralho já prontas, <strong>não contam no limite da tabela</strong> e não podem ser trocadas nem repintadas por outra coisa.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço de magia correspondente. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
 			<ul>
-				<li><strong>Ás e 1º–2º nível (3º nível de classe):</strong> <i>Faísca</i>, <i>Sinal de Avanço</i>, <i>Fogueira Festiva</i></li>
-				<li><strong>3º nível (5º):</strong> <i>Estandarte da Vitória</i></li>
-				<li><strong>4º nível (7º):</strong> <i>Salva Veloz</i></li>
-				<li><strong>5º nível (9º):</strong> <i>Peso das Chamas</i></li>
-				<li><strong>6º nível (11º):</strong> <i>Arauto da Faísca</i></li>
-				<li><strong>7º nível (13º):</strong> <i>Carga Flamejante</i></li>
-				<li><strong>8º nível (15º):</strong> <i>Coroa Ardente</i></li>
-				<li><strong>9º nível (17º):</strong> <i>A Vontade Que Queima</i></li>
+				<li><strong>Nível 3:</strong> <i>Faísca</i>, <i>Sinal de Avanço</i>, <i>Fogueira Festiva</i></li>
+				<li><strong>Nível 5:</strong> <i>Estandarte da Vitória</i></li>
+				<li><strong>Nível 7:</strong> <i>Salva Veloz</i></li>
+				<li><strong>Nível 9:</strong> <i>Peso das Chamas</i></li>
+				<li><strong>Nível 11:</strong> <i>Arauto da Faísca</i></li>
+				<li><strong>Nível 13:</strong> <i>Carga Flamejante</i></li>
+				<li><strong>Nível 15:</strong> <i>Coroa Ardente</i></li>
+				<li><strong>Nível 17:</strong> <i>A Vontade Que Queima</i></li>
 			</ul>
 			<p class="indent">A Rainha continua sendo a Rainha: <i>Coroa Ardente</i> e <i>Coroa Exigida</i> continuam queimando a carta como qualquer outra. O naipe te dá a carta, não o perdão.</p>
 		</description>
 		<sheet>
-			<description>Cartas de Paus concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Faísca, Sinal de Avanço e Fogueira Festiva (3º). Estandarte da Vitória (5º). Salva Veloz (7º). Peso das Chamas (9º). Arauto da Faísca (11º). Carga Flamejante (13º). Coroa Ardente (15º). A Vontade Que Queima (17º).</description>
+			<description>Cartas de Paus concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: nível 3 Faísca, Sinal de Avanço, Fogueira Festiva. nível 5 Estandarte da Vitória. nível 7 Salva Veloz. nível 9 Peso das Chamas. nível 11 Arauto da Faísca. nível 13 Carga Flamejante. nível 15 Coroa Ardente. nível 17 A Vontade Que Queima.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_PAUS_FAISCA" spellcasting="Cartomante" prepared="true" level="3" />
@@ -129,21 +129,21 @@
 	<element name="Cartas de Ouros" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_OUROS_CARTAS">
 		<description>
 			<p>A partir do 3º nível, o naipe te dá as cartas que você não precisou pintar. Elas entram no seu baralho já prontas, <strong>não contam no limite da tabela</strong> e não podem ser trocadas nem repintadas por outra coisa.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço de magia correspondente. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
 			<ul>
-				<li><strong>Ás e 1º–2º nível (3º nível de classe):</strong> <i>Semente de Chumbo</i>, <i>Obra de Três</i>, <i>Punho Fechado</i></li>
-				<li><strong>3º nível (5º):</strong> <i>A Espera da Colheita</i></li>
-				<li><strong>4º nível (7º):</strong> <i>Martelo do Aprendiz</i></li>
-				<li><strong>5º nível (9º):</strong> <i>O Patrimônio</i></li>
-				<li><strong>6º nível (11º):</strong> <i>O Aprendiz de Barro</i></li>
-				<li><strong>7º nível (13º):</strong> <i>Passo de Ferro</i></li>
-				<li><strong>8º nível (15º):</strong> <i>O Toque de Ouros</i></li>
-				<li><strong>9º nível (17º):</strong> <i>A Montanha Obedece</i></li>
+				<li><strong>Nível 3:</strong> <i>Semente de Chumbo</i>, <i>Obra de Três</i>, <i>Punho Fechado</i></li>
+				<li><strong>Nível 5:</strong> <i>A Espera da Colheita</i></li>
+				<li><strong>Nível 7:</strong> <i>Martelo do Aprendiz</i></li>
+				<li><strong>Nível 9:</strong> <i>O Patrimônio</i></li>
+				<li><strong>Nível 11:</strong> <i>O Aprendiz de Barro</i></li>
+				<li><strong>Nível 13:</strong> <i>Passo de Ferro</i></li>
+				<li><strong>Nível 15:</strong> <i>O Toque de Ouros</i></li>
+				<li><strong>Nível 17:</strong> <i>A Montanha Obedece</i></li>
 			</ul>
 			<p class="indent">A Rainha continua sendo a Rainha: <i>O Toque de Ouros</i> continua queimando a carta como qualquer outra. O naipe te dá a carta, não o perdão.</p>
 		</description>
 		<sheet>
-			<description>Cartas de Ouros concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Semente de Chumbo, Obra de Três e Punho Fechado (3º). A Espera da Colheita (5º). Martelo do Aprendiz (7º). O Patrimônio (9º). O Aprendiz de Barro (11º). Passo de Ferro (13º). O Toque de Ouros (15º). A Montanha Obedece (17º).</description>
+			<description>Cartas de Ouros concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: nível 3 Semente de Chumbo, Obra de Três, Punho Fechado. nível 5 A Espera da Colheita. nível 7 Martelo do Aprendiz. nível 9 O Patrimônio. nível 11 O Aprendiz de Barro. nível 13 Passo de Ferro. nível 15 O Toque de Ouros. nível 17 A Montanha Obedece.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_OUROS_SEMENTE_DE_CHUMBO" spellcasting="Cartomante" prepared="true" level="3" />
@@ -228,23 +228,21 @@
 	<element name="Cartas de Espadas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ESPADAS_CARTAS">
 		<description>
 			<p>A partir do 3º nível, o naipe te dá as cartas que você não precisou pintar. Elas entram no seu baralho já prontas, <strong>não contam no limite da tabela</strong> e não podem ser trocadas nem repintadas por outra coisa.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço de magia correspondente. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
 			<ul>
-				<li><strong>Ás e 1º–2º nível (3º nível de classe):</strong> <i>Fio da Verdade</i></li>
-				<li><strong>:</strong> <i>Venda nos Olhos</i></li>
-				<li><strong>:</strong> <i>Repouso do Cavaleiro</i></li>
-				<li><strong>3º nível (5º):</strong> <i>Sete Espadas</i></li>
-				<li><strong>4º nível (7º):</strong> <i>O Cerco de Lâminas</i></li>
-				<li><strong>5º nível (9º):</strong> <i>Dez nas Costas</i></li>
-				<li><strong>6º nível (11º):</strong> <i>O Vigia</i></li>
-				<li><strong>7º nível (13º):</strong> <i>A Carga Sem Rédea</i></li>
-				<li><strong>8º nível (15º):</strong> <i>Sentença</i></li>
-				<li><strong>9º nível (17º):</strong> <i>O Juízo</i></li>
+				<li><strong>Nível 3:</strong> <i>Fio da Verdade</i>, <i>Venda nos Olhos</i>, <i>Repouso do Cavaleiro</i></li>
+				<li><strong>Nível 5:</strong> <i>Sete Espadas</i></li>
+				<li><strong>Nível 7:</strong> <i>O Cerco de Lâminas</i></li>
+				<li><strong>Nível 9:</strong> <i>Dez nas Costas</i></li>
+				<li><strong>Nível 11:</strong> <i>O Vigia</i></li>
+				<li><strong>Nível 13:</strong> <i>A Carga Sem Rédea</i></li>
+				<li><strong>Nível 15:</strong> <i>Sentença</i></li>
+				<li><strong>Nível 17:</strong> <i>O Juízo</i></li>
 			</ul>
 			<p class="indent">O Juízo continua sendo O Juízo. O naipe te dá a carta, não a absolvição de quem a lê.</p>
 		</description>
 		<sheet>
-			<description>Cartas de Espadas concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Fio da Verdade, Venda nos Olhos e Repouso do Cavaleiro (3º). Sete Espadas (5º). O Cerco de Lâminas (7º). Dez nas Costas (9º). O Vigia (11º). A Carga Sem Rédea (13º). Sentença (15º). O Juízo (17º).</description>
+			<description>Cartas de Espadas concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: nível 3 Fio da Verdade, Venda nos Olhos, Repouso do Cavaleiro. nível 5 Sete Espadas. nível 7 O Cerco de Lâminas. nível 9 Dez nas Costas. nível 11 O Vigia. nível 13 A Carga Sem Rédea. nível 15 Sentença. nível 17 O Juízo.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_ESPADAS_FIO_DA_VERDADE" spellcasting="Cartomante" prepared="true" level="3" />
@@ -325,23 +323,21 @@
 	<element name="Cartas de Copas" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_COPAS_CARTAS">
 		<description>
 			<p>A partir do 3º nível, o naipe te dá as cartas que você não precisou pintar. Elas entram no seu baralho já prontas, <strong>não contam no limite da tabela</strong> e não podem ser trocadas nem repintadas por outra coisa.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço de magia correspondente. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre. Como você possui a carta inteira, e não uma leitura dela, pode conjurar qualquer uma delas <strong>nas duas orientações</strong>.</p>
 			<ul>
-				<li><strong>Ás e 1º–2º nível (3º nível de classe):</strong> <i>Gole de Ânimo</i></li>
-				<li><strong>:</strong> <i>Taça Transbordante</i></li>
-				<li><strong>:</strong> <i>Brinde dos Três</i></li>
-				<li><strong>3º nível (5º):</strong> <i>Maré de Memória</i></li>
-				<li><strong>4º nível (7º):</strong> <i>A Carta dos Desejos</i></li>
-				<li><strong>5º nível (9º):</strong> <i>Mensageiro de Água</i></li>
-				<li><strong>6º nível (11º):</strong> <i>Coração Aberto</i></li>
-				<li><strong>7º nível (13º):</strong> <i>A Corrente Que Leva</i></li>
-				<li><strong>8º nível (15º):</strong> <i>A Cheia</i></li>
-				<li><strong>9º nível (17º):</strong> <i>O Mar Inteiro</i></li>
+				<li><strong>Nível 3:</strong> <i>Gole de Ânimo</i>, <i>Taça Transbordante</i>, <i>Brinde dos Três</i></li>
+				<li><strong>Nível 5:</strong> <i>Maré de Memória</i></li>
+				<li><strong>Nível 7:</strong> <i>A Carta dos Desejos</i></li>
+				<li><strong>Nível 9:</strong> <i>Mensageiro de Água</i></li>
+				<li><strong>Nível 11:</strong> <i>Coração Aberto</i></li>
+				<li><strong>Nível 13:</strong> <i>A Corrente Que Leva</i></li>
+				<li><strong>Nível 15:</strong> <i>A Cheia</i></li>
+				<li><strong>Nível 17:</strong> <i>O Mar Inteiro</i></li>
 			</ul>
 			<p class="indent">O Mar Inteiro salva uma vez por pessoa e depois solta. O naipe te dá a carta, não a promessa de segurar todo mundo para sempre.</p>
 		</description>
 		<sheet>
-			<description>Cartas de Copas concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: Gole de Ânimo, Taça Transbordante e Brinde dos Três (3º). Maré de Memória (5º). A Carta dos Desejos (7º). Mensageiro de Água (9º). Coração Aberto (11º). A Corrente Que Leva (13º). A Cheia (15º). O Mar Inteiro (17º).</description>
+			<description>Cartas de Copas concedidas pelo naipe, fora do limite da tabela e conjuráveis nas duas orientações: nível 3 Gole de Ânimo, Taça Transbordante, Brinde dos Três. nível 5 Maré de Memória. nível 7 A Carta dos Desejos. nível 9 Mensageiro de Água. nível 11 Coração Aberto. nível 13 A Corrente Que Leva. nível 15 A Cheia. nível 17 O Mar Inteiro.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COPAS_GOLE_DE_ANIMO" spellcasting="Cartomante" prepared="true" level="3" />

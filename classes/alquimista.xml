@@ -3,7 +3,7 @@
 	<info>
 		<name>Alquimista</name>
 		<description>Classe-base Alquimista do mundo de Luminytia.</description>
-		<update version="0.1.8">
+		<update version="0.1.10">
 			<file name="classes/alquimista.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/alquimista.xml" />
 		</update>
 	</info>
@@ -40,6 +40,7 @@
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_SINTONIA" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACOES" />
+			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARTE_COMUM" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO" />
 			<div element="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI" />
@@ -66,6 +67,7 @@
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_SINTONIA" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_PONTOS_RESSONANCIA" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_MANIFESTACOES" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARTE_COMUM" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_FARDO" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ASI" level="4" />
@@ -231,6 +233,36 @@
 		<sheet usage="X PR">
 			<description>Ao lançar uma magia de dano, gaste até metade do seu bônus de proficiência em PR e adicione 1d6 do mesmo tipo por PR gasto.</description>
 		</sheet>
+	</element>
+
+	<element name="A Arte Comum" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_ARTE_COMUM">
+		<supports>Class Feature</supports>
+		<description>
+			<p>Ílios e Kólasi não quiseram a matéria morta, então ela ficou sem dono. É por isso que a <strong>Via da Transmutação</strong> se aprende em vez de se herdar, e é pela mesma razão que existe um punhado de magias que <strong>toda Via faz</strong>, não importa o sangue.</p>
+			<p class="indent">Chamam de arte comum, ou magia de bancada. É o que sobra do ofício quando você tira dele a herança: medir, conter, separar, guardar e montar. Nenhum deus reclama nada disso, e por isso a Arte Comum <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">Elas <strong>não são de graça</strong>. Cada uma entra na sua lista de magias disponíveis quando você alcança o nível indicado, e a partir dali você a prepara como qualquer outra, gastando uma preparação. O que a arte comum te dá é <strong>acesso</strong>, não espaço.</p>
+			<ul>
+				<li><strong>Nível 1:</strong> <i>Bancada Portátil</i>, <i>Leitura de Composição</i></li>
+				<li><strong>Nível 5:</strong> <i>Vidro de Contenção</i>, <i>Reagente Emprestado</i></li>
+				<li><strong>Nível 9:</strong> <i>Peso e Medida</i>, <i>Selo de Bancada</i></li>
+				<li><strong>Nível 13:</strong> <i>A Terceira Mão</i></li>
+				<li><strong>Nível 17:</strong> <i>Destilação</i></li>
+			</ul>
+			<p class="indent">A Arte Comum não substitui a Via da Transmutação, e a diferença é de escala e de tempo. A arte comum é bancada: pequena, fria e lenta. A Via é obra: ergue ponte, fecha parede e põe arma na mão no meio da briga.</p>
+		</description>
+		<sheet>
+			<description>Magias de bancada, disponíveis para preparar conforme você sobe de nível e sem gerar Fardo: nível 1 Bancada Portátil, Leitura de Composição. nível 5 Vidro de Contenção, Reagente Emprestado. nível 9 Peso e Medida, Selo de Bancada. nível 13 A Terceira Mão. nível 17 Destilação.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_BANCADA_PORTATIL" spellcasting="Alquimista" level="1" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_LEITURA_DE_COMPOSICAO" spellcasting="Alquimista" level="1" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_VIDRO_DE_CONTENCAO" spellcasting="Alquimista" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_REAGENTE_EMPRESTADO" spellcasting="Alquimista" level="5" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_PESO_E_MEDIDA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_SELO_DE_BANCADA" spellcasting="Alquimista" level="9" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_A_TERCEIRA_MAO" spellcasting="Alquimista" level="13" />
+			<grant type="Spell" id="ID_SPELL_LUMINYTIA_COMUM_DESTILACAO" spellcasting="Alquimista" level="17" />
+		</rules>
 	</element>
 
 	<element name="Via de Ressonância" type="Class Feature" source="Luminytia" id="ID_CLASS_FEATURE_LUMINYTIA_ALQUIMISTA_VIA">

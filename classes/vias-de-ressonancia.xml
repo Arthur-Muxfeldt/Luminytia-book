@@ -3,7 +3,7 @@
 	<info>
 		<name>Vias de Ressonância</name>
 		<description>As cinco Vias de Ressonância, subclasses do Alquimista de Luminytia.</description>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="classes/vias-de-ressonancia.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/classes/vias-de-ressonancia.xml" />
 		</update>
 	</info>
@@ -367,19 +367,19 @@
 
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_TRANSMUTACAO_MAGIAS_DE_VIA">
 		<description>
-			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p>A partir do 1º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre.</p>
 			<ul>
-				<li><strong>1º nível:</strong> <i>Graxa</i></li>
-				<li><strong>2º nível:</strong> <i>Aumentar/Reduzir</i></li>
-				<li><strong>3º nível:</strong> <i>Dissipar Magia</i></li>
-				<li><strong>4º nível:</strong> <i>Fabricar</i></li>
-				<li><strong>5º nível:</strong> <i>Animar Objetos</i></li>
+				<li><strong>Nível 1:</strong> <i>Graxa</i></li>
+				<li><strong>Nível 5:</strong> <i>Aumentar/Reduzir</i></li>
+				<li><strong>Nível 9:</strong> <i>Dissipar Magia</i></li>
+				<li><strong>Nível 13:</strong> <i>Fabricar</i></li>
+				<li><strong>Nível 17:</strong> <i>Animar Objetos</i></li>
 			</ul>
 			<p class="indent">Nenhuma delas é proibida, e essa é a característica que define a Via: a Transmutação não herdou de ninguém, não deve nada e nunca toca a trilha do Fardo.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Transmutação, fora do limite de preparadas: 1º Graxa, 2º Aumentar/Reduzir, 3º Dissipar Magia, 4º Fabricar, 5º Animar Objetos.</description>
+			<description>Magias sempre preparadas da Via da Transmutação, fora do limite de preparadas: nível 1 Graxa, nível 5 Aumentar/Reduzir, nível 9 Dissipar Magia, nível 13 Fabricar, nível 17 Animar Objetos.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_GREASE" spellcasting="Alquimista" prepared="true" level="1" />
@@ -392,19 +392,19 @@
 
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_PIROMANCIA_MAGIAS_DE_VIA">
 		<description>
-			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p>A partir do 1º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre.</p>
 			<ul>
-				<li><strong>1º nível:</strong> <i>Mãos Flamejantes</i></li>
-				<li><strong>2º nível:</strong> <i>Raio Ardente</i></li>
-				<li><strong>3º nível:</strong> <i>Bola de Fogo</i></li>
-				<li><strong>4º nível:</strong> <i>Muralha de Fogo</i></li>
-				<li><strong>5º nível:</strong> <i>Coluna de Chamas</i></li>
+				<li><strong>Nível 1:</strong> <i>Mãos Flamejantes</i></li>
+				<li><strong>Nível 5:</strong> <i>Raio Ardente</i></li>
+				<li><strong>Nível 9:</strong> <i>Bola de Fogo</i></li>
+				<li><strong>Nível 13:</strong> <i>Muralha de Fogo</i></li>
+				<li><strong>Nível 17:</strong> <i>Coluna de Chamas</i></li>
 			</ul>
 			<p class="indent">Nenhuma é proibida: o fogo do calor não exige vitalidade, só ressonância. O que cobra Fardo nesta Via são as características de classe, não as magias.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Piromancia, fora do limite de preparadas: 1º Mãos Flamejantes, 2º Raio Ardente, 3º Bola de Fogo, 4º Muralha de Fogo, 5º Coluna de Chamas.</description>
+			<description>Magias sempre preparadas da Via da Piromancia, fora do limite de preparadas: nível 1 Mãos Flamejantes, nível 5 Raio Ardente, nível 9 Bola de Fogo, nível 13 Muralha de Fogo, nível 17 Coluna de Chamas.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Alquimista" prepared="true" level="1" />
@@ -417,19 +417,19 @@
 
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_VITAMANCIA_MAGIAS_DE_VIA">
 		<description>
-			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p>A partir do 1º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre.</p>
 			<ul>
-				<li><strong>1º nível:</strong> <i>Curar Ferimentos</i></li>
-				<li><strong>2º nível:</strong> <i>Restauração Menor</i></li>
-				<li><strong>3º nível:</strong> <i>Toque Vampírico</i> (proibida)</li>
-				<li><strong>4º nível:</strong> <i>Praga</i> (proibida)</li>
-				<li><strong>5º nível:</strong> <i>Restauração Maior</i></li>
+				<li><strong>Nível 1:</strong> <i>Curar Ferimentos</i></li>
+				<li><strong>Nível 5:</strong> <i>Restauração Menor</i></li>
+				<li><strong>Nível 9:</strong> <i>Toque Vampírico</i> (proibida)</li>
+				<li><strong>Nível 13:</strong> <i>Praga</i> (proibida)</li>
+				<li><strong>Nível 17:</strong> <i>Restauração Maior</i></li>
 			</ul>
 			<p class="indent">Duas proibidas em cinco, e nessa ordem de propósito. A Via começa curando de graça e termina curando de graça. O que fica no meio é o que ela cobra.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Vitamancia, fora do limite de preparadas: 1º Curar Ferimentos, 2º Restauração Menor, 3º Toque Vampírico (proibida), 4º Praga (proibida), 5º Restauração Maior.</description>
+			<description>Magias sempre preparadas da Via da Vitamancia, fora do limite de preparadas: nível 1 Curar Ferimentos, nível 5 Restauração Menor, nível 9 Toque Vampírico (proibida), nível 13 Praga (proibida), nível 17 Restauração Maior.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Alquimista" prepared="true" level="1" />
@@ -442,19 +442,19 @@
 
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_ANIMANCIA_MAGIAS_DE_VIA">
 		<description>
-			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p>A partir do 1º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre.</p>
 			<ul>
-				<li><strong>1º nível:</strong> <i>Enfeitiçar Pessoa</i> (proibida)</li>
-				<li><strong>2º nível:</strong> <i>Detectar Pensamentos</i></li>
-				<li><strong>3º nível:</strong> <i>Sugestão</i> (proibida)</li>
-				<li><strong>4º nível:</strong> <i>Confusão</i> (proibida)</li>
-				<li><strong>5º nível:</strong> <i>Modificar Memória</i> (proibida)</li>
+				<li><strong>Nível 1:</strong> <i>Enfeitiçar Pessoa</i> (proibida)</li>
+				<li><strong>Nível 5:</strong> <i>Detectar Pensamentos</i></li>
+				<li><strong>Nível 9:</strong> <i>Sugestão</i> (proibida)</li>
+				<li><strong>Nível 13:</strong> <i>Confusão</i> (proibida)</li>
+				<li><strong>Nível 17:</strong> <i>Modificar Memória</i> (proibida)</li>
 			</ul>
 			<p class="indent">Quatro proibidas em cinco, herança dos dois deuses. A única limpa é Detectar Pensamentos, e ela é limpa por um motivo só: ler não é reescrever.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Animancia, fora do limite de preparadas: 1º Enfeitiçar Pessoa (proibida), 2º Detectar Pensamentos, 3º Sugestão (proibida), 4º Confusão (proibida), 5º Modificar Memória (proibida).</description>
+			<description>Magias sempre preparadas da Via da Animancia, fora do limite de preparadas: nível 1 Enfeitiçar Pessoa (proibida), nível 5 Detectar Pensamentos, nível 9 Sugestão (proibida), nível 13 Confusão (proibida), nível 17 Modificar Memória (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Alquimista" prepared="true" level="1" />
@@ -467,19 +467,19 @@
 
 	<element name="Magias de Via" type="Archetype Feature" source="Luminytia" id="ID_ARCHETYPE_FEATURE_LUMINYTIA_NECROMANCIA_MAGIAS_DE_VIA">
 		<description>
-			<p>A partir do 3º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
-			<p class="indent">Cada uma chega quando você abre o espaço correspondente: a de 1º nível já no 1º nível de classe, e depois no 5º, 9º, 13º e 17º.</p>
+			<p>A partir do 1º nível, sua Via concede uma magia por nível de magia, cinco no total. Elas ficam <strong>sempre preparadas</strong>, não contam no seu limite de magias preparadas e não podem ser trocadas: é o sangue escolhendo por você.</p>
+			<p class="indent">Cada uma chega no nível de classe indicado abaixo, quando o espaço de magia correspondente abre.</p>
 			<ul>
-				<li><strong>1º nível:</strong> <i>Falsa Vida</i> (proibida)</li>
-				<li><strong>2º nível:</strong> <i>Raio de Enfraquecimento</i> (proibida)</li>
-				<li><strong>3º nível:</strong> <i>Animar os Mortos</i> (proibida)</li>
-				<li><strong>4º nível:</strong> <i>Proteção contra a Morte</i> (proibida)</li>
-				<li><strong>5º nível:</strong> <i>Erguer Morto</i> (proibida)</li>
+				<li><strong>Nível 1:</strong> <i>Falsa Vida</i> (proibida)</li>
+				<li><strong>Nível 5:</strong> <i>Raio de Enfraquecimento</i> (proibida)</li>
+				<li><strong>Nível 9:</strong> <i>Animar os Mortos</i> (proibida)</li>
+				<li><strong>Nível 13:</strong> <i>Proteção contra a Morte</i> (proibida)</li>
+				<li><strong>Nível 17:</strong> <i>Erguer Morto</i> (proibida)</li>
 			</ul>
 			<p class="indent">Cinco proibidas em cinco. Nenhuma magia limpa, porque não existe jeito limpo de mexer no que já é de Kólasi. É por isso que esta é a Via de Fardo alto.</p>
 		</description>
 		<sheet>
-			<description>Magias sempre preparadas da Via da Necromancia, fora do limite de preparadas: 1º Falsa Vida (proibida), 2º Raio de Enfraquecimento (proibida), 3º Animar os Mortos (proibida), 4º Proteção contra a Morte (proibida), 5º Erguer Morto (proibida).</description>
+			<description>Magias sempre preparadas da Via da Necromancia, fora do limite de preparadas: nível 1 Falsa Vida (proibida), nível 5 Raio de Enfraquecimento (proibida), nível 9 Animar os Mortos (proibida), nível 13 Proteção contra a Morte (proibida), nível 17 Erguer Morto (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" spellcasting="Alquimista" prepared="true" level="1" />
@@ -495,19 +495,19 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Liga Viva</i></li>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Chave de Toda Fechadura</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>A Ponte de Um Passo</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Peso Falso</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Reescrever a Peça</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>A Parede Que Não Estava</i></li>
-				<li><strong>4º nível (13º nível de classe):</strong> <i>A Forja de Campanha</i></li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>Cidadela de um Minuto</i></li>
+				<li><strong>Nível 1:</strong> <i>Liga Viva</i></li>
+				<li><strong>Nível 1:</strong> <i>Chave de Toda Fechadura</i></li>
+				<li><strong>Nível 5:</strong> <i>A Ponte de Um Passo</i></li>
+				<li><strong>Nível 5:</strong> <i>Peso Falso</i></li>
+				<li><strong>Nível 9:</strong> <i>Reescrever a Peça</i></li>
+				<li><strong>Nível 9:</strong> <i>A Parede Que Não Estava</i></li>
+				<li><strong>Nível 13:</strong> <i>A Forja de Campanha</i></li>
+				<li><strong>Nível 17:</strong> <i>Cidadela de um Minuto</i></li>
 			</ul>
 			<p class="indent">Nenhuma das oito é proibida, e essa é a característica que define a Via. A Transmutação não deve nada a deus nenhum, então nem as magias dela tocam a trilha do Fardo.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: 1º Liga Viva, 1º Chave de Toda Fechadura, 2º A Ponte de Um Passo, 2º Peso Falso, 3º Reescrever a Peça, 3º A Parede Que Não Estava, 4º A Forja de Campanha, 5º Cidadela de um Minuto.</description>
+			<description>Magias exclusivas da Via da Transmutação, disponíveis para preparar e fora de qualquer outra lista: nível 1 Liga Viva, nível 1 Chave de Toda Fechadura, nível 5 A Ponte de Um Passo, nível 5 Peso Falso, nível 9 Reescrever a Peça, nível 9 A Parede Que Não Estava, nível 13 A Forja de Campanha, nível 17 Cidadela de um Minuto.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_LIGA_VIVA" spellcasting="Alquimista" level="1" />
@@ -526,19 +526,19 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Brasa Guardada</i></li>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Aviso de Brasa</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>O Que Aquece de Longe</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Ferro em Brasa</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Sopro de Meio-Dia</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>O Calor Que Fica</i></li>
-				<li><strong>4º nível (13º nível de classe):</strong> <i>A Hora Sem Sombra</i></li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>A Parte Voltada Para Fora</i></li>
+				<li><strong>Nível 1:</strong> <i>Brasa Guardada</i></li>
+				<li><strong>Nível 1:</strong> <i>Aviso de Brasa</i></li>
+				<li><strong>Nível 5:</strong> <i>O Que Aquece de Longe</i></li>
+				<li><strong>Nível 5:</strong> <i>Ferro em Brasa</i></li>
+				<li><strong>Nível 9:</strong> <i>Sopro de Meio-Dia</i></li>
+				<li><strong>Nível 9:</strong> <i>O Calor Que Fica</i></li>
+				<li><strong>Nível 13:</strong> <i>A Hora Sem Sombra</i></li>
+				<li><strong>Nível 17:</strong> <i>A Parte Voltada Para Fora</i></li>
 			</ul>
 			<p class="indent">Nenhuma das oito é proibida. O fogo do calor não exige vitalidade, só ressonância. Nesta Via quem cobra Fardo são as características de classe, não as magias.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Brasa Guardada, 1º Aviso de Brasa, 2º O Que Aquece de Longe, 2º Ferro em Brasa, 3º Sopro de Meio-Dia, 3º O Calor Que Fica, 4º A Hora Sem Sombra, 5º A Parte Voltada Para Fora.</description>
+			<description>Magias exclusivas da Via da Piromancia, disponíveis para preparar e fora de qualquer outra lista: nível 1 Brasa Guardada, nível 1 Aviso de Brasa, nível 5 O Que Aquece de Longe, nível 5 Ferro em Brasa, nível 9 Sopro de Meio-Dia, nível 9 O Calor Que Fica, nível 13 A Hora Sem Sombra, nível 17 A Parte Voltada Para Fora.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_BRASA_GUARDADA" spellcasting="Alquimista" level="1" />
@@ -557,19 +557,19 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Costura</i></li>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Pulso Firme</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Remendo Firme</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Emprestar Fôlego</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Balança de Ílios</i> (proibida)</li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Repartir a Dor</i> (proibida)</li>
-				<li><strong>4º nível (13º nível de classe):</strong> <i>Torniquete</i> (proibida)</li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>Dividir a Vida</i> (proibida)</li>
+				<li><strong>Nível 1:</strong> <i>Costura</i></li>
+				<li><strong>Nível 1:</strong> <i>Pulso Firme</i></li>
+				<li><strong>Nível 5:</strong> <i>Remendo Firme</i></li>
+				<li><strong>Nível 5:</strong> <i>Emprestar Fôlego</i></li>
+				<li><strong>Nível 9:</strong> <i>Balança de Ílios</i> (proibida)</li>
+				<li><strong>Nível 9:</strong> <i>Repartir a Dor</i> (proibida)</li>
+				<li><strong>Nível 13:</strong> <i>Torniquete</i> (proibida)</li>
+				<li><strong>Nível 17:</strong> <i>Dividir a Vida</i> (proibida)</li>
 			</ul>
 			<p class="indent">Quatro limpas e quatro proibidas. As limpas remendam por fora, e isso Ílios dá de presente. As proibidas seguram a vida na mão, e ali começa a sombra de Kólasi.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: 1º Costura, 1º Pulso Firme, 2º Remendo Firme, 2º Emprestar Fôlego, 3º Balança de Ílios (proibida), 3º Repartir a Dor (proibida), 4º Torniquete (proibida), 5º Dividir a Vida (proibida).</description>
+			<description>Magias exclusivas da Via da Vitamancia, disponíveis para preparar e fora de qualquer outra lista: nível 1 Costura, nível 1 Pulso Firme, nível 5 Remendo Firme, nível 5 Emprestar Fôlego, nível 9 Balança de Ílios (proibida), nível 9 Repartir a Dor (proibida), nível 13 Torniquete (proibida), nível 17 Dividir a Vida (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_COSTURA" spellcasting="Alquimista" level="1" />
@@ -588,19 +588,19 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Nome na Boca</i> (proibida)</li>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Ouvido na Parede</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Eco de Intenção</i></li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Esquecer o Rosto</i> (proibida)</li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Empréstimo de Perícia</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Mão Emprestada</i> (proibida)</li>
-				<li><strong>4º nível (13º nível de classe):</strong> <i>Trocar de Lado</i> (proibida)</li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>Segunda Voz</i> (proibida)</li>
+				<li><strong>Nível 1:</strong> <i>Nome na Boca</i> (proibida)</li>
+				<li><strong>Nível 1:</strong> <i>Ouvido na Parede</i></li>
+				<li><strong>Nível 5:</strong> <i>Eco de Intenção</i></li>
+				<li><strong>Nível 5:</strong> <i>Esquecer o Rosto</i> (proibida)</li>
+				<li><strong>Nível 9:</strong> <i>Empréstimo de Perícia</i></li>
+				<li><strong>Nível 9:</strong> <i>Mão Emprestada</i> (proibida)</li>
+				<li><strong>Nível 13:</strong> <i>Trocar de Lado</i> (proibida)</li>
+				<li><strong>Nível 17:</strong> <i>Segunda Voz</i> (proibida)</li>
 			</ul>
 			<p class="indent">Cinco proibidas e três limpas. As limpas são exatamente as que só escutam. Toda vez que a Via impõe alguma coisa a outra vontade, ela cobra.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: 1º Nome na Boca (proibida), 1º Ouvido na Parede, 2º Eco de Intenção, 2º Esquecer o Rosto (proibida), 3º Empréstimo de Perícia, 3º Mão Emprestada (proibida), 4º Trocar de Lado (proibida), 5º Segunda Voz (proibida).</description>
+			<description>Magias exclusivas da Via da Animancia, disponíveis para preparar e fora de qualquer outra lista: nível 1 Nome na Boca (proibida), nível 1 Ouvido na Parede, nível 5 Eco de Intenção, nível 5 Esquecer o Rosto (proibida), nível 9 Empréstimo de Perícia, nível 9 Mão Emprestada (proibida), nível 13 Trocar de Lado (proibida), nível 17 Segunda Voz (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_NOME_NA_BOCA" spellcasting="Alquimista" level="1" />
@@ -619,19 +619,19 @@
 			<p>Além das cinco magias concedidas, outras oito que <strong>só esta Via aprende</strong>. Não existem em lista de mago, clérigo ou druida, não podem ser copiadas de pergaminho, e um alquimista de outra Via não as aprende nem com tempo nem com dinheiro.</p>
 			<p class="indent">Elas <strong>não são de graça</strong>. Entram na sua lista de magias disponíveis quando você alcança o nível correspondente, e você gasta uma preparação para usá-las como qualquer outra.</p>
 			<ul>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Adiamento</i> (proibida)</li>
-				<li><strong>1º nível (1º nível de classe):</strong> <i>Marca de Devedor</i> (proibida)</li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Penhor de Osso</i> (proibida)</li>
-				<li><strong>2º nível (5º nível de classe):</strong> <i>Fôlego Atrasado</i> (proibida)</li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Inventário de Ossos</i></li>
-				<li><strong>3º nível (9º nível de classe):</strong> <i>Serviço Cobrado</i> (proibida)</li>
-				<li><strong>4º nível (13º nível de classe):</strong> <i>Chamada de Credor</i> (proibida)</li>
-				<li><strong>5º nível (17º nível de classe):</strong> <i>A Conta Aberta</i> (proibida)</li>
+				<li><strong>Nível 1:</strong> <i>Adiamento</i> (proibida)</li>
+				<li><strong>Nível 1:</strong> <i>Marca de Devedor</i> (proibida)</li>
+				<li><strong>Nível 5:</strong> <i>Penhor de Osso</i> (proibida)</li>
+				<li><strong>Nível 5:</strong> <i>Fôlego Atrasado</i> (proibida)</li>
+				<li><strong>Nível 9:</strong> <i>Inventário de Ossos</i></li>
+				<li><strong>Nível 9:</strong> <i>Serviço Cobrado</i> (proibida)</li>
+				<li><strong>Nível 13:</strong> <i>Chamada de Credor</i> (proibida)</li>
+				<li><strong>Nível 17:</strong> <i>A Conta Aberta</i> (proibida)</li>
 			</ul>
 			<p class="indent">Sete proibidas e uma limpa. Inventário de Ossos é limpa por razão técnica: contar não é atrasar. Todo o resto que esta Via faz é atrasar.</p>
 		</description>
 		<sheet>
-			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: 1º Adiamento (proibida), 1º Marca de Devedor (proibida), 2º Penhor de Osso (proibida), 2º Fôlego Atrasado (proibida), 3º Inventário de Ossos, 3º Serviço Cobrado (proibida), 4º Chamada de Credor (proibida), 5º A Conta Aberta (proibida).</description>
+			<description>Magias exclusivas da Via da Necromancia, disponíveis para preparar e fora de qualquer outra lista: nível 1 Adiamento (proibida), nível 1 Marca de Devedor (proibida), nível 5 Penhor de Osso (proibida), nível 5 Fôlego Atrasado (proibida), nível 9 Inventário de Ossos, nível 9 Serviço Cobrado (proibida), nível 13 Chamada de Credor (proibida), nível 17 A Conta Aberta (proibida).</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_SPELL_LUMINYTIA_VIA_ADIAMENTO" spellcasting="Alquimista" level="1" />

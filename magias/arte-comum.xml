@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>A Arte Comum</name>
+		<description>As oito magias de bancada do Alquimista de Luminytia, comuns a todas as Vias porque mexem em matéria que não é de deus nenhum.</description>
+		<update version="0.1.0">
+			<file name="magias/arte-comum.xml" url="https://raw.githubusercontent.com/Arthur-Muxfeldt/Luminytia-book/main/magias/arte-comum.xml" />
+		</update>
+	</info>
+
+	<element name="Bancada Portátil" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_BANCADA_PORTATIL">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">Você abre as mãos e a bancada vem: uma superfície de trabalho de metal frio, com pinça, almofariz, fornalha pequena e os reagentes comuns que todo ofício consome.</p>
+			<p class="indent">Enquanto durar, você tem vantagem em testes com ferramentas de alquimista, e pode preparar qualquer item de valor até 25 po que suas ferramentas alcancem, gastando o tempo normal e nenhum material.</p>
+			<p class="indent">A bancada não pode ser levada. Ela some se você sair a mais de 9 metros dela, e não volta antes do próximo descanso longo.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O valor máximo do que você prepara dobra a cada dois níveis acima do 1º.</p>
+		</description>
+		<sheet>
+			<description>Bancada de trabalho por 8 horas: vantagem em testes de ferramentas de alquimista e prepara itens de até 25 po sem material. Some se você se afastar 9 m.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">10 minutos</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V, G</set>
+			<set name="duration">8 horas</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+		</setters>
+	</element>
+
+	<element name="Leitura de Composição" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_LEITURA_DE_COMPOSICAO">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">Ressonância é a energia que vibra em toda matéria, e matéria vibra diferente conforme o que é.</p>
+			<p class="indent">Toque uma substância, objeto ou porção de material. Você sabe exatamente do que ele é feito, em que proporção, quanto vale em ouro, e se ele é venenoso, corrosivo, inflamável ou impróprio para consumo.</p>
+			<p class="indent">Se o material tiver sido alterado, misturado ou falsificado, você sabe disso e sabe o que havia antes. Um mercador honesto não teme esta magia, e é por isso que mercador nenhum gosta dela.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Você lê um objeto adicional a até 1,5 metro por nível acima do 1º.</p>
+		</description>
+		<sheet>
+			<description>Você sabe a composição exata, a proporção, o valor em ouro e o perigo de qualquer material que toque, e se ele foi adulterado.</description>
+		</sheet>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 ação</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+		</setters>
+	</element>
+
+	<element name="Vidro de Contenção" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_VIDRO_DE_CONTENCAO">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">Reação, que você toma quando um efeito de nuvem, gás, líquido ou área de até 3 metros surge ao seu alcance.</p>
+			<p class="indent">Um frasco de vidro de ressonância se fecha em volta dele. O efeito continua existindo, mas fica preso ali dentro, sem afetar nada fora do vidro.</p>
+			<p class="indent">Com uma ação, você pode arremessar o frasco a até 18 metros e quebrá-lo, soltando o efeito no ponto onde caiu, com a duração que ainda lhe restava. Se a magia acabar antes, o efeito volta para o lugar de onde saiu.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> A área contida aumenta em 1,5 metro por nível acima do 2º.</p>
+		</description>
+		<sheet>
+			<description>Reação: prende uma nuvem, gás ou área de até 3 m num frasco. Com uma ação, arremesse a 18 m e solte o efeito lá.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 1 minuto</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Reagente Emprestado" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_REAGENTE_EMPRESTADO">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">Componente material é matéria morta com função, e matéria morta não é de deus nenhum. Se ela não tem dono, ela aceita ser imitada.</p>
+			<p class="indent">Enquanto durar, você pode conjurar qualquer magia sem os componentes materiais dela, desde que esses componentes não tenham custo em ouro e não sejam consumidos.</p>
+			<p class="indent">Uma vez durante a duração, você também substitui um componente **consumido** de até 100 po, montando ele de ressonância pura na hora. O componente funciona uma vez e desmancha.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O valor do componente consumido sobe em 100 po por nível acima do 2º.</p>
+		</description>
+		<sheet>
+			<description>Por 1 hora, conjure sem componentes materiais sem custo. Uma vez na duração, substitua um componente consumido de até 100 po.</description>
+		</sheet>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação bônus</set>
+			<set name="range">Pessoal</set>
+			<set name="components">V</set>
+			<set name="duration">1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+		</setters>
+	</element>
+
+	<element name="Peso e Medida" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_PESO_E_MEDIDA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">A planície de sal fica a oeste da faixa central e a consequência chega adiantada por lá. Esta magia é a versão de bancada disso.</p>
+			<p class="indent">Escolha um objeto inorgânico não mágico de até 3 metros em qualquer dimensão. Você fixa uma medida dele: peso, comprimento, volume ou temperatura.</p>
+			<p class="indent">A medida escolhida passa a ser exatamente o que você determinou e resiste a qualquer coisa que tente alterá-la, incluindo magia de nível igual ou menor. Uma corda fixada em três metros não estica nem encolhe, um caldeirão fixado em cem graus não esfria, uma barra fixada em dez quilos não pode ser aliviada nem carregada.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> O tamanho máximo aumenta em 3 metros por nível acima do 3º.</p>
+		</description>
+		<sheet>
+			<description>Fixa uma medida de um objeto (peso, comprimento, volume ou temperatura). Ela resiste a alteração, inclusive mágica de nível igual ou menor.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 ação</set>
+			<set name="range">9 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 10 minutos</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Selo de Bancada" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_SELO_DE_BANCADA">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">Todo alquimista aprende cedo que o problema não é fazer, é guardar.</p>
+			<p class="indent">Toque um recipiente, porta, baú ou compartimento de até 3 metros cúbicos. Ele se fecha e só você o abre, ou quem você nomear no momento da conjuração.</p>
+			<p class="indent">Nada dentro dele se deteriora, azeda, evapora, apodrece ou perde potência enquanto o selo durar, e o tempo lá dentro não conta para nenhuma duração. Uma criatura que tente forçar precisa passar num teste de Força CD 20, e falhando sofre 4d8 de dano de força.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> A duração dobra por nível acima do 3º.</p>
+		</description>
+		<sheet>
+			<description>Sela um recipiente ou porta de até 3 m³ por 30 dias. Só você abre, nada lá dentro se deteriora e o tempo não corre. Forçar exige Força CD 20 ou 4d8 de força.</description>
+		</sheet>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minuto</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G</set>
+			<set name="duration">30 dias</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+		</setters>
+	</element>
+
+	<element name="A Terceira Mão" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_A_TERCEIRA_MAO">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">Um braço inteiro de ressonância, do ombro à ponta dos dedos, que trabalha onde você não alcança.</p>
+			<p class="indent">A mão tem Força 18, alcança 18 metros de você e obedece ordens mentais sem gastar sua ação. Ela pode carregar até 100 quilos, usar objetos, abrir portas, manipular ferramentas e realizar testes de perícia com ferramentas usando o seu bônus.</p>
+			<p class="indent">Com uma ação sua, ela pode empunhar uma arma e atacar usando seu bônus de ataque mágico, causando o dano da arma mais seu modificador de Inteligência. Ela tem CA 18 e 30 pontos de vida, e desmancha se cair a zero.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> A mão ganha mais 10 pontos de vida e carrega mais 50 quilos por nível acima do 4º.</p>
+		</description>
+		<sheet>
+			<description>Braço de ressonância a 18 m, Força 18, carrega 100 kg, usa objetos e ferramentas com seu bônus. Com sua ação, ataca com arma usando seu bônus mágico mais INT. CA 18, 30 PV.</description>
+		</sheet>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 ação</set>
+			<set name="range">18 metros</set>
+			<set name="components">V, G</set>
+			<set name="duration">Concentração, até 1 hora</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Destilação" type="Spell" source="Luminytia" id="ID_SPELL_LUMINYTIA_COMUM_DESTILACAO">
+		<supports>Spell, Alquimista</supports>
+		<description>
+			<p><i>Arte Comum do Alquimista.</i> Toda Via aprende esta magia, porque ela mexe em matéria morta, e matéria morta não é de deus nenhum. Por isso ela <strong>nunca gera Fardo</strong>.</p>
+			<p class="indent">A arte inteira do alquimista cabe num verbo: separar. Esta é a versão que não deixa resto.</p>
+			<p class="indent">Toque uma mistura, um objeto composto ou uma criatura disposta. Você separa dela um único componente e ele sai inteiro para o frasco, deixando o resto intacto.</p>
+			<p class="indent">De uma mistura, você extrai qualquer substância presente. De um objeto, você aparta um material do outro sem danificar nenhum. De uma criatura disposta, você retira um veneno, uma doença ou uma maldição, que passa a existir como líquido no frasco e pode ser estudada, guardada ou usada depois. Isso não cura ferimento nenhum e não devolve ponto de vida, porque separar não é remendar.</p>
+			<p class="indent"><b>Em Níveis Superiores.</b> Você separa um componente adicional, em frascos distintos, por nível acima do 5º.</p>
+		</description>
+		<sheet>
+			<description>Separa um componente de uma mistura, objeto ou criatura disposta, e ele sai inteiro para um frasco. De criatura, extrai veneno, doença ou maldição. Não cura nada.</description>
+		</sheet>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 minuto</set>
+			<set name="range">Toque</set>
+			<set name="components">V, G, M (um frasco vazio, que a magia enche)</set>
+			<set name="duration">Instantânea</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">false</set>
+		</setters>
+	</element>
+
+</elements>
